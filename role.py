@@ -47,7 +47,7 @@ class BaseAgent:
             self.local_model = False
             self.model_name = self.model_path
             if model_path == 'chatGLM':
-                self.model = ZhipuAI(api_key='2dfaa55b620a46a41262554c9a92829e.MF4i4ecFwcwipq3W')
+                self.model = ZhipuAI(api_key='')
         else:
             self.local_model = True
             if model_outside:
