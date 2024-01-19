@@ -1,0 +1,1013 @@
+ID,Question,Answer
+1,How is the summary provided by the Sheriff used during the voting phase?,The summary provided by the Sheriff is used to persuade other players to vote in alignment with him during the voting phase.
+2,Can the Werewolves vote for the same player during the voting phase in the Werewolf game?,"Yes, the Werewolves can vote for the same player during the voting phase in the Werewolf game."
+3,How does the game handle situations where players lie about their roles?,"The game relies on player honesty and cooperation. If a player lies about their role, it may affect the discussions and decisions made by other players."
+4,Can the Werewolves kill the same player in consecutive night rounds?,"Yes, the Werewolves can choose to kill the same player in consecutive night rounds."
+5,Can the Seer see the role of the player they choose in the night round?,The Seer can see the role of the player they choose in the night round.
+6,What happens to the player with the most votes in the voting phase?,The player with the most votes in the voting phase is eliminated from the game.
+7,Can the players vote for multiple players during the voting phase?,"During the voting phase, each player can vote for only one player."
+8,Can the Seer see the role of the players running for Sheriff during the night round?,The Seer cannot see the role of the players running for Sheriff during the night round.
+9,Can the players strategize and plan their actions before each round in the Werewolf game?,The players are encouraged to strategize and plan their actions before each round in the Werewolf game.
+10,Can the Sheriff vote during the voting phase in the Werewolf game?,The Sheriff can vote during the voting phase in the Werewolf game.
+11,Can the Werewolves win the game by eliminating all the other players?,The Werewolves win the game by eliminating all the other players.
+12,How many players are there in total?,There are seven players in total in the Werewolf game.
+13,Can the Guard save the same player as the Werewolves chose to kill?,The Guard can choose to save the same player as the Werewolves chose to kill.
+14,What happens if there is no consensus among the Werewolves in the night round?,"If there is no consensus among the Werewolves in the night round, no player will be killed."
+15,How does the voting phase work in the voting phase of the day round in the Werewolf game?,"During the voting phase of the day round, each player votes for one player. The player with the most votes is eliminated."
+16,Can the players vote for themselves during the voting phase?,"Yes, the players can vote for themselves during the voting phase."
+17,When does the election phase occur in the day round?,The election phase occurs after the announcement phase in the first day round.
+18,Can the Guard protect themselves during the night round?,"Yes, the Guard can choose to protect themselves during the night round."
+19,Can the Villagers use voting patterns and behavior analysis to identify the Werewolves?,The Villagers can use voting patterns and behavior analysis to identify the Werewolves.
+20,Can the players form alliances with each other during the Werewolf game?,The players can form alliances with each other during the Werewolf game.
+21,"Is victory attainable for the Werewolves if there is an equal number of Werewolves and Seer, Guard, and Villagers remaining?","The Werewolves cannot attain victory if there is an equal number of Werewolves and Seer, Guard, and Villagers remaining."
+22,How many Werewolves are there in the game?,There are two Werewolves in the game.
+23,Can the Sheriff vote in the voting phase?,The Sheriff can vote in the voting phase.
+24,Do the Villagers have any actions during the night round?,The Villagers do not have any actions during the night round.
+25,How is the player eliminated during the voting phase in the Werewolf game?,The player with the most votes is eliminated during the voting phase in the Werewolf game.
+26,Can the Villagers vote for the same player during the voting phase in the Werewolf game?,"Yes, the Villagers can vote for the same player during the voting phase in the Werewolf game."
+27,Can the Seer use their ability on the same player two nights in a row?,The Seer cannot use their ability on the same player two nights in a row.
+28,What is the announcement made during the announcement phase of the day round?,"The announcement during the announcement phase of the day round depends on whether a player was killed and not saved (""player_i was killed"") or if no player was killed (""no player was killed"")."
+29,Can the Guard protect a player who has been targeted by the Werewolves for elimination?,"Yes, the Guard can protect a player who has been targeted by the Werewolves for elimination."
+30,Can the Seer use their ability on a player who has been voted out by the Sheriff?,The Seer cannot use their ability on a player who has been voted out by the Sheriff.
+31,"Can the Seer, Guard, and Villagers change their actions after the initial selection in the night round?","No, the Seer, Guard, and Villagers cannot change their actions after the initial selection in the night round."
+32,Can the Sheriff choose any player to start the next round of discussions?,"Yes, the Sheriff can choose any player to start the next round of discussions."
+33,Can the Seer see the role of the Seer during the night round?,The Seer cannot see the role of the Seer during the night round.
+34,Can the Villagers discuss their suspicions during the voting phase?,The Villagers cannot discuss their suspicions during the voting phase.
+35,Can the Werewolves kill the Guard during the night round?,The Werewolves can kill the Guard during the night round.
+36,What happens during the night round of the Werewolf game?,"During the night round of the Werewolf game, the Werewolves choose a player to kill, the Seer chooses a player to see if they are a Werewolf, and the Guard chooses a player to save."
+37,Can the players choose not to speak during the discussion phase in the Werewolf game?,The players cannot choose not to speak during the discussion phase in the Werewolf game.
+38,Can the Sheriff choose a player who has been accused by multiple players in the discussion phase as the starting player for the next round of discussions?,"Yes, the Sheriff can choose a player who has been accused by multiple players in the discussion phase as the starting player for the next round of discussions."
+39,Can the Guard reveal who they saved to the other players?,"No, the Guard cannot reveal who they saved to the other players."
+40,Can the Werewolves pretend to be Villagers during the day round?,"Yes, the Werewolves can pretend to be Villagers during the day round."
+41,How are the Werewolves identified during the night round?,"During the night round, the Werewolves are identified by recognizing each other."
+42,What happens in the night round?,"During the night round, the Werewolves choose one player to kill, the Seer chooses one player to investigate, and the Guard chooses one player to save. The Villagers do nothing."
+43,Can the Sheriff's successor vote during the voting phase?,The Sheriff's successor can vote during the voting phase.
+44,Can the Sheriff be investigated by the Seer during the night round?,The Seer cannot investigate the Sheriff during the night round.
+45,Can the Guard successfully protect a player from being killed multiple times?,The Guard can successfully protect a player from being killed multiple times.
+46,How does the Guard decide who to save during the night round?,The Guard decides who to save during the night round without knowing who is chosen by the Werewolves.
+47,Can the Sheriff vote for the player who starts the next round of discussions?,"Yes, the Sheriff can vote for the player who starts the next round of discussions."
+48,What is the authority of the elected Sheriff?,The elected Sheriff has the authority to choose which player starts the next round of discussions and can provide a summary to persuade other players to vote in alignment with him.
+49,"Can the Seer, Guard, or Villagers win if all Werewolves are eliminated?","Yes, the Seer, Guard, and Villagers can win if all Werewolves are eliminated."
+50,Can the Guard choose themselves as the player to save?,"Yes, the Guard can choose themselves as the player to save."
+51,Can the Sheriff be killed by the player with the most votes in the voting phase?,"No, the Sheriff cannot be killed by the player with the most votes in the voting phase."
+52,How is the result of the night round announced?,The result of the night round is announced by stating if a player was killed and not saved or if no player was killed.
+53,Can the Villagers collectively decide to take an action during the night round?,"No, the Villagers cannot collectively decide to take an action during the night round."
+54,Can the players choose not to vote during the voting phase?,"Yes, the players can choose not to vote during the voting phase."
+55,How does the game end in the Werewolf game?,"The game ends when either the Werewolves win by having the same number of remaining players as the Seer, Guard, and Villagers, or when all Werewolves are eliminated and the Seer, Guard, and Villagers win."
+56,Can the Werewolves win the game without killing any players?,"No, the Werewolves cannot win the game without killing any players."
+57,What does the Seer do during the night round?,"During the night round, the Seer chooses one player to investigate and see if they are a Werewolf."
+58,Can the Villagers discuss their suspicions during the election phase?,"No, the Villagers cannot discuss their suspicions during the election phase."
+59,Who has the final speech during the discussion phase in the Werewolf game?,The Sheriff has the final speech during the discussion phase.
+60,Can the Sheriff choose a player who has not received any votes in the voting phase as the starting player for the next round of discussions?,"Yes, the Sheriff can choose a player who has not received any votes in the voting phase as the starting player for the next round of discussions."
+61,Can the Seer check a player who has already been eliminated?,The Seer cannot check a player who has already been eliminated.
+62,"Can the Seer, Guard, and Villagers win if there are no Werewolves remaining?","The Seer, Guard, and Villagers can win if there are no Werewolves remaining."
+63,Can the Werewolves kill the same player as the Villagers suspect during the night round in the Werewolf game?,The Werewolves can kill the same player as the Villagers suspect during the night round in the Werewolf game.
+64,How many players need to vote for a Sheriff to be elected?,The number of players needed to vote for a Sheriff to be elected is not specified.
+65,What are the four roles in the game?,"The four roles in the game are Werewolves, Villagers, Seer, and Guard."
+66,Can the Villagers vote to eliminate the Guard?,The Villagers can vote to eliminate the Guard.
+67,What is the outcome if a player chooses not to vote during the voting phase?,"If a player chooses not to vote during the voting phase, it is not specified what the outcome is."
+68,Can a player change their vote during the voting phase?,A player cannot change their vote during the voting phase.
+69,Can the Guard save the Werewolves?,The Guard cannot save the Werewolves.
+70,Can the Villagers choose not to do anything during the night round in the Werewolf game?,The Villagers can choose not to do anything during the night round in the Werewolf game.
+71,Can the Guard save multiple players in the same night round?,The Guard can save multiple players in the same night round.
+72,Can the Seer reveal their identity during the game in the Werewolf game?,The Seer cannot reveal their identity during the game in the Werewolf game.
+73,Can the Seer see the role of any player during the night round?,The Seer can see the role of any player during the night round.
+74,Can the Werewolves be killed by another Werewolf?,The Werewolves cannot be killed by another Werewolf.
+75,What happens during the night round in the Werewolf game?,"During the night round in the Werewolf game, the Werewolves choose a player to kill, the Seer chooses a player to check, and the Guard chooses a player to save."
+76,Are the roles of Werewolves and Villagers assigned randomly?,It is not specified if the roles of Werewolves and Villagers are assigned randomly.
+77,What is the purpose of the Guard in the Werewolf game?,The purpose of the Guard in the Werewolf game is to choose a player to save without knowing who is chosen by the Werewolves.
+78,How is the game won by the Werewolves?,"The game is won by the Werewolves if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+79,Can the Seer use their ability on the same player multiple times in one night round?,The Seer can use their ability on the same player multiple times in one night round.
+80,Can the Sheriff choose a player who is a Werewolf to start the next round of discussions in the Werewolf game?,The Sheriff can choose a player who is a Werewolf to start the next round of discussions in the Werewolf game.
+81,Can the Villagers vote to eliminate the Werewolves?,The Villagers can vote to eliminate the Werewolves during the voting phase of the day round.
+82,Can the Seer reveal their role to other players?,The Seer can choose to reveal their role to other players if they wish to do so.
+83,Do the Villagers have any special abilities in the Werewolf game?,The Villagers do not have any special abilities in the Werewolf game.
+84,How is the player to be killed decided during the night round in the Werewolf game?,"The player to be killed during the night round is decided by a vote among the Werewolves. The player who receives the most votes will be killed, unless there is no consensus."
+85,Can the Villagers take any actions during the night round?,The Villagers cannot take any actions during the night round.
+86,What happens during the voting phase of the day round?,"During the voting phase of the day round, each player votes for one player to be eliminated from the game. The player with the most votes is eliminated."
+87,Can the Seer use their ability on a player who has been elected as Sheriff?,"Yes, the Seer can use their ability on a player who has been elected as Sheriff."
+88,Can the Werewolves participate in the discussion phase?,"The Werewolves can participate in the discussion phase and state their opinions, just like the other players."
+89,Can the Villagers change their suspicions during the day round?,"Yes, the Villagers can change their suspicions and accusations during the day round based on the discussions."
+90,Can the Sheriff be eliminated during the day round?,The Sheriff can be eliminated during the day round if they receive the most votes during the voting phase.
+91,Can the Seer see the role of the Sheriff?,"The Seer cannot see the specific role of the Sheriff, but they can determine whether the Sheriff is a Werewolf or not."
+92,What happens during the announcement phase of the day round in the Werewolf game?,"During the announcement phase of the day round, the results of the previous night's actions are announced. It will be mentioned if a player was killed or if no player was killed."
+93,Can players choose not to vote during the voting phase?,"Yes, players can choose not to vote during the voting phase if they do not want to cast a vote."
+94,Can the players reveal their roles during the game?,Players are not allowed to reveal their specific roles during the game.
+95,"How does the Seer determine the true nature of a player, whether they are a Werewolf or not?","The Seer determines the true nature of a player, whether they are a Werewolf or not, by using their ability to see the role of a chosen player during the night round."
+96,"Can the Werewolves win if there is only one remaining Seer, Guard, and Villager?","Yes, the Werewolves can win if there is only one remaining Seer, Guard, and Villager."
+97,What is the role of the Sheriff during the discussion phase in the Werewolf game?,"The role of the Sheriff during the discussion phase is to participate in the discussion and offer their insights and opinions, just like the other players."
+98,Can the Werewolves win if there is only one Seer remaining?,"Yes, the Werewolves can win if there is only one Seer remaining."
+99,Can the Werewolves kill the same player as the Sheriff has voted to eliminate?,The Werewolves have the freedom to choose whether to kill the same player as the Sheriff has voted to eliminate or choose a different player.
+100,"Can the Seer, Guard, or Villagers win the game if all Werewolves are eliminated?","Yes, if all Werewolves are eliminated, the Seer, Guard, and Villagers will win the game."
+101,Can the Sheriff also be a Guard?,The Sheriff can also be a Guard.
+102,Can the Guard choose not to use their ability during the night round?,The Guard can choose not to use their ability during the night round.
+103,Can the Villagers vote for the same player they discussed during the day round?,The Villagers can vote for the same player they discussed during the day round.
+104,How is the result of the night round announced to the players?,The result of the night round is announced to the players during the announcement phase of the day round.
+105,Can the Werewolves kill the Villagers?,The Werewolves can kill the Villagers.
+106,Can the Werewolves eliminate the Seer or Guard during the night round?,The Werewolves can eliminate the Seer or Guard during the night round.
+107,Can the Werewolves choose not to kill any player during the night round in the Werewolf game?,The Werewolves can choose not to kill any player during the night round in the Werewolf game.
+108,Can the Werewolves win if there is only one Guard remaining?,The Werewolves can win if there is only one Guard remaining.
+109,How many phases are there in the day round?,"There are three phases in the day round: the announcement phase, the discussion phase, and the voting phase."
+110,How are the Werewolves determined in the game?,The Werewolves are determined based on the players' assigned hidden roles at the beginning of the game.
+111,Is it permissible for a player to vote for themselves during the voting phase?,It is permissible for a player to vote for themselves during the voting phase.
+112,Can the Seer use their ability on a player who has been eliminated by the Sheriff?,The Seer cannot use their ability on a player who has been eliminated by the Sheriff.
+113,How is the player to be eliminated determined during the voting phase in the Werewolf game?,The player to be eliminated is determined based on the votes cast during the voting phase in the Werewolf game.
+114,Can the Werewolves intentionally target players who are suspected of being the Seer or Guard?,The Werewolves can intentionally target players who are suspected of being the Seer or Guard.
+115,Can the Seer check themselves?,The Seer cannot check themselves.
+116,What is the order of players speaking during the discussion phase?,The order of players speaking during the discussion phase is from player_0 to player_6.
+117,Can the Guard reveal the identity of the player they saved during the day round in the Werewolf game?,The Guard cannot reveal the identity of the player they saved during the day round in the Werewolf game.
+118,What is the purpose of the discussion phase in the day round of the Werewolf game?,The purpose of the discussion phase in the day round of the Werewolf game is to discuss and identify who might be the Werewolves.
+119,"Can the Werewolves win if the number of remaining Werewolves is greater than the number of remaining Seer, Guard, and Villagers?","The Werewolves cannot win if the number of remaining Werewolves is greater than the number of remaining Seer, Guard, and Villagers."
+120,"Can the Seer, Guard, and Villagers eliminate players in the voting phase?","The Seer, Guard, and Villagers cannot eliminate players in the voting phase."
+121,Can the Guard save the same player as the Sheriff has voted for?,The Guard cannot save the same player as the Sheriff has voted for.
+122,Can the players use any external tools or resources during the Werewolf game?,Players are not allowed to use any external tools or resources during the Werewolf game.
+123,How is the new Sheriff determined if the current Sheriff dies in the Werewolf game?,"If the current Sheriff dies in the Werewolf game, the Sheriff can choose a player to succeed him as the new Sheriff."
+124,Can the players change their votes during the voting phase in the Werewolf game?,Players cannot change their votes once they have voted during the voting phase in the Werewolf game.
+125,Can the Sheriff be a Werewolf?,The Sheriff cannot be a Werewolf.
+126,"What are the winning conditions for the Werewolves and the Seer, Guard, and Villagers?","The winning condition for the Werewolves is when the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers. The winning condition for the Seer, Guard, and Villagers is when all Werewolves are eliminated."
+127,Can the Sheriff eliminate multiple players during the voting phase?,"No, the Sheriff can only eliminate one player during the voting phase."
+128,Can the players reveal their roles to others during the Werewolf game?,Players are not allowed to reveal their roles to others during the Werewolf game.
+129,Can the Werewolves kill the same player as the Sheriff has voted for?,"Yes, the Werewolves can kill the same player as the Sheriff has voted for."
+130,"What are the winning conditions for the Seer, Guard, and Villagers in the game?","The winning condition for the Seer, Guard, and Villagers is when all Werewolves are eliminated."
+131,Can the Werewolves kill each other during the night round?,"No, the Werewolves cannot kill each other during the night round."
+132,Is the role assignment of Werewolves and Villagers random?,The role assignment of Werewolves and Villagers is not specified as random or fixed.
+133,What happens in the discussion phase of the day round?,"In the discussion phase of the day round, each remaining player speaks only once in order from player_0 to player_6 to discuss who might be the Werewolves."
+134,What happens in the night round of the game?,"In the night round of the game, the Werewolves recognize each other and choose one player to kill. The Seer chooses one player to see if they are a Werewolf. The Guard chooses one player including themselves to save without knowing who is chosen by the Werewolves. The Villagers do nothing."
+135,Can the players discuss multiple times during the discussion phase?,The players can only discuss once during the discussion phase.
+136,In what order do players speak during the discussion phase of the day round?,The players speak in order from player_0 to player_6 during the discussion phase of the day round.
+137,Who has the authority to choose the starting player for the next round of discussions?,The Sheriff has the authority to choose the starting player for the next round of discussions.
+138,What abilities does the Guard have?,"The Guard has the ability to choose one player, including themselves, to save without knowing who is chosen by the Werewolves."
+139,How many Seers are there in the game?,There is only one Seer in the game.
+140,What is the consequence if a player does not vote during the voting phase?,"If a player does not vote during the voting phase, there are no specific consequences mentioned."
+141,Can the Guard save the players running for Sheriff during the night round?,The Guard can save the players running for Sheriff during the night round.
+142,Can the Werewolves win the game if the Seer or Guard is still alive?,The Werewolves can win the game if the Seer or Guard is still alive.
+143,"Can the Werewolves win the game without eliminating all the Seer, Guard, and Villagers?","The Werewolves cannot win the game without eliminating all the Seer, Guard, and Villagers."
+144,In what order do the players speak during the discussion phase?,The players speak in order from player_0 to player_6 during the discussion phase.
+145,Can the Werewolves win if there is only one remaining Werewolf?,The Werewolves cannot win if there is only one remaining Werewolf.
+146,Can the Villagers change their vote during the voting phase?,The Villagers cannot change their vote during the voting phase.
+147,How does the game handle situations where players have conflicting suspicions about each other?,The game handles situations where players have conflicting suspicions about each other through the discussion phase and voting phase.
+148,"What is the win condition for the Seer, Guard, and Villagers?","The win condition for the Seer, Guard, and Villagers is to eliminate all the Werewolves."
+149,Can the Sheriff provide a summary to persuade other players during the discussion phase?,The Sheriff can provide a summary to persuade other players during the discussion phase.
+150,What is the order of players speaking during the discussion phase in the Werewolf game?,The order of players speaking during the discussion phase in the Werewolf game is from player_0 to player_6.
+151,What is the purpose of the discussion phase in the Werewolf game?,The purpose of the discussion phase in the Werewolf game is to discuss who might be the Werewolves and gather information.
+152,How many times can each player speak during the discussion phase of the day round?,Each player can speak only once during the discussion phase of the day round.
+153,Can the Guard reveal the identity of the player they saved?,The Guard cannot reveal the identity of the player they saved.
+154,Can the Villagers discuss their suspicions openly during the discussion phase?,The Villagers can openly discuss their suspicions during the discussion phase.
+155,Can the Werewolves know who the Seer is during the night round in the Werewolf game?,The Werewolves cannot know who the Seer is during the night round in the Werewolf game.
+156,Can the Seer see the role of the Sheriff during the night round?,The Seer cannot see the role of the Sheriff during the night round.
+157,Can the Seer see the role of the player chosen by the Werewolves to be killed?,The Seer can see the role of the player chosen by the Werewolves to be killed.
+158,What happens during the night round of the game?,"During the night round of the game, the Werewolves choose one player to kill, the Seer chooses one player to see if they are a Werewolf, and the Guard chooses one player to save without knowing who is chosen by the Werewolves. The Villagers do nothing."
+159,How does the Guard decide whom to protect during the night round?,The Guard decides whom to protect during the night round based on their own choice.
+160,Can the players eliminate the Sheriff during the voting phase?,The players can eliminate the Sheriff during the voting phase.
+161,What happens in the night round of the Werewolf game?,"During the night round of the Werewolf game, the Werewolves recognize each other and choose one player to kill. The Seer chooses one player to see if they are a Werewolf. The Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves. The Villagers do not take any actions."
+162,Can the Guard save the player who was killed in the night round?," 'Yes, the Guard can save the player who was killed in the night round."
+163,How many votes can each player cast during the voting phase?, 'Each player can cast one vote during the voting phase.
+164,Can the players take any actions to protect themselves during the night round in the Werewolf game?," 'No, the players cannot take any actions to protect themselves during the night round in the Werewolf game."
+165,Can the Sheriff choose a player who has received the most votes in the voting phase as the starting player for the next round of discussions?," 'Yes, the Sheriff can choose a player who has received the most votes in the voting phase as the starting player for the next round of discussions."
+166,Can a player be both a Werewolf and a Seer in the game?," 'No, a player cannot be both a Werewolf and a Seer in the game."
+167,Can the Seer see the role of the Villagers?, 'The Seer cannot see the roles of the Villagers.
+168,Can the Seer win the game without correctly identifying any Werewolves?," 'Yes, the Seer can win the game without correctly identifying any Werewolves."
+169,What happens if a player is killed and saved during the night round in the Werewolf game?," 'If a player is killed and saved during the night round in the Werewolf game, the announcement will be ""no player was killed""."
+170,What happens during the election phase of the first day in the day round?," 'During the election phase of the first day in the day round, players can decide whether or not to run for Sheriff. They take turns stating their reasons, and each player votes for one Sheriff or chooses not to vote."
+171,What role does the Seer fulfill in the Werewolf game?, 'The Seer fulfills the role of determining if a player is a Werewolf or not.
+172,What are the win conditions for the Guard in the game?," 'The win condition for the Guard is the same as the Seer and Villagers, which is to eliminate all the Werewolves."
+173,"Can the Seer, Guard, and Villagers communicate with each other during the night round?"," 'No, the Seer, Guard, and Villagers cannot communicate with each other during the night round."
+174,What is the role of the Seer in the game?, 'The Seer is responsible for choosing one player to see if they are a Werewolf.
+175,Can the players change their roles during the Werewolf game?," 'No, the players cannot change their roles during the Werewolf game."
+176,"Can the Seer, Guard, and Villagers choose a player to succeed them if they are eliminated during the voting phase?"," 'No, the Seer, Guard, and Villagers cannot choose a player to succeed them if they are eliminated during the voting phase."
+177,Can the players discuss their suspicions privately with other players during the Werewolf game?," 'Yes, the players can discuss their suspicions privately with other players during the Werewolf game."
+178,What does the Guard do in the night round?," 'The Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves."
+179,Can the Sheriff vote in the game?," 'Yes, the Sheriff can vote in the game.'"
+180,Can the players discuss their suspicions during the discussion phase in the Werewolf game?,The players are allowed to discuss their suspicions during the discussion phase in the Werewolf game.
+181,How is the Sheriff chosen in the game?,"The Sheriff is chosen through an election phase during the day round. Players can decide whether or not to run for Sheriff based on their identity, and players take turns stating their reasons. Each player then votes for one Sheriff or chooses not to vote."
+182,How many Villagers are there in the Werewolf game?,There are three Villagers in the Werewolf game.
+183,What happens during the voting phase of the day round in the Werewolf game?,"During the voting phase of the day round, each player votes for one player or chooses not to vote. The player with the most votes is eliminated, and the game continues to the next night round."
+184,How is the Sheriff determined if the previous one dies?,"If the previous Sheriff dies, they have the right to choose a player to succeed them as the Sheriff."
+185,Can the Werewolves win if there is only one remaining Werewolf and one remaining Villager?,"No, the Werewolves cannot win if there is only one remaining Werewolf and one remaining Villager. The Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+186,Can the Werewolves kill multiple players in one night round?,The Werewolves can only choose one player to kill during the night round.
+187,Can the Seer check the same player multiple times?,"Yes, the Seer can check the same player multiple times."
+188,What do the Villagers do in the night round?,The Villagers do nothing during the night round.
+189,Is the Seer allowed to choose not to use their ability during the night round?,"Yes, the Seer is allowed to choose not to use their ability during the night round."
+190,What happens if there is a tie in the voting phase?,"If there is a tie in the voting phase, it is not mentioned what happens in the given rules."
+191,Can the Sheriff choose the player to start the next round of discussions?,"Yes, the Sheriff has the authority to choose the player to start the next round of discussions."
+192,Can the Werewolves choose not to vote during the voting phase?,The Werewolves can choose not to vote during the voting phase.
+193,"Can the Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?","No, the Werewolves cannot win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers. The Seer, Guard, and Villagers win the game if all Werewolves are eliminated."
+194,Can the Guard vote for the Sheriff during the election phase?,The Guard can vote for the Sheriff during the election phase.
+195,Can the Guard save the Sheriff during the night round?,"The Guard can save the Sheriff during the night round, including themselves."
+196,Can the Seer identify the Werewolves every night?,The Seer cannot identify the Werewolves every night. They can only choose one player each night to see if they are a Werewolf.
+197,Can the Villagers reveal their identities during the night round?,The Villagers are not allowed to reveal their identities during the night round.
+198,What is the purpose of the discussion phase?,The purpose of the discussion phase is for each remaining player to speak only once in order to discuss who might be the Werewolves. The Sheriff has the final speech and concludes the voting.
+199,How does the game determine the winner?,"The game determines the winner based on the following conditions: If the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers, the Werewolves win. If all Werewolves are eliminated, the Seer, Guard, and Villagers win."
+200,Can the Sheriff choose themselves as the starting player for the next round of discussions?,The Sheriff can choose themselves as the starting player for the next round of discussions.
+201,"Can the Seer, Guard, and Villagers vote for each other during the voting phase in the Werewolf game?","The Seer, Guard, and Villagers cannot vote for each other during the voting phase in the Werewolf game."
+202,What is the first phase in the day round called?,The first phase in the day round is called the announcement phase.
+203,Can the Guard save the same player multiple times during the night round in the Werewolf game?,The Guard can save the same player multiple times during the night round in the Werewolf game.
+204,How many Werewolves are needed for the Werewolves to win?,"The Werewolves need the number of remaining Werewolves to be equal to the number of remaining Seer, Guard, and Villagers to win."
+205,How is the Sheriff determined in the Werewolf game?,The Sheriff is determined through the election phase where players can decide whether or not to run for Sheriff based on their identity. Players then vote for one Sheriff or choose not to vote.
+206,Can the Villagers vote for themselves during the voting phase?,The Villagers can vote for themselves during the voting phase.
+207,What actions do the Villagers take during the night round?,The Villagers do nothing during the night round.
+208,Can the Villagers reveal their roles to other players?,The Villagers cannot reveal their roles to other players.
+209,What happens if the Werewolves fail to eliminate any players during the night round?,"If the Werewolves fail to eliminate any players during the night round, no one will be killed."
+210,What authority does the elected Sheriff have in the game?,The elected Sheriff has the authority to choose which player starts the next round of discussions and can provide a summary as the last speaker to persuade other players to vote in alignment with them.
+211,How does the voting phase work in the day round of the Werewolf game?,"During the voting phase in the day round of the Werewolf game, each player votes for one player or chooses not to vote."
+212,Can the players discuss their suspicions openly during the discussion phase in the Werewolf game?,The players can discuss their suspicions openly during the discussion phase in the Werewolf game.
+213,Can the Guard save more than one player in one night?,The Guard can save more than one player in one night.
+214,"Can the Seer, Guard, and Villagers win the game if there is more than one remaining Werewolf?","The Seer, Guard, and Villagers can win the game if there is more than one remaining Werewolf."
+215,What is announced if a player was killed and not saved during the night round?,"If a player was killed and not saved during the night round, it is announced that the player was killed."
+216,What does the Seer do during the night round in the Werewolf game?,The Seer chooses one player to see if they are a Werewolf during the night round in the Werewolf game.
+217,Can the Seer see the role of the Guard?,The Seer cannot see the role of the Guard.
+218,Can the Villagers vote for the Sheriff during the election phase?,The Villagers can vote for the Sheriff during the election phase.
+219,Can the Werewolves win if there is only one Villager remaining?,The Werewolves can win if there is only one Villager remaining.
+220,What are the roles in the Werewolf game?,"The roles in the Werewolf game are Werewolves, Villagers, Seer, and Guard."
+221,Can the Guard influence the election for Sheriff?,The Guard cannot influence the election for Sheriff.
+222,"Can the Seer, Guard, and Villagers win if there is only one remaining Werewolf and one remaining Villager?","If there is only one remaining Werewolf and one remaining Villager, the Seer, Guard, and Villagers can win the game."
+223,"Can the Werewolves win the game if there are more Werewolves than Seer, Guard, and Villagers remaining?","The Werewolves cannot win the game if there are more Werewolves than Seer, Guard, and Villagers remaining."
+224,What is the role of the Villagers during the night round?,The Villagers do nothing during the night round.
+225,How is the selection made for the new Sheriff if the previous Sheriff dies in the subsequent game?,The selection for the new Sheriff is made by the previous Sheriff if they die in the subsequent game.
+226,Can the Villagers reveal their identities during the day round?,The Villagers can reveal their identities during the day round.
+227,Can the Seer use their ability on a player who has been eliminated?,The Seer cannot use their ability on a player who has been eliminated.
+228,Can the Sheriff's successor be eliminated during the voting phase?,The Sheriff's successor can be eliminated during the voting phase.
+229,Can the Werewolves choose not to kill any player in one night?,The Werewolves can choose not to kill any player in one night.
+230,How is the Sheriff chosen during the election phase?,The Sheriff is chosen during the election phase based on the players' decisions.
+231,Can the Werewolves win the game if there are no remaining Villagers?,The Werewolves cannot win the game if there are no remaining Villagers.
+232,Do villagers have any special abilities?,The villagers do not have any special abilities.
+233,Can the Seer vote for the player who starts the next round of discussions?,The Seer cannot vote for the player who starts the next round of discussions.
+234,How many players are there in total in the Werewolf game?,There are seven players in total in the Werewolf game.
+235,What happens during the election phase in the first day of the Werewolf game?,"During the election phase in the first day of the Werewolf game, players decide whether or not to run for Sheriff and state their reasons."
+236,Can the Werewolves change their target during the night round?,The Werewolves cannot change their target during the night round.
+237,Can the Seer see the role of multiple players in the night round?,The Seer can only see the role of one player in the night round.
+238,Who has the final speech in the discussion phase of the Werewolf game?,The Sheriff has the final speech in the discussion phase of the Werewolf game.
+239,Can the Sheriff be eliminated during the voting phase?,The Sheriff can be eliminated during the voting phase.
+240,Can the players running for Sheriff vote for themselves?,"Yes, the players running for Sheriff can vote for themselves."
+241,Can the Villagers win the game if there is at least one Werewolf remaining?,"No, the Villagers cannot win the game if there is at least one Werewolf remaining."
+242,Can the Seer ascertain the role of the player chosen by the Werewolves to be killed?,"No, the Seer cannot ascertain the role of the player chosen by the Werewolves to be killed."
+243,Can the Guard win the game without saving any players from the Werewolves?,"Yes, the Guard can win the game without saving any players from the Werewolves."
+244,How is the Sheriff chosen if the previous Sheriff dies in the subsequent game?,The Sheriff is chosen by a voting process if the previous Sheriff dies in the subsequent game.
+245,Who has the final speech during the discussion phase of the day round?,The Sheriff has the final speech during the discussion phase of the day round.
+246,What is the significance of the election phase in the day round?,The election phase in the day round is significant because it determines who becomes the Sheriff and has the authority to choose the next speaker during the discussion phase.
+247,Can the Guard win the game without saving any players?,"Yes, the Guard can win the game without saving any players."
+248,Can the Werewolves choose not to kill anyone during the night round in the Werewolf game?,"Yes, the Werewolves can choose not to kill anyone during the night round in the Werewolf game."
+249,Can the Werewolves kill the players running for Sheriff during the night round?,"Yes, the Werewolves can kill the players running for Sheriff during the night round."
+250,How many players can run for Sheriff?,Any number of players can run for Sheriff.
+251,"How many Seer, Guard, and Villagers are required to win the game?","All Seer, Guard, and Villagers must be eliminated for the Werewolves to win the game, and all Werewolves must be eliminated for the Seer, Guard, and Villagers to win the game."
+252,Can the Seer see their own role during the night round in the Werewolf game?,"No, the Seer cannot see their own role during the night round in the Werewolf game."
+253,Can the Seer see the role of the other Seer?,"No, the Seer cannot see the role of the other Seer."
+254,Can the players choose not to run for Sheriff in the election phase?,"Yes, the players can choose not to run for Sheriff in the election phase."
+255,Can the players vote for themselves during the voting phase in the Werewolf game?,"Yes, the players can vote for themselves during the voting phase in the Werewolf game."
+256,How is the role of the moderator different from the other players?,The role of the moderator is different from the other players because they are the host and organizer of the game.
+257,"Can the Seer, Guard, and Villagers be eliminated during the voting phase?","Yes, the Seer, Guard, and Villagers can be eliminated during the voting phase."
+258,What is announced if no player was killed during the night round?,"If no player was killed during the night round, it is announced as ""no player was killed""."
+259,Can the Werewolves eliminate the Guard during the night round to prevent them from saving anyone?,"Yes, the Werewolves can eliminate the Guard during the night round to prevent them from saving anyone."
+260,Can the Werewolves win if there is only one remaining Villager?,The Werewolves can win if there is only one remaining Villager.
+261,"Can the Seer, Guard, and Villagers win if there is only one Werewolf remaining?","The Seer, Guard, and Villagers can win if there is only one Werewolf remaining."
+262,Can the Werewolves kill the players who have been elected as Sheriff during the night round?,The Werewolves cannot kill players who have been elected as Sheriff during the night round.
+263,Can the Sheriff choose a player to succeed them as the sheriff if they are permanently eliminated from the game?,The Sheriff cannot choose a player to succeed them as the sheriff if they are permanently eliminated from the game.
+264,How do the Werewolves choose their target to kill?,The Werewolves choose their target to kill through a voting process among themselves during the night round.
+265,In what order do players speak during the discussion phase?,Players speak in order from player_0 to player_6 during the discussion phase.
+266,Can the Seer choose not to use their ability during the night round?,The Seer can choose not to use their ability during the night round.
+267,Can the Sheriff be elected again in the subsequent games if they are eliminated during the voting phase?,The Sheriff cannot be elected again in the subsequent games if they are eliminated during the voting phase.
+268,Can the Villagers secure victory without identifying all the Werewolves?,The Villagers can secure victory without identifying all the Werewolves.
+269,What happens if a player is killed but also saved during the night round?,"If a player is killed but also saved during the night round, the announcement will be ""no player was killed""."
+270,How is the player to be eliminated decided during the voting phase?,The player to be eliminated during the voting phase is decided based on the player with the most votes.
+271,What happens in the election phase of the day round?,"In the election phase of the day round, players decide whether or not to run for Sheriff and state their reasons for running."
+272,Can the Werewolves kill the same player they saved?,The Werewolves cannot kill the same player they saved during the night round.
+273,"How many Seer, Guard, and Villagers are needed for the Seer, Guard, and Villagers to win?","The Seer, Guard, and Villagers need all the Werewolves to be eliminated in order to win."
+274,Can the Guard vote for the player who starts the next round of discussions?,The Guard cannot vote for the player who starts the next round of discussions.
+275,Can the Werewolves win the game if there is no consensus among the players during the voting phase?,The Werewolves cannot win the game if there is no consensus among the players during the voting phase.
+276,Can the Seer see the role of the player who was killed during the night round in the Werewolf game?,The Seer cannot see the role of the player who was killed during the night round in the Werewolf game.
+277,"Can the Werewolves win the game if there is a tie between the number of remaining Werewolves and the number of remaining Seer, Guard, and Villagers?","The Werewolves cannot win the game if there is a tie between the number of remaining Werewolves and the number of remaining Seer, Guard, and Villagers."
+278,Can the Seer or Guard save themselves during the night round?,The Seer or Guard cannot save themselves during the night round.
+279,Can the Werewolves be eliminated during the night round without any player being killed?,The Werewolves cannot be eliminated during the night round without any player being killed.
+280,"Can the Seer, Guard, and Villagers win if there is only one player remaining?","The Seer, Guard, and Villagers cannot win if there is only one player remaining."
+281,How is the Sheriff determined if the previous Sheriff dies?,The Sheriff is determined by the player who receives the majority of votes from all players.
+282,Can the Sheriff choose a player to succeed them as the sheriff if they voluntarily step down?,The Sheriff cannot choose a player to succeed them as the sheriff if they voluntarily step down.
+283,"How many Seer, Guard, and Villagers are needed for them to win the game?","The Seer, Guard, and Villagers need all the Werewolves to be eliminated in order to win the game."
+284,What is the purpose of the election phase?,The purpose of the election phase is to select a Sheriff who has the authority to choose the starting player for the next round of discussions and provide a persuasive summary.
+285,Can the Werewolves kill the Guard during the night round if they choose to save themselves?,The Werewolves cannot kill the Guard during the night round if they choose to save themselves.
+286,Can the Sheriff influence the voting phase by providing a persuasive summary?,The Sheriff can influence the voting phase by providing a persuasive summary.
+287,Who does the Guard choose to save during the night round?,"The Guard chooses one player, including themselves, to save during the night round."
+288,"Can the Seer, Guard, or Villagers win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?","The Seer, Guard, and Villagers cannot win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+289,Can the Guard save the same player multiple times in one night round?,The Guard can save the same player multiple times in one night round.
+290,Can the Sheriff choose a player who has received the second most votes in the voting phase as the starting player for the next round of discussions?,The Sheriff cannot choose a player who has received the second most votes in the voting phase as the starting player for the next round of discussions.
+291,Can the Werewolves vote to eliminate the Guard?,The Werewolves can vote to eliminate the Guard during the voting phase.
+292,Can the Sheriff choose a player who is a Villager to start the next round of discussions in the Werewolf game?,The Sheriff cannot choose a player who is a Villager to start the next round of discussions in the Werewolf game.
+293,Can the Sheriff's successor also be a Werewolf?,The Sheriff's successor can also be a Werewolf.
+294,Can the players discuss the strategies of the Werewolves openly during the discussion phase?,The players cannot openly discuss the strategies of the Werewolves during the discussion phase.
+295,"Can the Seer, Guard, and Villagers win if there is only one remaining Villager?","The Seer, Guard, and Villagers cannot win if there is only one remaining Villager."
+296,Can the Seer see the role of the Werewolves?,The Seer cannot see the role of the Werewolves.
+297,Can the Sheriff be saved by the Guard during the night round?,The Sheriff can be saved by the Guard during the night round.
+298,Can the players eliminate multiple players during the voting phase?,The players can only eliminate one player during the voting phase.
+299,Can the Villagers change their actions during the night round in the Werewolf game?,The Villagers cannot change their actions during the night round in the Werewolf game.
+300,"Can the Seer, Guard, and Villagers win the game if all Werewolves are eliminated?","Yes, the Seer, Guard, and Villagers win the game if all Werewolves are eliminated."
+301,Can the Sheriff provide a summary to persuade other players during the day round?,"Yes, the Sheriff can provide a summary to persuade other players during the day round."
+302,How does the game culminate in either side achieving victory?,"The game culminates in either side achieving victory when the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers, or when all Werewolves are eliminated."
+303,How are the Werewolves identified in the game?,The Werewolves are identified in the game through the Seer's ability to choose one player to see if they are a Werewolf.
+304,How is the player to be eliminated determined during the voting phase?,"During the voting phase, the player to be eliminated is determined by the player receiving the most votes."
+305,Can the Sheriff choose a player who has been eliminated in the voting phase as the starting player for the next round of discussions?,"No, the Sheriff cannot choose a player who has been eliminated in the voting phase as the starting player for the next round of discussions."
+306,Can the Werewolves win the game without killing anyone during the night round?,"Yes, the Werewolves can win the game without killing anyone during the night round."
+307,Can the Seer change their investigation target during the day round?,"No, the Seer cannot change their investigation target during the day round."
+308,"Can the Seer, Guard, and Villagers win if there is only one remaining Werewolf?","Yes, the Seer, Guard, and Villagers can win if there is only one remaining Werewolf."
+309,Can a player vote for themselves during the voting phase?,"No, a player cannot vote for themselves during the voting phase."
+310,Can the Guard save themselves during the night round in the Werewolf game?,"Yes, the Guard can save themselves during the night round in the Werewolf game."
+311,Can the Werewolves influence the election for Sheriff?,"Yes, the Werewolves can influence the election for Sheriff."
+312,How are the roles assigned to the players kept hidden during the Werewolf game?,The roles assigned to the players are kept hidden during the Werewolf game through the use of hidden role assignments made by the moderator/host.
+313,Can the Sheriff be eliminated during the day round in the Werewolf game?,"Yes, the Sheriff can be eliminated during the day round in the Werewolf game."
+314,How is the player to be killed determined in the Werewolf game?,The player to be killed is determined in the Werewolf game based on the consensus among the Werewolves during the night round.
+315,What happens if the Sheriff is killed during the night round and there is no backup Sheriff?,"If the Sheriff is killed during the night round and there is no backup Sheriff, they do not have the ability to choose a player to succeed them."
+316,Can the Villagers win the game if there are no remaining Werewolves?,"Yes, the Villagers can win the game if there are no remaining Werewolves."
+317,Can the Werewolves win if there is one Villager remaining?,"No, the Werewolves cannot win if there is one Villager remaining."
+318,Can players vote for themselves during the voting phase?,"No, players cannot vote for themselves during the voting phase."
+319,Can the Sheriff choose a player to succeed them if they are eliminated during the voting phase?,"Yes, the Sheriff can choose a player to succeed them if they are eliminated during the voting phase."
+320,How does the role of the moderator differ from that of the other players?,The moderator's role is to organize the game and give instructions. They do not participate in the game as a player.
+321,How are the results of the night round announced in the day round?,"In the day round, the results of the night round are announced through an announcement phase. If a player was killed and not saved, the announcement will state their name followed by ""was killed."" If no player was killed, the announcement will state ""no player was killed."""
+322,Can the Seer check multiple players in the same night round?,The Seer can check one player during each night round to determine if they are a Werewolf. They cannot check multiple players in the same night round.
+323,Can the players discuss their suspicions during the announcement phase in the Werewolf game?,Players cannot discuss their suspicions during the announcement phase in the Werewolf game.
+324,Can the Werewolves discuss during the day round?,The Werewolves cannot discuss during the day round.
+325,What are the consequences if a player is both killed and saved during the night round?,"If a player is both killed and saved during the night round, they will not be eliminated from the game. The saved player will remain alive."
+326,Can the Seer vote during the voting phase?,The Seer cannot vote during the voting phase. Only the remaining players can vote.
+327,How is the new Sheriff determined if the previous one dies?,"If the previous Sheriff dies, they have the right to choose a player to succeed them as the new Sheriff."
+328,Can the Werewolves change their target player during the night round?,The Werewolves cannot change their target player once they have made their decision during the night round.
+329,What determines the sequence of players speaking during the discussion phase?,The sequence of players speaking during the discussion phase is determined by the order of player_0 to player_Each player speaks only once.
+330,"Can the Werewolves win if there are no Seer, Guard, and Villagers remaining?","No, the Werewolves cannot win if there are no Seer, Guard, and Villagers remaining. The game ends when either the Werewolves or the Seer, Guard, and Villagers win."
+331,Can the Werewolves vote to eliminate the Villagers?,"Yes, the Werewolves can vote to eliminate the Villagers during the voting phase."
+332,What are the four roles in the Werewolf game?,"The four roles in the Werewolf game are Werewolves, Villagers, Seer, and Guard."
+333,Can the Seer win the game without revealing their identity?,"Yes, the Seer can win the game without revealing their identity. They win if all the Werewolves are eliminated."
+334,"Can the Seer, Guard, and Villagers win if there are remaining Werewolves?","Yes, the Seer, Guard, and Villagers can win if there are remaining Werewolves. They win if all the Werewolves are eliminated."
+335,Can the Guard choose themselves to save in the night round?,"Yes, the Guard can choose themselves to save in the night round."
+336,Can the Sheriff choose a player who is already eliminated to start the next round of discussions in the Werewolf game?,"No, the Sheriff cannot choose a player who is already eliminated to start the next round of discussions. They can only choose from the remaining players."
+337,How many times can each player vote during the voting phase?,Each player can vote once during the voting phase.
+338,Can the Sheriff choose a player to succeed them if they die in the subsequent game in the Werewolf game?,"If the Sheriff dies in the subsequent game, they have the right to choose a player to succeed them as the new Sheriff."
+339,Can the Werewolves vote during the voting phase in the Werewolf game?,"No, the Werewolves cannot vote during the voting phase in the Werewolf game. Only the remaining players can vote."
+340,Can the Villagers discuss strategies during the night round?,The Villagers cannot discuss strategies during the night round.
+341,Can the Werewolves kill more than one player during the night round?,The Werewolves can only choose one player to kill during the night round.
+342,Can a player be killed and saved in the same night round?,"No, it is not possible for a player to be killed and saved in the same night round."
+343,How are the players divided into teams in the Werewolf game?,"The players are divided into two teams, the Werewolves and the Villagers. The roles assigned to each player determine which team they belong to."
+344,How many rounds are played until one side wins the game?,"The game continues until one side, either the Werewolves or the Seer, Guard, and Villagers, wins the game. The number of rounds played is not specified"
+345,Can the Guard save the same player as the Sheriff has chosen to start the next round of discussions?,"Yes, the Guard can choose to save the same player as the Sheriff has chosen to start the next round of discussions."
+346,Can the Sheriff eliminate a player who was saved by the Guard during the night round?,"No, the Sheriff cannot eliminate a player who was saved by the Guard during the night round."
+347,"Can the Seer, Guard, or Villagers be eliminated before all Werewolves?","Yes, the Seer, Guard, or Villagers can be eliminated before all Werewolves."
+348,Can the Sheriff choose a player who has received an equal number of votes as another player in the voting phase as the starting player for the next round of discussions?,"Yes, the Sheriff can choose a player who has received an equal number of votes as another player in the voting phase as the starting player for the next round of discussions."
+349,Can the Seer check the same player in consecutive night rounds?,The information about whether the Seer can check the same player in consecutive night rounds is not provided.
+350,What happens during the election phase of the day round in the Werewolf game?,"During the election phase of the day round, players can decide whether or not to run for Sheriff based on their identity. Players running for the Sheriff take turns stating their reasons. Each player then votes for one Sheriff or chooses not to vote. The elected Sheriff has the authority to choose which player starts the next round of discussions."
+351,What happens if a player reveals their role to the group during the discussion phase?,The consequences of a player revealing their role to the group during the discussion phase are not specified.
+352,Can the Guard save the player who was killed during the night round in the Werewolf game?,"No, the Guard cannot save the player who was killed during the night round."
+353,How does the game progress from the night round to the day round?,The game progresses from the night round to the day round with three phases
+354,Can the Villagers communicate with each other during the night round?,"No, the Villagers cannot communicate with each other during the night round."
+355,"When do the Seer, Guard, and Villagers win the game?","The Seer, Guard, and Villagers win the game if all of the Werewolves are eliminated."
+356,Can the players discuss their suspicions during the voting phase in the Werewolf game?,"Yes, the players can discuss their suspicions during the voting phase in the Werewolf game."
+357,Is there a possibility of no player being killed during the night round?,"Yes, there is a possibility of no player being killed during the night round if there is no consensus among the Werewolves."
+358,How is the Sheriff elected in the Werewolf game?,The Sheriff is elected during the election phase of the day round. Each player votes for one Sheriff or chooses not to vote.
+359,How is each player assigned a role in the Werewolf game?,Each player is assigned a role at the beginning of the game. The specific method of assigning roles is not provided.
+360,Can the Villagers discuss their suspicions during the day round?,"Yes, the Villagers can discuss their suspicions during the day round in the Werewolf game."
+361,Can the Werewolves kill more than one player during the night round in the Werewolf game?,"No, the Werewolves can only kill one player during the night round in the Werewolf game."
+362,"What is the winning condition for the Seer, Guard, and Villagers in the Werewolf game?","The winning condition for the Seer, Guard, and Villagers is to eliminate all the Werewolves."
+363,"Can the Seer, Guard, or Villagers win if there is a tie in the number of remaining Werewolves and Seer, Guard, and Villagers?","No, the Seer, Guard, and Villagers cannot win if there is a tie in the number of remaining Werewolves and Seer, Guard, and Villagers."
+364,How do the Werewolves choose a player to kill during the night round?,The Werewolves choose a player to kill during the night round by voting and reaching a consensus.
+365,Can the Guard choose themselves to be saved during the night round?,"Yes, the Guard can choose themselves to be saved during the night round."
+366,Can the Seer choose themselves as the player to see in the night round?,"Yes, the Seer can choose themselves as the player to see in the night round."
+367,What happens during the discussion phase of the day round?,"During the discussion phase of the day round, each remaining player speaks only once in order to discuss who might be the Werewolves."
+368,Can the Guard save a player who is already dead?,"No, the Guard cannot save a player who is already dead."
+369,"Can the Werewolves win the game if there is only one remaining Seer, Guard, or Villager in the Werewolf game?","No, the Werewolves cannot win the game if there is only one remaining Seer, Guard, or Villager in the Werewolf game."
+370,Can the Werewolves communicate with each other during the night round in the Werewolf game?,"Yes, the Werewolves can communicate with each other during the night round in the Werewolf game."
+371,Can the Guard save the Villagers?,"No, the Guard cannot save the Villagers."
+372,Can the Guard reveal their role during the day round in the Werewolf game?,"No, the Guard cannot reveal their role during the day round in the Werewolf game."
+373,Can the Guard choose not to save any player during the night round?,"Yes, the Guard can choose not to save any player during the night round."
+374,Can the Guard choose not to use their ability during the night round in the Werewolf game?,"Yes, the Guard can choose not to use their ability during the night round in the Werewolf game."
+375,Can the Guard save the same player multiple times in the game?,"No, the Guard cannot save the same player multiple times in the game."
+376,Can the Sheriff eliminate a player who received the least votes during the voting phase?,"No, the Sheriff cannot eliminate a player who received the least votes during the voting phase."
+377,"Can the Seer, Guard, or Villagers win if there is only one remaining player other than the Werewolves?","No, the Seer, Guard, or Villagers cannot win if there is only one remaining player other than the Werewolves."
+378,How is the Sheriff determined in the subsequent game if the previous Sheriff dies?,The Sheriff in the subsequent game is determined by the previous Sheriff choosing a player to succeed him as the sheriff if he dies.
+379,Can the Werewolves communicate with each other during the day round?,"No, the Werewolves cannot communicate with each other during the day round in the Werewolf game."
+380,Can the Seer check the Werewolves?,"Yes, the Seer can check the Werewolves."
+381,Can the Seer see the role of the player they choose during the night round?,The Seer cannot see the role of the player they choose during the night round.
+382,What is the role of the Seer in the Werewolf game?,The Seer's role in the Werewolf game is to choose one player during the night round to see if they are a Werewolf.
+383,Can the Sheriff choose themselves to start the next round of discussions in the Werewolf game?,"Yes, the Sheriff can choose themselves to start the next round of discussions in the Werewolf game."
+384,Can the Seer investigate multiple players during the night round?,"No, the Seer can only investigate one player during the night round."
+385,"Can the Seer, Guard, and Villagers eliminate all Werewolves without the Sheriff?","Yes, the Seer, Guard, and Villagers can eliminate all Werewolves without the Sheriff."
+386,Can the Werewolves kill the Sheriff during the night round?,"Yes, the Werewolves can kill the Sheriff during the night round."
+387,Can the Sheriff be a Werewolf in the Werewolf game?,"No, the Sheriff cannot be a Werewolf in the Werewolf game."
+388,Can the Guard save the same player as the Guard chose to save?,"Yes, the Guard can save the same player as the Guard chose to save."
+389,Can the Sheriff eliminate a player who was not revealed as a Werewolf by the Seer during the night round?,"No, the Sheriff cannot eliminate a player who was not revealed as a Werewolf by the Seer during the night round."
+390,"Can the Seer, Guard, and Villagers win the game without eliminating all the Werewolves?","Yes, the Seer, Guard, and Villagers can win the game without eliminating all the Werewolves."
+391,"What is the winning condition for the Seer, Guard, and Villagers?","The winning condition for the Seer, Guard, and Villagers is if all the Werewolves are eliminated."
+392,How does the Seer determine if a player is a Werewolf?,The Seer determines if a player is a Werewolf by choosing one player during the night round to see if they are a Werewolf.
+393,Can the Werewolves reveal their roles to other players?,"No, the Werewolves cannot reveal their roles to other players."
+394,Can the Villagers know who the Werewolves are during the night round in the Werewolf game?,"No, the Villagers cannot know who the Werewolves are during the night round in the Werewolf game."
+395,Can the Villagers take any actions to protect themselves during the night round in the Werewolf game?,"No, the Villagers cannot take any actions to protect themselves during the night round in the Werewolf game."
+396,How is the Sheriff chosen in the election phase?,The Sheriff is chosen in the election phase based on the players deciding whether or not to run for Sheriff.
+397,"Can the Seer, Guard, and Villagers choose not to vote during the voting phase?","Yes, the Seer, Guard, and Villagers can choose not to vote during the voting phase."
+398,Can the Sheriff be the Seer?,"No, the Sheriff cannot be the Seer."
+399,How are the roles assigned to the players at the beginning of the game?,The roles are assigned to the players at the beginning of the game by the moderator/organizer.
+400,"Can the Seer, Guard, or Villagers win the game if there is a tie between the number of remaining Werewolves and the number of remaining Seer, Guard, and Villagers?","The Seer, Guard, or Villagers cannot win the game if there is a tie between the number of remaining Werewolves and the number of remaining Seer, Guard, and Villagers."
+401,Can the players eliminate a player who has been killed by the Werewolves during the night round?,The players cannot eliminate a player who has been killed by the Werewolves during the night round.
+402,Can the Sheriff eliminate a player who was not discussed as a potential Werewolf during the discussion phase?,The Sheriff cannot eliminate a player who was not discussed as a potential Werewolf during the discussion phase.
+403,What happens in the voting phase of the day round?,"In the voting phase of the day round, each player votes for one player or chooses not to vote. The player with the most votes is eliminated and the game continues to the next night round."
+404,"Can the Werewolves win if there is a tie in the number of remaining Werewolves and Seer, Guard, and Villagers?","The Werewolves cannot win if there is a tie in the number of remaining Werewolves and Seer, Guard, and Villagers."
+405,Can the Seer reveal the identity of the player they checked during the day round in the Werewolf game?,The Seer cannot reveal the identity of the player they checked during the day round in the Werewolf game.
+406,Can the Seer see the role of the Werewolves during the night round?,The Seer can see the role of the Werewolves during the night round.
+407,Can the players change their voting choice during the voting phase?,The players cannot change their voting choice during the voting phase.
+408,How are the Werewolves able to recognize each other during the night round?,The Werewolves are able to recognize each other during the night round through their shared knowledge.
+409,Can the Guard save themselves during the night round?,The Guard cannot save themselves during the night round.
+410,How does the Sheriff provide a summary during the election phase?,The Sheriff provides a summary during the election phase to persuade other players to vote in alignment with him.
+411,What is the purpose of the voting phase in the day round?,The purpose of the voting phase in the day round is to eliminate a player from the game.
+412,Can the players eliminate the Villagers during the voting phase?,The players cannot eliminate the Villagers during the voting phase.
+413,What authority does the Sheriff have in choosing the player who starts the next round of discussions?,The Sheriff has the authority to choose the player who starts the next round of discussions.
+414,Can the Sheriff choose which player starts the next round of discussions?,The Sheriff can choose which player starts the next round of discussions.
+415,Can the Villagers vote to eliminate multiple players during the day round?,The Villagers cannot vote to eliminate multiple players during the day round.
+416,Can the players eliminate the Guard during the voting phase?,The players cannot eliminate the Guard during the voting phase.
+417,"How do the Seer, Guard, and Villagers win the game?","The Seer, Guard, and Villagers win the game if all Werewolves are eliminated."
+418,"Can the Seer, Guard, and Villagers win if there is only one remaining Seer?","The Seer, Guard, and Villagers can win if there is only one remaining Seer."
+419,How is the player eliminated in the voting phase?,The player is eliminated in the voting phase based on receiving the most votes.
+420,Can the Sheriff choose a player to succeed them if they are eliminated in the voting phase?,The Sheriff can choose a player to succeed them if they are eliminated in the voting phase.
+421,Can the Werewolves vote for a player who has been saved by the Guard?,The Werewolves can vote for a player who has been saved by the Guard.
+422,What happens if there is no consensus among the Werewolves?,"If there is no consensus among the Werewolves, no one will be killed in the night round."
+423,Can the Seer and Guard coordinate their actions to maximize their chances of winning?,The Seer and Guard can coordinate their actions to maximize their chances of winning.
+424,Is it possible for a player to possess both the role of a Werewolf and a Seer in the game?,A player cannot possess both the role of a Werewolf and a Seer in the game.
+425,Can the Seer check themselves during the night round?,The Seer cannot check themselves during the night round.
+426,Can players choose not to run for Sheriff during the election phase?,Players can choose not to run for Sheriff during the election phase.
+427,Can the Sheriff choose a player who has been accused by the Werewolves in the discussion phase as the starting player for the next round of discussions?,The Sheriff can choose a player accused by the Werewolves in the discussion phase as the starting player for the next round of discussions.
+428,"Can the Werewolves win the game if the number of remaining Seer, Guard, and Villagers is equal to the number of remaining Werewolves?","The Werewolves can win the game if the number of remaining Seer, Guard, and Villagers is equal to the number of remaining Werewolves."
+429,Can the Seer check the same player multiple times in the game?,The Seer cannot check the same player multiple times in the game.
+430,Can the Werewolves kill more than one player in one night?,The Werewolves can only kill one player in one night.
+431,Can the Guard vote during the voting phase?,The Guard cannot vote during the voting phase.
+432,Can the Guard choose themselves to save during the night round?,The Guard can choose themselves to save during the night round.
+433,How do the Werewolves choose a player to kill?,The Werewolves choose a player to kill by voting and selecting the player who receives the most votes.
+434,Can the Seer check the same player they saved?,The Seer cannot check the same player they saved.
+435,Can the Villagers win the game without eliminating any Werewolves?,The Villagers cannot win the game without eliminating any Werewolves.
+436,What is announced to all players during the announcement phase of the day round?,"During the announcement phase of the day round, it is announced to all players whether a player was killed or not during the night round."
+437,How many phases are there in the day round of the Werewolf game?,There are three phases in the day round of the Werewolf game.
+438,Can the players communicate with the moderator during the game?,The players cannot communicate with the moderator during the game.
+439,What are the three phases in the day round of the Werewolf game?,"The three phases in the day round of the Werewolf game are the announcement phase, the discussion phase, and the voting phase."
+440,Can the Sheriff vote for themselves in the election phase?,The Sheriff cannot vote for themselves in the election phase.
+441,Can players state their reasons for running for Sheriff during the election phase?,"Yes, players can state their reasons for running for Sheriff during the election phase."
+442,Can the Guard reveal their identity during the game?,The Guard cannot reveal their identity during the game.
+443,Can the Guard save themselves if they were chosen by the Werewolves?,"Yes, the Guard can save themselves if they were chosen by the Werewolves."
+444,Can the Sheriff choose a player who is already dead as the starting player for the next round of discussions?,"No, the Sheriff cannot choose a player who is already dead as the starting player for the next round of discussions."
+445,"Can the Seer, Guard, and Villagers win if there are equal number of Werewolves and Seer, Guard, and Villagers remaining?","Yes, the Seer, Guard, and Villagers can win if there are equal numbers of Werewolves and Seer, Guard, and Villagers remaining."
+446,Can the Sheriff be a Seer?,"Yes, the Sheriff can be a Seer."
+447,Can the Werewolves vote for a player who has already been eliminated in the Werewolf game?,"No, the Werewolves cannot vote for a player who has already been eliminated in the Werewolf game."
+448,Who does the Seer choose to see if they are a Werewolf during the night round?,The Seer chooses one player to see if they are a Werewolf during the night round.
+449,What happens during the election phase of the first day round?,"During the election phase of the first day round, players decide whether or not to run for Sheriff and state their reasons if they choose to run."
+450,How does the game continue after a player is eliminated in the Werewolf game?,"After a player is eliminated in the Werewolf game, the game continues to the next night round."
+451,Can the Sheriff eliminate a player who was not voted for by any player during the voting phase?,"No, the Sheriff cannot eliminate a player who was not voted for by any player during the voting phase."
+452,Can the Sheriff be killed by the Werewolves in the night round?,"Yes, the Sheriff can be killed by the Werewolves in the night round."
+453,Can the Sheriff be a Guard in the Werewolf game?,"No, the Sheriff cannot be a Guard in the Werewolf game."
+454,How does the game alternate between the night round and the day round?,"The game alternates between the night round and the day round, with each round following a specific set of actions based on the game rules."
+455,Can the Sheriff choose a player to succeed him as the sheriff?,"Yes, the Sheriff can choose a player to succeed them as the sheriff."
+456,How does the game end?,"The game ends when one side, either the Werewolves or the Seer, Guard, and Villagers, wins the game."
+457,What is the role of the Sheriff in the game?,"The Sheriff has the authority to choose which player starts the next round of discussions, can provide a summary to persuade other players during voting, and has the right to choose a player to succeed them as the sheriff."
+458,How many Villagers are there in the game?,There are three Villagers in the game.
+459,Can the Seer choose themselves as the player to see if they are a Werewolf?,"No, the Seer cannot choose themselves as the player to see if they are a Werewolf."
+460,"Can the Werewolves win if there is only one remaining Werewolf and one remaining Seer, Guard, and Villager?","The Werewolves cannot win if there is only one remaining Werewolf and one remaining Seer, Guard, and Villager."
+461,What is announced during the announcement phase of the day round?,"During the announcement phase of the day round, the result of the previous night is announced. If a player was killed and not saved, the announcement will be ""player_i was killed"". If no player was killed, the announcement will be ""no player was killed""."
+462,Can the Werewolves kill the Seer or the Guard during the night round?,The Werewolves can kill the Seer or the Guard during the night round.
+463,Can the Werewolves kill the Seer?,"Yes, the Werewolves can kill the Seer."
+464,Can the players change their suspicions during the discussion phase in the Werewolf game?,"During the discussion phase in the Werewolf game, the players can change their suspicions."
+465,What do the Villagers do during the night round?,The Villagers do nothing during the night round.
+466,What happens during the night round?,"During the night round, the Werewolves recognize each other and choose one player to kill. The Seer chooses one player to see if they are a Werewolf. The Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves."
+467,Can the Werewolves win if there is one Guard remaining?,"No, the Werewolves cannot win if there is one Guard remaining."
+468,How does the discussion phase conclude?,The discussion phase concludes with the Sheriff's final speech and the voting phase.
+469,Can the Seer choose themselves to see if they are a Werewolf?,"Yes, the Seer can choose themselves to see if they are a Werewolf."
+470,"Can the Villagers win the game if there are equal numbers of Werewolves and Seer, Guard, and Villagers remaining?","No, the Villagers cannot win the game if there are equal numbers of Werewolves and Seer, Guard, and Villagers remaining."
+471,What happens if there is no consensus among the Werewolves during the night round?,"If there is no consensus among the Werewolves during the night round, no one will be killed."
+472,How is the announcement made if a player was killed and not saved during the night round?,"If a player was killed and not saved during the night round, the announcement will state that player's name followed by ""was killed""."
+473,What is the winning condition for the Werewolves in the Werewolf game?,"The winning condition for the Werewolves is when the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+474,Can the Sheriff choose a player who is a Seer to start the next round of discussions in the Werewolf game?,"Yes, the Sheriff can choose a player who is a Seer to start the next round of discussions in the Werewolf game."
+475,How does the discussion phase work in the day round?,"In the discussion phase of the day round, each player speaks only once in order, starting from player_0 to player_6, to discuss who might be the Werewolves. The Sheriff has the final speech and concludes the voting."
+476,How are the players assigned their roles in the Werewolf game?,The players are assigned their roles at the beginning of the game.
+477,Can the Villagers discuss who might be the Werewolves during the day round?,"Yes, the Villagers can discuss who might be the Werewolves during the day round."
+478,What role does the Guard have during the night round?,"During the night round, the Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves."
+479,Can the Seer use their ability on a player who has already been killed?,"No, the Seer cannot use their ability on a player who has already been killed."
+480,Can the players discuss their suspicions openly during the voting phase?,"During the voting phase, players can openly discuss their suspicions."
+481,What happens in the announcement phase of the day round?,"In the announcement phase of the day round, the result of the previous night, whether a player was killed or not, is announced to all players."
+482,What is the purpose of the election phase in the first day round?,The purpose of the election phase in the first day round is for players to decide whether or not to run for Sheriff and to elect a player to take on the role of Sheriff.
+483,Can the Sheriff be eliminated in the voting phase?,"Yes, the Sheriff can be eliminated in the voting phase like any other player."
+484,What is announced in the announcement phase of the day round?,"The announcement phase of the day round announces the result of the previous night, whether a player was killed or not."
+485,What are the two factions in the Werewolf game?,"The two factions in the Werewolf game are the Werewolves and the Villagers (including the Seer, Guard, and other Villagers)."
+486,What happens during the discussion phase of the day round in the Werewolf game?,"During the discussion phase of the day round, each player speaks once in order to discuss and share their suspicions on who might be the Werewolves. The Sheriff has the final speech and concludes the voting."
+487,Can the Villagers discuss during the night round in the Werewolf game?,"No, the Villagers cannot discuss during the night round in the Werewolf game."
+488,Can the Werewolves recognize each other during the night round?,"Yes, the Werewolves can recognize each other during the night round."
+489,Can the Villagers reveal their identities during the day round in the Werewolf game?,"No, the Villagers cannot reveal their identities during the day round in the Werewolf game."
+490,Can the players change their votes during the voting phase?,"Yes, players can change their votes during the voting phase."
+491,What does the Guard do during the night round?,"During the night round, the Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves."
+492,How many players are there in the game?,There are seven players in the game.
+493,Can the Seer see the role of the Guard during the night round?,"No, the Seer cannot see the role of the Guard during the night round."
+494,How does the game continue after the voting phase?,"After the voting phase, the player with the most votes is eliminated and the game continues to the next night round."
+495,What is the purpose of the announcement phase in the day round?,The purpose of the announcement phase in the day round is to inform all players of the result of the previous night.
+496,Can the players discuss their suspicions openly during the announcement phase?,"No, the players cannot discuss their suspicions openly during the announcement phase."
+497,What happens if the Werewolves fail to reach a consensus during the night round?,"If the Werewolves fail to reach a consensus during the night round, no player will be killed."
+498,How does the game handle situations where players have conflicting information about a player's role?,"In situations where players have conflicting information about a player's role, the game relies on the discussion phase and voting to determine the truth."
+499,Can the Guard save the same player as the Sheriff has chosen to succeed him?,"Yes, the Guard can save the same player as the Sheriff has chosen to succeed him."
+500,Do the Villagers have any special abilities?,The Villagers do not have any special abilities.
+501,Who has the authority to choose the starting player for the next round of discussions in the Werewolf game?,The Sheriff has the authority to choose the starting player for the next round of discussions in the Werewolf game.
+502,How many Guards are there in the game?,There is one Guard in the game.
+503,What is the winning condition for the Werewolves in the game?,"The winning condition for the Werewolves is to have the same number of remaining Werewolves as the number of remaining Seer, Guard, and Villagers."
+504,What are the winning conditions for the Werewolves?,The winning condition for the Werewolves is for all Werewolves to be eliminated.
+505,Can the Werewolves win the game without being identified by the Seer?,"Yes, the Werewolves can win the game without being identified by the Seer."
+506,Can the Werewolves eliminate players in the voting phase?,"No, the Werewolves cannot eliminate players in the voting phase."
+507,What action does the Seer take during the night round?,The Seer investigates one player during the night round to see if they are a Werewolf.
+508,"Is it possible for the Seer, Guard, and Villagers to win the game if there is at least one remaining Werewolf?","No, it is not possible for the Seer, Guard, and Villagers to win the game if there is at least one remaining Werewolf."
+509,Can the Guard save the Villagers during the night round?,"Yes, the Guard can save the Villagers during the night round."
+510,Can the Werewolves kill multiple players during the night round?,"No, the Werewolves can only choose one player to kill during the night round."
+511,Can the Seer investigate themselves during the night round?,"No, the Seer cannot investigate themselves during the night round."
+512,Can the Guard save the same player as the Sheriff has chosen to eliminate?,"Yes, the Guard can save the same player the Sheriff has chosen to eliminate."
+513,Can the Sheriff be killed by the Werewolves during the night round?,"No, the Sheriff cannot be killed by the Werewolves during the night round."
+514,Can the Guard save the same player they checked?,"Yes, the Guard can save the same player they have previously checked."
+515,Can the Werewolves vote for the player who starts the next round of discussions?,"No, the Werewolves cannot vote for the player who starts the next round of discussions."
+516,Can the Guard save themselves in the night round?,"No, the Guard cannot save themselves in the night round."
+517,What is the winning condition for the Werewolves?,"The winning condition for the Werewolves is to have the same number of remaining Werewolves as the number of remaining Seer, Guard, and Villagers."
+518,Can the players choose not to run for Sheriff during the election phase?,"Yes, the players can choose not to run for Sheriff during the election phase."
+519,Can the Werewolves eliminate a player who has already been eliminated?,"No, the Werewolves cannot eliminate a player who has already been eliminated."
+520,Can the Villagers influence the election for Sheriff?,The Villagers cannot influence the election for Sheriff.
+521,Can the Sheriff choose themselves to start the next round of discussions?,The Sheriff can choose themselves to start the next round of discussions.
+522,How do the Werewolves choose who to kill during the night round?,"During the night round, the Werewolves choose who to kill by voting. The player who receives the most votes from the Werewolves will be killed. If there is no consensus, no one will be killed."
+523,Can the Guard save themselves?,"The Guard can save themselves, as they have the option to choose themselves to be saved."
+524,Can the Seer check the same player two nights in a row?,The Seer cannot check the same player two nights in a row.
+525,Can the Werewolves vote for each other during the voting phase in the Werewolf game?,The Werewolves can vote for each other during the voting phase in the Werewolf game.
+526,"Can the Seer, Guard, and Villagers win the game if the Sheriff is eliminated?","If the Sheriff is eliminated, the Seer, Guard, and Villagers can still win the game."
+527,Can the Villagers change their voting choice during the voting phase?,The Villagers cannot change their voting choice once they have made it during the voting phase.
+528,What happens in the day round of the Werewolf game?,"In the day round of the Werewolf game, there are three phases: an announcement phase, a discussion phase, and a voting phase. The announcement phase reveals the result of the previous night, the discussion phase allows players to discuss and debate who might be the Werewolves, and the voting phase determines the player to be eliminated."
+529,What is the purpose of the Seer in the game?,The purpose of the Seer in the game is to identify the players who are Werewolves.
+530,How is the player to be eliminated decided during the voting phase in the Werewolf game?,"During the voting phase, each player votes for one player or chooses not to vote. The player with the most votes is eliminated."
+531,How is the player to be killed by the Werewolves determined during the night round?,"During the night round, the player to be killed by the Werewolves is determined by the votes of the Werewolves. The player who receives the most votes will be killed."
+532,How is the announcement made if no player was killed during the night round?,"If no player was killed during the night round, the announcement will simply state ""no player was killed""."
+533,Can the Seer change their chosen player during the night round?,The Seer cannot change their chosen player during the night round.
+534,How is the player to be killed decided during the night round?,The player to be killed during the night round is decided by the votes of the Werewolves. The player who receives the most votes will be killed.
+535,Can the players eliminate a player who has been checked as a Werewolf by the Seer during the night round?,The players can eliminate a player who has been checked as a Werewolf by the Seer during the night round.
+536,Can the Sheriff choose any player to start the next round of discussions in the Werewolf game?,The Sheriff can choose any player to start the next round of discussions in the Werewolf game.
+537,Can the Villagers ask questions during the discussion phase?,"During the discussion phase, the Villagers can ask questions."
+538,Can the Werewolves win if there is only one Werewolf remaining?,The Werewolves can win if there is only one Werewolf remaining.
+539,Can the Werewolves kill the Seer or Guard during the night round without any consequences?,The Werewolves can kill the Seer or Guard during the night round without any consequences.
+540,"Can the Seer, Guard, and Villagers discuss who might be the Werewolves during the discussion phase?","Yes, the Seer, Guard, and Villagers can discuss who might be the Werewolves during the discussion phase."
+541,Can the Villagers vote for the same player multiple times during the voting phase?,"No, the Villagers cannot vote for the same player multiple times during the voting phase. Each player can only vote for one player."
+542,How is the elimination determined during the voting phase?,The player who receives the most votes during the voting phase is eliminated.
+543,Can the Werewolves kill multiple players in the same night round?,"No, the Werewolves can only choose one player to kill in the same night round."
+544,Can the Werewolves manipulate the discussion phase to mislead the other players?,"Yes, the Werewolves can manipulate the discussion phase to mislead the other players."
+545,Can the Seer see their own role in the night round?,"No, the Seer cannot see their own role in the night round."
+546,How many players can the Werewolves kill in one night?,The Werewolves can only kill one player in one night.
+547,Can the Seer influence the election for Sheriff?,The Seer can influence the election for Sheriff by stating their reasons and trying to convince other players to vote in alignment with them.
+548,What happens if all the Werewolves are eliminated?,"If all the Werewolves are eliminated, the Seer, Guard, and Villagers win the game."
+549,How is the player eliminated in the voting phase determined?,The player eliminated in the voting phase is determined by the player who receives the most votes.
+550,Can the Werewolves kill the Guard?,"Yes, the Werewolves can kill the Guard."
+551,"What are the win conditions for the Seer, Guard, and Villagers?","The win conditions for the Seer, Guard, and Villagers are to eliminate all the Werewolves."
+552,"Can the Seer, Guard, and Villagers win if there are no remaining Werewolves?","Yes, the Seer, Guard, and Villagers can win if there are no remaining Werewolves."
+553,Can the Villagers discuss their suspicions during the night round?,"No, the Villagers cannot discuss their suspicions during the night round."
+554,"What are the winning conditions for the Seer, Guard, and Villagers?","The winning condition for the Seer, Guard, and Villagers is to eliminate all the Werewolves."
+555,Who has the authority to choose the starting player in the next round of discussions?,The Sheriff has the authority to choose the starting player in the next round of discussions.
+556,Can the Guard save multiple players during the night round?,"No, the Guard can only save one player during the night round."
+557,Can the Werewolves vote for a player who has been checked by the Seer?,"Yes, the Werewolves can vote for a player who has been checked by the Seer."
+558,How do the Werewolves choose a player to kill in the night round?,The Werewolves choose a player to kill in the night round through a consensus among themselves.
+559,"Can the Seer, Guard, or Villagers win the game if there are still Werewolves alive?","No, the Seer, Guard, and Villagers cannot win the game if there are still Werewolves alive."
+560,Can the Werewolves kill the same player as the Sheriff has chosen to succeed him?,The Werewolves cannot kill the same player as the Sheriff has chosen to succeed him.
+561,Can the Villagers vote during the voting phase?,The Villagers can vote during the voting phase.
+562,Can the players choose not to vote during the election phase?,The players can choose not to vote during the election phase.
+563,Can the players choose not to speak during the discussion phase?,The players cannot choose not to speak during the discussion phase. Each player must speak once in order from player_0 to player_6.
+564,What happens if the Werewolves cannot reach a consensus on who to kill during the night round?,"If the Werewolves cannot reach a consensus on who to kill during the night round, no one will be killed."
+565,Can players choose not to vote during the election phase?,The players can choose not to vote during the election phase.
+566,Can the Sheriff provide a summary to persuade other players to vote in alignment with him?,The Sheriff can provide a summary to persuade other players to vote in alignment with him.
+567,Can the Sheriff choose a player to succeed them if they are eliminated in the night round?,"If the Sheriff is eliminated in the night round, they can choose a player to succeed them as the sheriff."
+568,"Can the Seer, Guard, and Villagers win if there is only one remaining Seer, Guard, and Villager?","The Seer, Guard, and Villagers can win if there is only one remaining Werewolf."
+569,Can the Werewolves change their strategy during the day round?,The Werewolves can change their strategy during the day round.
+570,What abilities does the Guard possess during the night round?,"The Guard can choose one player, including themselves, to save during the night round."
+571,How is the player to be killed determined in the night round?,The player to be killed in the night round is determined by a majority vote among the Werewolves.
+572,How do the Werewolves choose their target in the night round?,The Werewolves choose their target in the night round through discussion and voting among themselves.
+573,Can the Werewolves know who the Guard is during the night round in the Werewolf game?,The Werewolves do not know who the Guard is during the night round in the Werewolf game.
+574,Can the Sheriff be killed by the Werewolves if they are not protected by the Guard?,The Sheriff can be killed by the Werewolves if they are not protected by the Guard.
+575,Can the Seer reveal their identity during the game?,The Seer can reveal their identity during the game if they choose to do so.
+576,Can the Seer choose the same player to check two nights in a row?,The Seer can choose the same player to check two nights in a row if they wish.
+577,Can the players eliminate a player who has already been eliminated in a previous round?,The players cannot eliminate a player who has already been eliminated in a previous round.
+578,Can the Guard save the same player multiple times during the night round?,The Guard cannot save the same player multiple times during the night round. They can only save one player each night.
+579,What are the phases in the day round of the Werewolf game?,"The phases in the day round of the Werewolf game are the announcement phase, the discussion phase, and the voting phase, with the first day also having an election phase before the announcement phase."
+580,How is the player who receives the most votes determined during the night round?,"During the night round, the player who receives the most votes is determined by a consensus among the Werewolves."
+581,Can the Seer choose the same player multiple times to check if they are a Werewolf?,"Yes, the Seer can choose the same player multiple times to check if they are a Werewolf."
+582,Can the Villagers be killed by the Werewolves during the night round?,"No, the Villagers cannot be killed by the Werewolves during the night round."
+583,How does the game balance the information known by the Werewolves and the other players?,The game balances the information known by the Werewolves and the other players by allowing the Seer to identify Werewolves and giving the Villagers the opportunity to discuss and vote during the day round.
+584,When is the announcement phase conducted in the day round?,The announcement phase is conducted in the day round after the night round is over.
+585,Can the Sheriff eliminate a player who was revealed as a Werewolf by the Seer during the night round?,The Sheriff cannot eliminate a player who was revealed as a Werewolf by the Seer during the night round.
+586,How many players can each player vote for in the voting phase?,Each player can vote for one player during the voting phase.
+587,Can the Sheriff eliminate a player who received an equal number of votes during the voting phase?,"No, the Sheriff cannot eliminate a player who received an equal number of votes during the voting phase."
+588,Can the Seer see the role of the Villagers during the night round?,The Seer cannot see the role of the Villagers during the night round.
+589,What is the purpose of running for Sheriff?,The purpose of running for Sheriff is to have the authority to choose which player starts the next round of discussions and to provide a persuasive summary as the last speaker.
+590,Can players choose not to vote during the election phase in the Werewolf game?,"Yes, players can choose not to vote during the election phase in the Werewolf game."
+591,Can the Werewolves kill the Seer or Guard during the night round?,"Yes, the Werewolves can kill the Seer or Guard during the night round."
+592,Can the Guard save the same player multiple times in the night round?,The Guard can save the same player multiple times in the night round.
+593,Can the Werewolves vote during the voting phase?,"No, the Werewolves cannot vote during the voting phase."
+594,What is the purpose of the nighttime actions in the game?,The purpose of the nighttime actions in the game is to allow each role to perform their special abilities and make strategic decisions.
+595,What is the role of the Guard during the night round in the Werewolf game?,"The role of the Guard during the night round is to choose one player, including themselves, to save from being killed by the Werewolves."
+596,How many Werewolves are there in the Werewolf game?,There are two Werewolves in the Werewolf game.
+597,Can the Sheriff eliminate a player during the discussion phase?,"No, the Sheriff cannot eliminate a player during the discussion phase."
+598,Who does the Guard choose to save during the night round in the Werewolf game?,"The Guard chooses one player, including themselves, to save during the night round in the Werewolf game."
+599,Is there an election phase in every day round of the Werewolf game?,"Yes, there is an election phase in every day round of the Werewolf game."
+600,Can the Guard save the same player as the Sheriff has voted to eliminate?,The Guard cannot save the same player as the Sheriff has voted to eliminate.
+601,Can the Werewolves kill the same player two nights in a row in the Werewolf game?,The Werewolves cannot kill the same player two nights in a row in the Werewolf game.
+602,Can the Werewolves kill the same player as the Sheriff has chosen to eliminate?,The Werewolves cannot kill the same player as the Sheriff has chosen to eliminate.
+603,Can the Sheriff choose a player who is a Guard to start the next round of discussions in the Werewolf game?,The Sheriff cannot choose a player who is a Guard to start the next round of discussions in the Werewolf game.
+604,Is it possible for the Werewolves to win the game without being detected by the Seer?,It is possible for the Werewolves to win the game without being detected by the Seer.
+605,Can the Guard save themselves from being killed by the Werewolves?,The Guard cannot save themselves from being killed by the Werewolves.
+606,What is the role of the Guard in the Werewolf game?,"The role of the Guard in the Werewolf game is to choose one player, including themselves, to save without knowing who is chosen by the Werewolves."
+607,Can players choose to run for Sheriff during the election phase?,Players can choose to run for Sheriff during the election phase.
+608,"Can the Seer, Guard, or Villagers win the game if the number of remaining Werewolves is less than the number of remaining Seer, Guard, and Villagers?","The Seer, Guard, or Villagers can win the game if the number of remaining Werewolves is less than the number of remaining Seer, Guard, and Villagers."
+609,Can the Werewolves strategically target specific roles in the game?,The Werewolves can strategically target specific roles in the game.
+610,Can the Werewolves kill a player who has been saved by the Guard in the night round?,The Werewolves cannot kill a player who has been saved by the Guard in the night round.
+611,Can players change their vote during the voting phase?,Players cannot change their vote during the voting phase.
+612,What role does the Guard have in the Werewolf game?,"The Guard's role in the Werewolf game is to choose one player, including themselves, to save without knowing who is chosen by the Werewolves."
+613,Can the Seer reveal the identity of the player they checked?,The Seer cannot reveal the identity of the player they checked.
+614,Can the Sheriff choose a player who is the opposite role as them to start the next round of discussions in the Werewolf game?,The Sheriff cannot choose a player who is the opposite role as them to start the next round of discussions in the Werewolf game.
+615,Can the Sheriff's successor provide a summary during the discussion phase?,The Sheriff's successor can provide a summary during the discussion phase.
+616,Can the Werewolves choose not to kill anyone in one night?,The Werewolves can choose not to kill anyone in one night.
+617,How many players are there in the Werewolf game?,There are seven players in the Werewolf game.
+618,How does the game alternate between rounds in the Werewolf game?,The game alternates between night rounds and day rounds in the Werewolf game.
+619,How does the discussion phase end?,The discussion phase ends with the Sheriff's final speech and conclusion of the voting.
+620,Can the Werewolves vote for the Sheriff in the election phase?,The Werewolves cannot vote for the Sheriff in the election phase.
+621,How are the Werewolves identified during the night round in the Werewolf game?,The Werewolves are not identified during the night round in the Werewolf game.
+622,Can the Seer repeatedly investigate the same player to confirm their role?,The Seer cannot repeatedly investigate the same player to confirm their role.
+623,Can the Werewolves recognize each other in the night round?,The Werewolves can recognize each other in the night round.
+624,Can the Guard save multiple players in the night round?,The Guard can only save one player in the night round and cannot save multiple players.
+625,Can the Guard change their saving target during the day round?,The Guard cannot change their saving target during the day round.
+626,Can the Werewolves choose not to kill any player during the night round?,The Werewolves can choose not to kill any player during the night round.
+627,Can the Werewolves kill the Villagers during the night round?,The Werewolves cannot kill the Villagers during the night round.
+628,What actions can the Werewolves take during the night round?,The Werewolves can choose a player to kill and the Seer can choose a player to investigate during the night round.
+629,Can the players communicate with each other privately during the Werewolf game?,The players cannot communicate with each other privately during the Werewolf game.
+630,Can the Seer check the Villagers?,The Seer cannot check the Villagers.
+631,"Can the Werewolves win if there are more Seer, Guard, and Villagers than Werewolves remaining?","The Werewolves cannot win if there are more Seer, Guard, and Villagers than Werewolves remaining."
+632,How many opportunities does each player have to speak during the discussion phase?,Each player has one opportunity to speak during the discussion phase.
+633,Can the Villagers change their roles during the game?,The Villagers cannot change their roles during the game.
+634,Can the Seer check the Guard?,The Seer cannot check the Guard.
+635,"Can the Werewolves win the game if the Seer, Guard, and Villagers are all eliminated?","The Werewolves can still win the game if the Seer, Guard, and Villagers are all eliminated."
+636,Can the Werewolves vote for the Sheriff during the election phase?,The Werewolves cannot vote for the Sheriff during the election phase.
+637,Can the Villagers win the game without identifying all the Werewolves?,The Villagers can win the game without identifying all the Werewolves.
+638,Can the Villagers vote for a player who has been saved by the Guard?,The Villagers can vote for a player who has been saved by the Guard.
+639,How many Werewolves are required to win the game?,The number of Werewolves required to win the game is not specified.
+640,Can the Seer choose themselves in the night round?,The Seer cannot choose themselves in the night round of the Werewolf game.
+641,Can the Seer see the role of any player in the night round?,The Seer can only see the role of one player in the night round of the Werewolf game.
+642,How does the Seer determine if a player is a Werewolf or not?,The Seer determines if a player is a Werewolf or not based on the role they see in the night round.
+643,Are the Werewolves aware of who the Guard chooses to save during the night round?,The Werewolves are not aware of who the Guard chooses to save during the night round of the Werewolf game.
+644,What is the role of the Villagers in the game?,The role of the Villagers in the game is to do nothing during the night round of the Werewolf game.
+645,Can the Seer reveal their findings to the other players?,The Seer cannot reveal their findings to the other players in the Werewolf game.
+646,Can the Werewolves kill the Seer during the night round?,The Werewolves can kill the Seer during the night round of the Werewolf game.
+647,What role does the Seer have during the night round?,The Seer has the role of choosing one player to see if they are a Werewolf in the night round of the Werewolf game.
+648,"Can the Seer, Guard, or Villagers win the game if there is no consensus among the players during the voting phase?","The Seer, Guard, and Villagers cannot win the game if there is no consensus among the players during the voting phase in the Werewolf game."
+649,Who has the final speech and concludes the voting in the discussion phase?,The Sheriff has the final speech and concludes the voting in the discussion phase of the Werewolf game.
+650,Can the Villagers reveal their roles during the day round in the Werewolf game?,The Villagers cannot reveal their roles during the day round in the Werewolf game.
+651,"Can the Seer, Guard, and Villagers win the game without eliminating any Werewolves?","The Seer, Guard, and Villagers can win the game without eliminating any Werewolves in the Werewolf game."
+652,How does the Sheriff choose the player to start the next round of discussions?,The Sheriff chooses the player to start the next round of discussions based on their own decision in the Werewolf game.
+653,Can the Villagers discuss their suspicions during the announcement phase?,The Villagers cannot discuss their suspicions during the announcement phase in the Werewolf game.
+654,"What determines the outcome of the game in favor of the Seer, Guard, and Villagers?","The outcome of the game is determined in favor of the Seer, Guard, and Villagers when all Werewolves are eliminated in the Werewolf game."
+655,Can the Werewolves kill more than one player in a single night?,The Werewolves can only kill one player in a single night in the Werewolf game.
+656,How does the voting phase work in the day round?,"In the voting phase of the day round, each player can only vote for one player or choose not to vote in the Werewolf game."
+657,Can the Werewolves reveal their identities during the day round?,The Werewolves cannot reveal their identities during the day round in the Werewolf game.
+658,What happens if a player is killed and not saved during the night round in the Werewolf game?,"If a player is killed and not saved during the night round in the Werewolf game, the announcement will be ""player_i was killed"" in the announcement phase."
+659,Can the players vote for multiple players during the voting phase in the Werewolf game?,"In the voting phase of the Werewolf game, players can only vote for one player or choose not to vote."
+660,Can the Werewolves kill the Guard in the night round?,The Werewolves cannot kill the Guard in the night round.
+661,What happens during the discussion phase in the day round?,"During the discussion phase in the day round, each remaining player speaks once in order to discuss who might be the Werewolves, with the Sheriff concluding the voting."
+662,Can the Villagers choose to take any actions during the night round?,The Villagers do not have the ability to take any actions during the night round.
+663,Can the Villagers achieve victory if at least one Werewolf remains?,The Villagers cannot achieve victory if at least one Werewolf remains.
+664,Can the Seer investigate more than one player in one night?,The Seer can only investigate one player in one night.
+665,Can the Werewolves secure victory if there is only one Villager remaining?,The Werewolves cannot secure victory if there is only one Villager remaining.
+666,Is the Seer able to discern the role of the player they investigate during the night round?,The Seer is unable to discern the role of the player they investigate during the night round.
+667,Can the Werewolves kill the same player as the Seer has checked?,The Werewolves can kill the same player as the Seer has checked.
+668,What is the purpose of running for Sheriff in the election phase?,"The purpose of running for Sheriff in the election phase is to have the authority to choose which player starts the next round of discussions, as well as to provide a summary as the last speaker to persuade other players to vote in alignment with them."
+669,What are the roles in the game?,"The roles in the game are Werewolves, Villagers (including the Seer and the Guard), and the moderator who is also the host."
+670,What is the win condition for the Werewolves in the game?,"The win condition for the Werewolves in the game is having the number of remaining Werewolves equal to the number of remaining Seer, Guard, and Villagers."
+671,"How is the game won by the Seer, Guard, and Villagers?","The game is won by the Seer, Guard, and Villagers if all Werewolves are eliminated."
+672,Who do the Werewolves choose to kill during the night round?,The Werewolves choose one player to kill during the night round.
+673,Who has the final speech in the discussion phase?,The Sheriff has the final speech in the discussion phase.
+674,Can the Seer or Guard protect themselves during the night round?,The Seer and Guard cannot protect themselves during the night round.
+675,How many players are there in total in the game?,There are a total of seven players in the game.
+676,"Can the Werewolves win the game if there are any remaining Seer, Guard, or Villagers?","The Werewolves cannot win the game if there are any remaining Seer, Guard, or Villagers."
+677,Can the Werewolves win if there is only one remaining player other than the Werewolves?,The Werewolves cannot win if there is only one remaining player other than the Werewolves.
+678,Can the players request additional information from the moderator during the game?,The players cannot request additional information from the moderator during the game.
+679,Can the Sheriff be a Guard?,"Yes, the Sheriff can be a Guard."
+680,Can the Werewolves kill the same player as the Guard has chosen to save?,"Yes, the Werewolves can choose to kill the same player as the Guard has chosen to save."
+681,Can players choose to abstain from voting during the voting phase?,"Yes, players can choose to abstain from voting during the voting phase."
+682,"Can the Seer, Guard, and Villagers win if there is only one remaining Werewolf and one remaining Guard?","No, the Seer, Guard, and Villagers cannot win if there is only one remaining Werewolf and one remaining Guard. All Werewolves need to be eliminated for the Seer, Guard, and Villagers to win."
+683,How does the game continue after a player is eliminated in the voting phase?,"After a player is eliminated in the voting phase, the game continues to the next night round."
+684,Can the Sheriff's successor choose the player to start the next round of discussions?,"Yes, the Sheriff's successor can choose the player to start the next round of discussions."
+685,How is the result of the night round announced if no player was killed?,"If no player was killed during the night round, it will be announced as ""no player was killed."""
+686,Can the Seer reveal their findings to the other players during the day round?,The Seer cannot reveal their findings to the other players during the day round.
+687,"Can the Seer, Guard, and Villagers win the game if there is at least one remaining Werewolf in the Werewolf game?","No, the Seer, Guard, and Villagers cannot win if there is at least one remaining Werewolf."
+688,Can players discuss who might be the Werewolves more than once during the discussion phase in the Werewolf game?,Players can discuss who might be the Werewolves only once during the discussion phase.
+689,What are the three phases of the day round?,"The three phases of the day round are the announcement phase, the discussion phase, and the voting phase."
+690,How is the player eliminated during the voting phase?,"During the voting phase, the player with the most votes is eliminated."
+691,Can the Werewolves kill the same player as the Sheriff has chosen to start the next round of discussions?,"Yes, the Werewolves can choose to kill the same player as the Sheriff has chosen to start the next round of discussions."
+692,What happens during the announcement phase of the day round?,"During the announcement phase of the day round, the result of the night round is announced. If no player was killed, it will be announced as ""no player was killed."""
+693,Can the Seer reveal their role during the day round in the Werewolf game?,The Seer cannot reveal their role during the day round.
+694,"Can the Werewolves win if there are equal number of Werewolves and Seer, Guard, and Villagers remaining?","No, the Werewolves cannot win if there are an equal number of Werewolves and Seer, Guard, and Villagers remaining."
+695,What happens if there is no consensus among the Werewolves during the night round in the Werewolf game?,"If there is no consensus among the Werewolves during the night round, no player will be killed."
+696,"Can the Sheriff choose a player who is the Seer, Guard, or Villager to start the next round of discussions in the Werewolf game?","Yes, the Sheriff can choose a player who is the Seer, Guard, or Villager to start the next round of discussions."
+697,Can the Werewolves vote to eliminate the Seer?,"Yes, the Werewolves can vote to eliminate the Seer."
+698,Can the Sheriff be the Guard?,"Yes, the Sheriff can be the Guard."
+699,Can the Sheriff influence the voting decision of other players during the day round?,The Sheriff can influence the voting decision of other players during the day round.
+700,Can the Werewolves win if there are no remaining Villagers?,The Werewolves can win if there are no remaining Villagers.
+701,Can the Villagers discuss their suspicions openly during the day round?,The Villagers can discuss their suspicions openly during the day round.
+702,Can the players running for Sheriff state their reasons in the Werewolf game?,The players running for Sheriff can state their reasons in the Werewolf game.
+703,Can the Guard save a player who has been checked by the Seer?,The Guard cannot save a player who has been checked by the Seer.
+704,How is the result of the night round announced if a player was killed and not saved?,"The result of the night round is announced with ""player_i was killed"" if a player was killed and not saved."
+705,How is the Sheriff chosen?,The Sheriff is chosen through a voting process during the election phase.
+706,Can the Werewolves kill the Seer or Guard if they are protected by the Guard?,The Werewolves cannot kill the Seer or Guard if they are protected by the Guard.
+707,"Is it possible for the Werewolves to win if there is an equal number of Werewolves and Seer, Guard, and Villagers remaining?","It is possible for the Werewolves to win if there is an equal number of Werewolves and Seer, Guard, and Villagers remaining."
+708,Can the players communicate with the moderator during the Werewolf game?,The players cannot communicate with the moderator during the Werewolf game.
+709,What is announced if a player was killed and not saved in the night round?,"If a player was killed and not saved in the night round, it is announced as ""player_i was killed""."
+710,What is the authority of the Sheriff in the game?,The authority of the Sheriff in the game is to choose which player starts the next round of discussions and provide a summary to persuade others during the voting phase.
+711,What is the purpose of the Seer in the Werewolf game?,The purpose of the Seer in the Werewolf game is to choose one player to see if they are a Werewolf.
+712,What is the purpose of the voting phase in the Werewolf game?,The purpose of the voting phase in the Werewolf game is for each player to vote for one player or choose not to vote.
+713,"Can the Seer, Guard, and Villagers win if there is only one remaining Werewolf and one remaining Seer, Guard, and Villager?","The Seer, Guard, and Villagers can win if there is only one remaining Werewolf and one remaining Seer, Guard, and Villager."
+714,Can the Werewolves win if there are more Werewolves than Villagers remaining?,The Werewolves can win if there are more Werewolves than Villagers remaining.
+715,"Can the Seer, Guard, and Villagers win if there are no Werewolves remaining in the Werewolf game?","The Seer, Guard, and Villagers can win if there are no Werewolves remaining in the Werewolf game."
+716,Can the Guard save the same player every night?,The Guard cannot save the same player every night.
+717,How is the Sheriff's authority different from the other roles?,The Sheriff's authority is different from the other roles as they have the power to choose the starting player for the next round of discussions and provide a persuasive summary during the voting phase.
+718,Can players choose not to run for Sheriff in the election phase?,Players can choose not to run for Sheriff in the election phase.
+719,Can players abstain from voting during the voting phase?,Players can abstain from voting during the voting phase.
+720,What is the purpose of the Villagers in the Werewolf game?,The purpose of the Villagers is to identify and eliminate the Werewolves. They participate in the discussion and voting phases to determine who the Werewolves might be.
+721,How many times is each player allowed to speak during the discussion phase?,"Each player is allowed to speak once during the discussion phase, in order from player_0 to player_6."
+722,Can the Werewolves kill the Sheriff if they are protected by the Guard?,"The Werewolves cannot kill the Sheriff if they are protected by the Guard. The Guard has the ability to save a player including themselves, without knowing who the Werewolves have chosen."
+723,Can the Villagers vote for the Sheriff in the election phase?,The Villagers can vote for the Sheriff in the election phase.
+724,Can the Sheriff be a Villager?,"Yes, the Sheriff can be a Villager."
+725,Can the players eliminate the same player two rounds in a row?,The players can eliminate the same player two rounds in a row.
+726,How many players can each player vote for during the voting phase?,"During the voting phase, each player can vote for one player or choose not to vote."
+727,What actions does the Seer take during the night round in the Werewolf game?,"During the night round, the Seer chooses one player to see if they are a Werewolf."
+728,Can the Sheriff provide a summary to persuade other players during the election phase in the Werewolf game?,"Yes, the Sheriff can provide a summary to persuade other players during the election phase."
+729,Can the Sheriff change the order of players during the discussion phase in the Werewolf game?,"No, the Sheriff cannot change the order of players during the discussion phase."
+730,What happens during the voting phase in the day round?,"During the voting phase in the day round, each player votes for one player or chooses not to vote. The player with the most votes is eliminated."
+731,Who has the authority to choose a player to succeed the Sheriff if the Sheriff dies?,"If the Sheriff dies, they have the authority to choose a player to succeed them as the Sheriff."
+732,Can the Sheriff choose a player who is the same role as them to start the next round of discussions in the Werewolf game?,"Yes, the Sheriff can choose a player who has the same role as them to start the next round of discussions."
+733,How do the Werewolves win the game in the Werewolf game?,"The Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+734,Can the Guard save the same player as the Seer chose to see?,"Yes, the Guard can save the same player as the Seer chose to see."
+735,Can players change their roles during the Werewolf game?,"No, players cannot change their roles during the Werewolf game."
+736,Can the Sheriff eliminate a player who was voted for by all players during the voting phase?,"Yes, the Sheriff can eliminate a player who was voted for by all players during the voting phase."
+737,Can the players discuss their votes during the voting phase?,Players can discuss their votes during the voting phase.
+738,What is the purpose of the Sheriff in the Werewolf game?,The purpose of the Sheriff is to have the authority to choose which player starts the next round of discussions and to provide a summary to persuade other players during the election phase.
+739,"Can the Werewolves win if there is one Seer, Guard, and Villager remaining?","No, the Werewolves cannot win if there is one Seer, Guard, and Villager remaining."
+740,How is the player to be killed decided in the night round?,"The player to be killed in the night round is decided by the Werewolves through voting. They choose one player to kill, and the player who receives the most votes will be killed. If there is no consensus, no one will be killed."
+741,Can the Villagers change their actions during the night round?,The Villagers cannot change their actions during the night round. They do nothing during this phase of the game.
+742,Can the Villagers vote for themselves in the voting phase?,"Yes, the Villagers can vote for themselves in the voting phase. They can choose any player, including themselves, to vote for."
+743,Can the Seer choose themselves to check if they are a Werewolf?,The Seer cannot choose themselves to check if they are a Werewolf. They can only choose another player to see if they are a Werewolf.
+744,What happens during the election phase?,"During the election phase, players can decide whether or not to run for the position of Sheriff. They take turns stating their reasons for becoming the Sheriff. Then each player votes for one Sheriff or choose not to vote. The Sheriff has the authority to choose which player starts the next round of discussions. They also have the opportunity to provide a summary to persuade other players to vote in alignment with them."
+745,What actions do the Villagers take during the night round in the Werewolf game?,The Villagers do nothing during the night round. They have no actions to take.
+746,Can the players discuss the night round events openly during the day round?,"During the day round, the players can openly discuss the events of the night round. They can discuss who might be the Werewolves and strategize together."
+747,Can the Guard reveal their identity during the night round?,The Guard cannot reveal their identity during the night round. They act anonymously when choosing a player to save.
+748,"Can the Seer, Guard, and Villagers win if there are more Seer, Guard, and Villagers than Werewolves remaining?","Yes, the Seer, Guard, and Villagers can win if there are more of them than Werewolves remaining. They win the game if all the Werewolves are eliminated."
+749,"What happens if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers in the Werewolf game?","If the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers, the game ends and the Werewolves win. They have achieved their goal of having an equal number of players on each side."
+750,What is announced during the announcement phase of the day round in the Werewolf game?,"During the announcement phase of the day round, an announcement is made to all players about the result of the previous night. If a player was killed and not saved, the announcement will state their name and that they were killed. If no player was killed because they were saved, the announcement will state that no player was killed."
+751,How do the Werewolves choose their target to kill during the night round?,The Werewolves choose their target to kill during the night round through voting. They discuss and vote on which player to kill. The player with the most votes will be the target.
+752,Can the players abstain from voting during the voting phase?,"Yes, players can abstain from voting during the voting phase. They have the option to choose not to vote if they do not want to decide on a player."
+753,Can the Werewolves kill the same player as the Seer chooses during the night round in the Werewolf game?,The Werewolves can choose the same player as the Seer chooses during the night round. The Werewolves do not know who the Seer chooses as they make their decision independently.
+754,Can the Werewolves communicate with each other during the night round?,The Werewolves cannot communicate with each other during the night round. They do not have the ability to discuss their actions or plans.
+755,Can the Sheriff choose a player who has been revealed as a Werewolf by the Seer as the starting player for the next round of discussions?,"Yes, the Sheriff can choose a player who has been revealed as a Werewolf by the Seer as the starting player for the next round of discussions. The Sheriff has the freedom to choose any player to start the discussions."
+756,Does the Sheriff have the freedom to choose any player to initiate the next round of discussions?,"Yes, the Sheriff has the freedom to choose any player to initiate the next round of discussions. They can choose any player, including themselves or a player revealed by the Seer as a Werewolf."
+757,Can the players discuss their voting choices openly during the voting phase?,"During the voting phase, players can openly discuss their voting choices. They can share their opinions, arguments, and reasons for voting for a particular player."
+758,Can the Werewolves win if there is only one player remaining?,"No, the Werewolves cannot win if there is only one player remaining. The Seer, Guard, and Villagers win the game if all the Werewolves are eliminated."
+759,Can the Seer check a player who has been saved by the Guard?,"The Seer cannot check a player who has been saved by the Guard. Once a player is saved by the Guard, they are protected and cannot be checked by the Seer."
+760,Can players decide whether or not to run for Sheriff in the election phase?,Players can decide whether or not to run for Sheriff in the election phase.
+761,Can the Seer see the role of the player who was killed in the night round?,The Seer cannot see the role of the player who was killed in the night round.
+762,How many Werewolves are needed for them to win the game?,"The Werewolves need to have the same number of remaining players as the Seer, Guard, and Villagers combined to win the game."
+763,What does the Guard do during the night round in the Werewolf game?,"During the night round, the Guard chooses one player, including themselves, to save without knowing who was chosen by the Werewolves."
+764,Can the Villagers reveal their identities during the game?,The Villagers cannot reveal their identities during the game.
+765,Can the Werewolves win if there is only one remaining Seer?,The Werewolves can win if there is only one remaining Seer.
+766,What are the win conditions for the Werewolves in the game?,"The win conditions for the Werewolves in the game are when the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers combined."
+767,Can the Guard change their chosen player during the night round?,The Guard cannot change their chosen player during the night round.
+768,Can the Villagers vote to eliminate the Seer?,The Villagers cannot vote to eliminate the Seer.
+769,Can the Villagers discuss who might be the Werewolves during the discussion phase?,The Villagers can discuss who might be the Werewolves during the discussion phase.
+770,"Can the Werewolves win the game if there are equal numbers of Werewolves and Seer, Guard, and Villagers remaining?","The Werewolves cannot win the game if there are equal numbers of Werewolves and Seer, Guard, and Villagers remaining."
+771,What happens during the election phase of the first day?,"During the election phase of the first day, players can decide whether or not to run for Sheriff based on their identity. Each player takes turns stating their reasons, and then each player votes for one Sheriff or choose not to vote."
+772,What is announced during the announcement phase in the day round of the Werewolf game?,"During the announcement phase in the day round, an announcement is made to all players regarding last night\'s result. If a player was killed and not saved, the announcement will be ""player_i was killed."" If no player was killed, the announcement will be ""no player was killed."""
+773,What occurs during the voting phase of the day round?,"During the voting phase of the day round, each player votes for one player or choose not to vote. The player with the most votes is eliminated, and the game continues to the next night round."
+774,What actions do the Werewolves take during the night round?,"During the night round, the Werewolves recognize each other and choose one player to kill. Player who receives the most votes after all werewolves voting will be killed. No one will be killed if there is no consensus!"
+775,"Can the Sheriff choose a player who is the Seer, Guard, or Villager to succeed them as the sheriff if they die in the subsequent game in the Werewolf game?","The Sheriff can choose a player who is the Seer, Guard, or Villager to succeed them as the sheriff if they die in the subsequent game in the Werewolf game."
+776,What does the Seer do in the night round of the Werewolf game?,The Seer chooses one player to see if they are a Werewolf during the night round.
+777,Can the Werewolves win if there is only one remaining Werewolf and one remaining Seer?,The Werewolves cannot win if there is only one remaining Werewolf and one remaining Seer.
+778,Can the Werewolves win if there are more Werewolves than Guards remaining?,The Werewolves can win if there are more Werewolves than Guards remaining.
+779,Can the Villagers vote for a player who has already been eliminated?,The Villagers cannot vote for a player who has already been eliminated.
+780,What are the three phases of the day round in the Werewolf game?,"The three phases of the day round in the Werewolf game are the announcement phase, the discussion phase, and the voting phase."
+781,Can players choose not to vote in the voting phase?,"Yes, players can choose not to vote during the voting phase."
+782,Can the Sheriff vote during the voting phase?,"No, the Sheriff cannot vote during the voting phase."
+783,What happens if the Seer investigates a player who has already been eliminated?,"If the Seer investigates a player who has already been eliminated, nothing happens. The Seer will not receive any information about that player."
+784,How does the voting phase work in the voting phase of the day round?,"In the voting phase of the day round, each player votes for one player or chooses not to vote. The player with the most votes is eliminated."
+785,Can the players use logical reasoning to deduce the roles of other players during the Werewolf game?,"Yes, players can use logical reasoning to deduce the roles of other players during the Werewolf game."
+786,"Can the Seer, Guard, and Villagers win if there are more Guards than Werewolves remaining?","No, the Seer, Guard, and Villagers cannot win if there are more Guards than Werewolves remaining. They need to eliminate all Werewolves to win."
+787,"How many Seer, Guard, and Villagers are needed for them to win?","The number of Seer, Guard, and Villagers needed for them to win depends on the number of Werewolves and other roles in the game."
+788,Can the Guard choose themselves as the player to save in the night round?,"Yes, the Guard can choose themselves as the player to save in the night round."
+789,Can the Moderator participate in the discussions during the day round?,"No, the Moderator cannot participate in the discussions during the day round. They only organize the game."
+790,What happens if a player is killed and saved during the night round?,"If a player is killed and saved during the night round, they will not be eliminated. They will continue to participate in the game."
+791,Can the Seer vote for the Sheriff during the election phase?,"Yes, the Seer can vote for the Sheriff during the election phase."
+792,Can the Sheriff eliminate a player who received the most votes during the voting phase?,"No, the Sheriff cannot eliminate a player who received the most votes during the voting phase. The player with the most votes is eliminated."
+793,"What is the winning condition for the Seer, Guard, and Villagers in the game?","The winning condition for the Seer, Guard, and Villagers is to eliminate all Werewolves."
+794,Can players abstain from voting during the voting phase in the Werewolf game?,"Yes, players can abstain from voting during the voting phase in the Werewolf game."
+795,Can the players change their votes after the voting phase in the Werewolf game?,"No, players cannot change their votes after the voting phase in the Werewolf game."
+796,How is the player to be killed determined if there is no consensus among the Werewolves?,"If there is no consensus among the Werewolves on the player to be killed, no one will be killed."
+797,Can the Villagers collectively decide on an action during the night round?,"No, the Villagers cannot collectively decide on an action during the night round. They do nothing during the night round."
+798,"Can the Seer, Guard, and Villagers win if there is only one Guard remaining?","Yes, the Seer, Guard, and Villagers can win if there is only one Guard remaining. They need to eliminate all Werewolves."
+799,What is the purpose of the Sheriff's final speech during the discussion phase?,The purpose of the Sheriff's final speech during the discussion phase is to conclude the voting and persuade other players to vote in alignment with them.
+800,What happens during the announcement phase in the day round?,"During the announcement phase in the day round, the moderator makes an announcement to all players about the result of the previous night. If a player was killed and not saved, the announcement will be ""player_i was killed."" If a player was killed but saved, the announcement will be ""no player was killed."""
+801,How do the Werewolves choose who to kill in the night round?,"The Werewolves choose who to kill in the night round by voting and reaching a consensus. The player who receives the most votes from the Werewolves will be killed. If there is no consensus, no one will be killed."
+802,"How does the game end for the Seer, Guard, and Villagers to win?","The Seer, Guard, and Villagers win the game if all the Werewolves are eliminated."
+803,Can the Seer vote for the Sheriff in the election phase?,"No, the Seer cannot vote for the Sheriff in the election phase."
+804,Can the players eliminate a player who has been saved by the Guard during the night round?,"No, players cannot eliminate a player who has been saved by the Guard during the night round."
+805,Can the Sheriff choose a player to succeed them if they die in the subsequent game?,"Yes, if the Sheriff dies in the subsequent game, they have the right to choose a player to succeed them as the Sheriff."
+806,Can the players change their suspicions during the voting phase in the Werewolf game?,"Yes, players can change their suspicions during the voting phase in the Werewolf game."
+807,Who chooses the player to be killed during the night round?,The Werewolves collectively choose the player to be killed during the night round.
+808,Can the Guard save the same player in consecutive night rounds?,"Yes, the Guard can save the same player in consecutive night rounds."
+809,Is there a limit to the number of times a player can be elected as Sheriff?,There is no limit to the number of times a player can be elected as Sheriff.
+810,Can the Villagers use deduction and logic to identify the Werewolves?,"Yes, the Villagers can use deduction and logic to identify the Werewolves."
+811,Can the players discuss their suspicions during the election phase in the Werewolf game?,"No, players cannot discuss their suspicions during the election phase in the Werewolf game."
+812,Can the Werewolves kill the same player as the Guard chooses during the night round in the Werewolf game?,"Yes, the Werewolves can kill the same player as the one chosen by the Guard during the night round in the Werewolf game."
+813,Can the Villagers discuss their suspicions during the discussion phase?,"Yes, the Villagers can discuss their suspicions during the discussion phase."
+814,Can the Seer choose the same player multiple times to verify their role?,"Yes, the Seer can choose the same player multiple times to verify their role."
+815,How many times can each player speak during the discussion phase?,Each player can speak once during the discussion phase.
+816,Can the Sheriff provide a summary to persuade other players to vote in alignment with them?,"Yes, the Sheriff can provide a summary to persuade other players to vote in alignment with them."
+817,Can the Seer reveal the identity of the players they have checked?,"No, the Seer cannot reveal the identity of the players they have checked."
+818,"Can the Seer, Guard, and Villagers win the game without identifying all the Werewolves?","Yes, the Seer, Guard, and Villagers can win the game without identifying all the Werewolves."
+819,Can the Sheriff change their decision after the discussion phase?,"No, the Sheriff cannot change their decision after the discussion phase."
+820,What does the Seer do in the night round?,The Seer chooses one player to see if they are a Werewolf.
+821,What do the Villagers do during the night round in the Werewolf game?,The Villagers do nothing during the night round in the Werewolf game.
+822,What are the winning conditions for the Werewolves in the game?,"The Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+823,Can the Werewolves choose not to kill anyone in a night round?,"Yes, the Werewolves can choose not to kill anyone in a night round if there is no consensus."
+824,How does the Sheriff choose which player starts the next round of discussions in the Werewolf game?,"The Sheriff chooses which player starts the next round of discussions based on their authority and as the last speaker, they can provide a summary to persuade other players to vote in alignment with them."
+825,Can the Seer change their target player during the night round?,"No, the Seer cannot change their target player during the night round."
+826,What happens during the election phase of the day round?,"During the election phase of the day round, players can decide whether or not to run for Sheriff based on their identity. Players running for Sheriff take turns stating their reasons and each player votes for one Sheriff or chooses not to vote."
+827,Can the Werewolves reveal their identities during the game?,"No, the Werewolves cannot reveal their identities during the game."
+828,What is the purpose of the discussion phase in the day round?,The purpose of the discussion phase in the day round is for each remaining player to speak only once in order to discuss who might be the Werewolves and for the Sheriff to have the final speech and conclude the voting.
+829,Can the Sheriff provide a summary to persuade other players to vote in alignment with him in the Werewolf game?,"Yes, the Sheriff can provide a summary to persuade other players to vote in alignment with them in the Werewolf game."
+830,How does the game end in the event of a victory for either side?,"The game ends in the event of a victory for either side. If the Werewolves win, the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers. If the Seer, Guard, and Villagers win, all Werewolves are eliminated."
+831,What is the purpose of the Sheriff in the game?,"The Sheriff is a special certification in the game and their purpose is to choose which player starts the next round of discussions and, as the last speaker, provide a summary to persuade other players to vote in alignment with them."
+832,"Can the Seer, Guard, and Villagers win if there is only one Seer remaining?","Yes, the Seer, Guard, and Villagers can win if there is only one Seer remaining."
+833,How many Werewolves can be killed in one night?,Only one Werewolf can be killed in one night.
+834,Can the Werewolves win if there is one Seer remaining?,"No, the Werewolves cannot win if there is one Seer remaining."
+835,How does the game alternate between night round and day round?,The game alternates between night round and day round until one side wins the game.
+836,Can the Sheriff be any player in the game in the Werewolf game?,"Yes, the Sheriff can be any player in the game in the Werewolf game."
+837,Can the Sheriff choose a player to succeed them if they die?,"Yes, the Sheriff has the right to choose a player to succeed them if they die."
+838,What information is announced during the announcement phase of the day round?,"During the announcement phase of the day round, the information announced is the result of the previous night. If a player was killed and not saved, the announcement will be ""player_i was killed"". If a player was killed and saved, the announcement will be ""no player was killed""."
+839,What do the Werewolves do during the night round?,"During the night round, the Werewolves recognize each other and choose one player to kill. The Seer chooses one player to see if they are a Werewolf. The Guard chooses one player, including themselves, to save without knowing who is chosen by the Werewolves. The Villagers do nothing."
+840,Can the Seer use their ability on a player who has been voted out?,The Seer cannot use their ability on a player who has been voted out.
+841,Can the players use non-verbal cues to communicate during the Werewolf game?,The players cannot use non-verbal cues to communicate during the Werewolf game.
+842,How does the game continue after a player is eliminated during the voting phase?,"After a player is eliminated during the voting phase, the game continues to the next night round."
+843,Can the Werewolves kill more than one player in the night round?,The Werewolves can only kill one player in the night round.
+844,Can the Sheriff vote during the voting phase of the day round?,The Sheriff can vote during the voting phase of the day round.
+845,What happens during the election phase in the day round?,"During the election phase in the day round, players decide whether or not to run for Sheriff, state their reasons, and vote for one Sheriff or choose not to vote. The elected Sheriff has the authority to choose the player who starts the next round of discussions."
+846,Can the Werewolves be eliminated during the voting phase?,The Werewolves can be eliminated during the voting phase.
+847,Can the Villagers discuss their suspicions during the night round in the Werewolf game?,The Villagers cannot discuss their suspicions during the night round in the Werewolf game.
+848,Can the Seer use their ability on a player who has been saved by the Guard?,The Seer cannot use their ability on a player who has been saved by the Guard.
+849,Can the Seer vote during the voting phase in the Werewolf game?,The Seer can vote during the voting phase in the Werewolf game.
+850,Can the Guard reveal their role to other players?,The Guard cannot reveal their role to other players.
+851,How many times can each remaining player speak in the discussion phase?,Each remaining player can speak only once in the discussion phase.
+852,How is the Sheriff determined if the current Sheriff dies?,"If the current Sheriff dies, the next Sheriff is determined by the choice of the previous Sheriff."
+853,In what order do the remaining players speak during the discussion phase?,The remaining players speak in order from player_0 to player_6 during the discussion phase.
+854,Can the Werewolves change their target after the initial selection in the night round?,The Werewolves cannot change their target after the initial selection in the night round.
+855,Can the Werewolves win if there is only one remaining Guard?,The Werewolves cannot win if there is only one remaining Guard.
+856,Can the Werewolves kill the same player multiple times during the night round?,The Werewolves cannot kill the same player multiple times during the night round.
+857,Can the Villagers win the game without voting for any players?,The Villagers can win the game without voting for any players.
+858,Can the Sheriff choose a player who has been saved by the Guard as the starting player for the next round of discussions?,The Sheriff can choose a player who has been saved by the Guard as the starting player for the next round of discussions.
+859,Can the Villagers discuss their suspicions privately during the discussion phase?,The Villagers cannot discuss their suspicions privately during the discussion phase.
+860,"Can the Werewolves win if there are no remaining Seer, Guard, and Villagers?","The Werewolves cannot win if there are no remaining Seer, Guard, and Villagers."
+861,Can the Werewolves win if there are more Werewolves than Seers remaining?,The Werewolves can win even if there are more Werewolves than Seers remaining.
+862,Can the Sheriff choose a player who is the Werewolf to start the next round of discussions in the Werewolf game?,The Sheriff cannot choose a player who is a Werewolf to start the next round of discussions in the Werewolf game.
+863,Can the Seer see the role of the player they choose during the night round in the Werewolf game?,The Seer can see the role of the player they choose during the night round in the Werewolf game.
+864,Can the Werewolves vote for a player who has already been eliminated?,The Werewolves cannot vote for a player who has already been eliminated.
+865,Can the Werewolves choose a player to succeed them if they are eliminated during the voting phase?,The Werewolves cannot choose a player to succeed them if they are eliminated during the voting phase.
+866,How does the voting phase work?,"During the voting phase, each player votes for one player or chooses not to vote. The player with the most votes is eliminated, and the game continues to the next night round."
+867,Can the game end in a draw?,The game can end in a draw if certain conditions are met.
+868,Can the players choose not to participate in the game?,The players cannot choose not to participate in the game.
+869,What is the win condition for the Werewolves?,"The win condition for the Werewolves is if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+870,What is the role of the Guard in the game?,"The role of the Guard is to choose one player, including themselves, to save without knowing who is chosen by the Werewolves."
+871,Can the Werewolves know who the Guard is during the night round?,The Werewolves cannot know who the Guard is during the night round.
+872,How does the game determine the order of players speaking during the discussion phase?,The order of players speaking during the discussion phase is determined by the game rules.
+873,Can players choose not to vote during the voting phase in the Werewolf game?,Players can choose not to vote during the voting phase in the Werewolf game.
+874,"What is the win condition for the Seer, Guard, and Villagers in the game?","The win condition for the Seer, Guard, and Villagers is if all Werewolves are eliminated."
+875,Can the Villagers vote to eliminate themselves?,The Villagers cannot vote to eliminate themselves.
+876,How are the players ordered during the discussion phase in the Werewolf game?,The players are ordered during the discussion phase based on their assigned order from player_0 to player_6.
+877,How many times can each player speak during the discussion phase in the Werewolf game?,Each player can speak once during the discussion phase in the Werewolf game.
+878,How is the winner determined in the Werewolf game?,"The winner in the Werewolf game is determined based on whether the Werewolves or the Seer, Guard, and Villagers achieve their win condition."
+879,What is the purpose of the election phase in the day round?,"The purpose of the election phase in the day round is to determine the Sheriff, who has the authority to choose which player starts the next round of discussions and provides a summary to persuade other players during the voting phase."
+880,Can the Seer reveal their identity during the night round?,The Seer can reveal their identity during the night round.
+881,Can the Guard save a player who has been chosen by the Werewolves to be killed?,The Guard can save a player who has been chosen by the Werewolves to be killed.
+882,Can the Guard save a player who has already been eliminated?,The Guard cannot save a player who has already been eliminated.
+883,"Can the Seer, Guard, and Villagers win if there is only one remaining Guard?","The Seer, Guard, and Villagers can win if there is only one remaining Guard."
+884,Can the Werewolves be eliminated before all other roles?,The Werewolves cannot be eliminated before all other roles.
+885,What are the two roles assigned to the Werewolves?,The two roles assigned to the Werewolves are hidden and unknown.
+886,"Can the Seer, Guard, and Villagers win if there is only one remaining Werewolf and one remaining Seer?","The Seer, Guard, and Villagers can win if there is only one remaining Werewolf and one remaining Seer."
+887,Can the Seer choose not to use their ability during the night round in the Werewolf game?,The Seer can choose not to use their ability during the night round in the Werewolf game.
+888,What happens if a player is killed and not saved during the night round?,"If a player is killed and not saved during the night round, there will be an announcement that the player was killed."
+889,Who has the final speech during the discussion phase?,The Sheriff has the final speech during the discussion phase.
+890,What is the role of the moderator in the Werewolf game?,The moderator in the Werewolf game acts as the host and organizer of the game.
+891,Can players change their vote during the voting phase in the Werewolf game?,Players cannot change their vote during the voting phase in the Werewolf game.
+892,What is the role of the Villagers in the night round of the Werewolf game?,The Villagers do not have a specific role or actions in the night round of the Werewolf game.
+893,How do players vote during the voting phase of the day round?,"During the voting phase of the day round, each player votes for one player or chooses not to vote."
+894,Can the Werewolves win the game if there are no remaining Seer and Guard?,The Werewolves cannot win the game if there are no remaining Seer and Guard.
+895,Can the Villagers discuss during the day round?,The Villagers can participate in the discussion during the day round.
+896,Can the Villagers take actions to protect themselves during the night round in the Werewolf game?,The Villagers cannot take actions to protect themselves during the night round in the Werewolf game.
+897,What are the three phases in the day round?,"The three phases in the day round are the announcement phase, discussion phase, and voting phase."
+898,Can the Werewolves win if there are more Werewolves than Seers remaining in the Werewolf game?,The Werewolves can win if there are more Werewolves than Seers remaining in the Werewolf game.
+899,How many Werewolves need to remain for the Werewolves to win?,There is no specific number of Werewolves needed to remain for the Werewolves to win.
+900,How do the Werewolves win the game?,"The Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+901,How many votes does each player have during the voting phase?,Each player has one vote during the voting phase.
+902,Can the Sheriff choose a player who has been accused by the Seer in the discussion phase as the starting player for the next round of discussions?,"Yes, the Sheriff can choose a player who has been accused by the Seer in the discussion phase as the starting player for the next round of discussions."
+903,Can the Guard change their target player during the night round in the Werewolf game?,"No, the Guard cannot change their target player during the night round in the Werewolf game."
+904,Can the Werewolves be eliminated if they receive the most votes during the voting phase?,"No, if the Werewolves receive the most votes during the voting phase, they cannot be eliminated."
+905,Can the players eliminate the Seer during the voting phase?,"No, the players cannot eliminate the Seer during the voting phase."
+906,Can the Werewolves communicate with each other during the day round in the Werewolf game?,"No, the Werewolves cannot communicate with each other during the day round in the Werewolf game."
+907,Can the Guard save the Seer during the night round?,"Yes, the Guard can save the Seer during the night round."
+908,Can the Guard change their target player during the night round?,"No, the Guard cannot change their target player during the night round."
+909,How does the game end for the Werewolves to win?,"The game ends for the Werewolves to win if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+910,How many roles are there in the Werewolf game?,There are four roles in the Werewolf game.
+911,Can the players strategize and form alliances during the game?,"Yes, the players can strategize and form alliances during the game."
+912,"Can the Werewolves win if there are more Werewolves than Seer, Guard, and Villagers remaining?","No, the Werewolves cannot win if there are more Werewolves than Seer, Guard, and Villagers remaining."
+913,In what order do the players speak during the discussion phase of the day round?,The players speak during the discussion phase of the day round in order from player_0 to player_6.
+914,Can the Sheriff choose a player to succeed them as the sheriff if they are eliminated during the voting phase?,"Yes, the Sheriff can choose a player to succeed them as the sheriff if they are eliminated during the voting phase."
+915,Can the Seer choose themselves as the player to check during the night round?,"No, the Seer cannot choose themselves as the player to check during the night round."
+916,Is it possible for the Werewolves to win if there is only one Villager remaining?,"Yes, it is possible for the Werewolves to win if there is only one Villager remaining."
+917,What happens if a player is killed and not protected during the night round?,"If a player is killed and not protected during the night round, the announcement will be ""player_i was killed""."
+918,Can the players change their roles during the game?,"No, the players cannot change their roles during the game."
+919,Can the Sheriff eliminate themselves during the voting phase?,"No, the Sheriff cannot eliminate themselves during the voting phase."
+920,"How do the Seer, Guard, and Villagers win the game in the Werewolf game?","The Seer, Guard, and Villagers win the game if all the Werewolves are eliminated."
+921,Can the players communicate with each other privately during the game?,The players cannot communicate with each other privately during the game.
+922,Can the Guard know who is chosen by the Werewolves in the night round?,The Guard does not know who is chosen by the Werewolves in the night round.
+923,Who has the final speech in the discussion phase of the day round?,The Sheriff has the final speech in the discussion phase of the day round.
+924,Can the Seer change their target player during the night round in the Werewolf game?,The Seer cannot change their target player during the night round in the Werewolf game.
+925,Can the Werewolves change their target player during the night round in the Werewolf game?,The Werewolves cannot change their target player during the night round in the Werewolf game.
+926,What are the win conditions for the Seer in the game?,The win condition for the Seer is for all the Werewolves to be eliminated.
+927,"What are the win conditions for the Seer, Guard, and Villagers in the game?","The win condition for the Seer, Guard, and Villagers is for all the Werewolves to be eliminated."
+928,Can players communicate with the moderator during the game?,The players cannot communicate with the moderator during the game.
+929,Can the Werewolves kill multiple players in one night round in the Werewolf game?,The Werewolves can only kill one player in one night round in the Werewolf game.
+930,How does the authority of the Sheriff differ from the other roles?,The authority of the Sheriff allows them to choose which player starts the next round of discussions and provides a summary to persuade other players during the voting phase.
+931,When do the Werewolves win the game?,"The Werewolves win the game when the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers."
+932,Can the Seer use their ability to check themselves?,The Seer cannot use their ability to check themselves.
+933,"Can the Seer, Guard, or Villagers win the game if there are any remaining Werewolves?","The Seer, Guard, or Villagers cannot win the game if there are any remaining Werewolves."
+934,Can the Sheriff be a Seer in the Werewolf game?,"Yes, the Sheriff can be a Seer in the Werewolf game."
+935,Can the Werewolves kill more than one player in a single night round?,The Werewolves can only kill one player in a single night round.
+936,Can the Werewolves eliminate the Seer during the day round?,The Werewolves cannot eliminate the Seer during the day round.
+937,How is the summary provided by the Sheriff utilized during the voting phase?,The summary provided by the Sheriff can influence other players' voting decisions during the voting phase.
+938,Can the Villagers vote for the player who starts the next round of discussions?,The Villagers can vote for the player who starts the next round of discussions.
+939,Can the players running for Sheriff state their reasons during the Werewolf game?,The players running for Sheriff can state their reasons during the Werewolf game.
+940,Is it optional for a player to run for Sheriff during the election phase?,"During the election phase, players have the option to run for Sheriff."
+941,Can the Villagers discuss during the night round?,The Villagers cannot discuss during the night round.
+942,Can the Guard vote for the Sheriff in the election phase?,The Guard cannot vote for the Sheriff in the election phase.
+943,Is it within the Seer's ability to choose themselves to investigate during the night round?,The Seer cannot choose themselves to investigate during the night round.
+944,Can the Sheriff choose the same player to start the next round of discussions every time?,The Sheriff can choose a different player to start the next round of discussions every time.
+945,How is the determination of the new Sheriff made if the previous Sheriff dies?,"If the previous Sheriff dies, the new Sheriff is determined by the choice of the deceased Sheriff."
+946,How is the Sheriff chosen in the Werewolf game?,The Sheriff is chosen through an election where players vote for the Sheriff or choose not to vote.
+947,Can the players discuss their suspicions during the night round in the Werewolf game?,The players cannot discuss their suspicions during the night round.
+948,Can the players strategize and plan their actions in advance during the Werewolf game?,The players cannot strategize and plan their actions in advance during the Werewolf game.
+949,"How many Werewolves need to be eliminated for the Seer, Guard, and Villagers to win?","All Werewolves need to be eliminated for the Seer, Guard, and Villagers to win."
+950,"Can the Seer, Guard, and Villagers win if there are more Villagers than Werewolves remaining?","Yes, the Seer, Guard, and Villagers can win if there are more Villagers than Werewolves remaining."
+951,"Can the Werewolves win the game if the number of remaining Werewolves is greater than the number of remaining Seer, Guard, and Villagers?","No, the Werewolves cannot win the game if the number of remaining Werewolves is greater than the number of remaining Seer, Guard, and Villagers."
+952,Can the players change their vote during the voting phase?,"During the voting phase, players cannot change their vote."
+953,Can the players eliminate the Werewolves during the voting phase?,The players can eliminate the Werewolves during the voting phase.
+954,Who does the Guard choose to save in the night round?,The Guard chooses a player (including themselves) to save in the night round.
+955,Can the Sheriff eliminate a player during the voting phase?,The Sheriff cannot eliminate a player during the voting phase.
+956,Can the Guard save the same player two nights in a row?,"Yes, the Guard can save the same player two nights in a row."
+957,Can the players communicate privately outside of the game rounds?,The players cannot communicate privately outside of the game rounds.
+958,How is the new Sheriff determined if the current Sheriff dies?,"If the current Sheriff dies, the new Sheriff is determined by the choice of the deceased Sheriff."
+959,Can the Werewolves kill multiple players in the night round?,The Werewolves can only kill one player in the night round.
+960,Can the Werewolves kill the same player two nights in a row?,The Werewolves cannot kill the same player two nights in a row.
+961,Is it permissible for a player to change their vote during the voting phase?,"During the voting phase, it is permissible for a player to change their vote."
+962,How is the player to be eliminated determined in the voting phase?,"In the voting phase, the player to be eliminated is determined by the player with the most votes."
+963,Can the Seer reveal their identity during the day round?,The Seer can reveal their identity during the day round if they choose to do so.
+964,What is the role of the Sheriff in the Werewolf game?,The Sheriff in the Werewolf game has the authority to choose which player starts the next round of discussions.
+965,How does the discussion phase work?,"During the discussion phase, each remaining player speaks only once in order to discuss who might be the Werewolves. The Sheriff has the final speech and concludes the voting."
+966,What authority does the Sheriff have in the game?,The Sheriff has the authority to choose which player starts the next round of discussions.
+967,Can the Sheriff be any player in the game?,The Sheriff can be any player in the game.
+968,How is the Sheriff determined in the game?,"The Sheriff is determined through an election phase after the announcement phase, where players can decide whether or not to run for Sheriff."
+969,Can the Sheriff choose a player to succeed them as the sheriff if they die in the subsequent game?,"If the Sheriff dies in the subsequent game, they have the right to choose a player to succeed them as the Sheriff."
+970,"Can the Sheriff be a Seer, Guard, or Villager?","The Sheriff can be a Seer, Guard, or Villager."
+971,Can the Guard save the same player multiple times?,The Guard can save the same player multiple times.
+972,Can the Werewolves kill the Seer or Guard during the night round in the Werewolf game?,The Werewolves can kill the Seer or Guard during the night round in the Werewolf game.
+973,Can the Werewolves recognize each other during the day round?,The Werewolves cannot recognize each other during the day round.
+974,Can the players eliminate themselves during the voting phase?,The players cannot eliminate themselves during the voting phase.
+975,How is the player to be killed determined during the night round?,The player to be killed during the night round is determined by the player who receives the most votes after all Werewolves have voted.
+976,Can the Seer see the actions of the Guard during the night round?,The Seer cannot see the actions of the Guard during the night round.
+977,Who has the authority to choose the player who starts the next round of discussions?,The Sheriff has the authority to choose the player who starts the next round of discussions.
+978,Can the Sheriff choose themselves as the starting player for the next round of discussions if they die in the subsequent game?,"If the Sheriff dies in the subsequent game, they cannot choose themselves as the starting player for the next round of discussions."
+979,Who has the authority to choose which player starts the next round of discussions?,The Sheriff has the authority to choose which player starts the next round of discussions.
+980,Can the Werewolves kill multiple players in one night?,Werewolves can only kill one player in one night.
+981,How many people can the Werewolves kill in one night?,Werewolves can only kill one player in one night.
+982,"Can the Seer, Guard, and Villagers win if there is one Werewolf remaining?","The Seer, Guard, and Villagers can win if there is one Werewolf remaining."
+983,Can the Sheriff choose a player to succeed him if he dies in the subsequent game?,"Yes, the Sheriff can choose a player to succeed him if he dies in the subsequent game."
+984,What are the win conditions for the Villagers in the game?,The win condition for the Villagers is to eliminate all Werewolves.
+985,What are the two roles of the Werewolves in the night round?,The two roles of the Werewolves in the night round are recognizing each other and choosing one player to kill.
+986,Can the Villagers vote to eliminate a player during the night round?,"No, the Villagers cannot vote to eliminate a player during the night round."
+987,How is the discussion phase conducted in the day round?,"During the discussion phase in the day round, each remaining player speaks once in order from player_0 to player_6 to discuss who might be the Werewolves."
+988,How does the game handle situations where players have strong suspicions but no concrete evidence?,The game handles situations where players have strong suspicions but no concrete evidence by allowing them to voice their suspicions during the discussion phase and voting phase.
+989,Can the Sheriff eliminate no player during the voting phase?,"Yes, the Sheriff can choose not to eliminate any player during the voting phase."
+990,Can the Seer see the role of the player they choose?,The Seer can see the role of the player they choose during the night round.
+991,How does the Sheriff influence the next round of discussions?,The Sheriff influences the next round of discussions by choosing which player starts the next round.
+992,Can the Guard save the same player they chose during the night round?,"No, the Guard cannot save the same player they chose during the night round."
+993,What do the Werewolves do in the night round?,"In the night round, the Werewolves recognize each other and choose one player to kill."
+994,Can the Werewolves win if there is only one remaining Werewolf and one remaining Guard?,"No, the Werewolves cannot win if there is only one remaining Werewolf and one remaining Guard."
+995,Who does the Seer choose to investigate during the night round?,The Seer can choose any player to investigate during the night round.
+996,Can the Villagers determine who the Werewolves are during the day round?,The Villagers can try to determine who the Werewolves are during the day round by discussing and voting on players.
+997,Can players vote for themselves during the election phase?,"Yes, players can vote for themselves during the election phase."
+998,How does the announcement differ if a player was killed and not saved during the night round in the Werewolf game?,"If a player was killed and not saved during the night round, the announcement will be ""player_i was killed""."
+999,Can the Sheriff be killed by the player they choose to start the next round of discussions?,"No, the Sheriff cannot be killed by the player they choose to start the next round of discussions."
+1000,What is announced if no player was killed in the night round?,"If no player was killed in the night round, it will be announced that ""no player was killed""."
+1001,Who is eliminated if a player receives the most votes during the voting phase?,The player who receives the most votes during the voting phase is eliminated.
+1002,Can the Werewolves win the game without being suspected by the Villagers?,The Werewolves cannot win the game without being suspected by the Villagers.
+1003,What happens if the Sheriff dies in the subsequent game?,"If the Sheriff dies in the subsequent game, they have the right to choose a player to succeed them as the sheriff."
+1004,What is the purpose of the night round in the Werewolf game?,"The night round in the Werewolf game serves the purpose of allowing the Werewolves to recognize each other, choose a player to kill, and for the Seer and Guard to perform their respective actions."
+1005,Can the Seer lie about their findings during the day round?,The Seer can lie about their findings during the day round.
+1006,What determines the order of players speaking during the discussion phase?,"The order of players speaking during the discussion phase is determined by their player number, starting from player_0 to player_6."
+1007,Can a player choose not to run for Sheriff during the election phase?,"Yes, a player can choose not to run for Sheriff during the election phase."
+1008,Can the Werewolves kill themselves?,"No, the Werewolves cannot kill themselves."
+1009,Can the Guard reveal their identity during the day round?,The Guard cannot reveal their identity during the day round.
+1010,Can the Sheriff reveal their role to other players?,The Sheriff can choose to reveal their role to other players if they wish.
+1011,Can the Sheriff vote for themselves during the election phase?,"Yes, the Sheriff can vote for themselves during the election phase."
+1012,Can the Sheriff be a Villager in the Werewolf game?,"Yes, the Sheriff can be a Villager in the Werewolf game."

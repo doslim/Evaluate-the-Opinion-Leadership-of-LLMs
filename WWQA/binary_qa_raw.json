@@ -1,0 +1,2002 @@
+[
+    {
+        "question": "Can the Werewolves kill the same player two nights in a row?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be both a Werewolf and a Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save themselves in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will an announcement be made in the day round about last night's result?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard save one player during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose one player to identify as a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the first player to speak during the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers know who the Werewolves are?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill the Guard?",
+        "answer": "Yes"
+    },
+    {
+        "question": "In the voting phase, can players choose not to vote?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves have to choose a player to kill unanimously?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer choose a player to see his identity?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill each other in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff provide a summary to persuade other players to vote in alignment with him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote for one Sheriff in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Guard able to save themselves during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Guard able to protect themselves during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers vote to eliminate a player during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves choose a player to kill in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there a voting phase in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves win the game if all Werewolves are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the game won by the Werewolves if all Villagers are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard protect themselves from the Werewolves' attack?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the discussion phase conducted before the voting phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill two players in one night?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if the number of remaining Werewolves equals the number of Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves know who the Seer is?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers win the game if all Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save himself from being killed?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves recognize each other in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves kill a player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an announcement phase in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see the Werewolf who was chosen?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers change their vote during the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves know each other?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the players vote to eliminate one player in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the guard be killed by the Werewolves in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save the same player two nights in a row?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be saved by the Guard two nights in a row?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the first speaker?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves recognize each other during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there only two Werewolves in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff elected in the announcement phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill a player who is saved by the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the goal of the Werewolves to eliminate the Seer first?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves choose not to kill anyone in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard save themselves in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the role of any player in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed in the night round if the Guard chooses them to be saved?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see the identity of the player elected as Sheriff?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers vote for the Sheriff in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the discussion phase done in a specific order?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves vote for themselves during the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the player who receives the most votes eliminated during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there more Werewolves than Seer, Guard, and Villagers combined?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer be killed by the Werewolves in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard know who the Werewolves are in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the last speaker in the discussion phase the Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the power to decide who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves choose not to kill anyone at night?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an election phase during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves win if there is an equal number of Werewolves and Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save themself in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save themselves from being killed in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is an announcement made if a player is killed and not saved?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the announcement phase always come after the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff choose the next speaker in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there a discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard save a player without knowing who is chosen by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose one player to see if they are a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose which player starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves be killed by another Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do Werewolves recognize each other in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there always a consensus among the Werewolves on who to kill?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be saved by the Guard in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the final speech in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard choose themselves as the player to save?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the result of the Guard's action at night?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the game end if all Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer know who the Werewolves are?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves win the game if all the Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff provide a summary to persuade other players to vote with him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do players run for Sheriff in the first day?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves communicate with each other privately?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be assigned the role of both a Werewolf or a Seer?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff choose a player to ban him from speaking.?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer choose one player to save during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves win the game if all Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the voting phase conducted after the announcement phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be killed by both the Werewolves and the Guard in the same night?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save a player who is chosen by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill more than one player in one night?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the announcement phase occur before the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote for the Sheriff in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves choose themselves as the player to kill?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves kill a player every night?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves know each other during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves pretend to be Villagers during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase always followed by the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the announcement phase come before the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be saved twice in one night?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there three Villagers in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose a player to succeed them if they die?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there more Werewolves than Villagers in the game?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Seer, Guard, and Villagers win if all Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save themselves in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers save the player with the most votes in the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves win if the number of Werewolves equals the number of Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose one player to save in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer see if a player is a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the Seer, Guard, and Villagers win the game if all Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers have any special actions during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the player with the most votes get killed at night?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player choose not to vote in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see if a player is a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Seer able to see if a player is a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an election phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Seer's role revealed to everyone?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill the Guard if they guess who the Guard is?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a werewolf be protected by a Guard?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Villagers allowed to discuss who might be the Werewolves during the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "In the announcement phase, will the name of the player killed by the Werewolves be revealed?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff a special certification that conflicts with players' roles?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers vote for themselves in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase the first phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an election phase in the day round after the announcement phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves choose their target by communicating with each other?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save themselves during the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Are the Werewolves eliminated if all the Villagers are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers become the Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Werewolves the only ones who vote in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Villager have any actions during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer choose not to see a player's identity in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose the player who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "During the day round, is it possible for an election phase after the announcement phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose to see if a player is a Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see if a player is a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do players vote for one player in the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill a player without consensus if they cannot agree on who to kill?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves vote to kill a player if they fail to agree on a target?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Guard know who is chosen by the Werewolves during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer choose a player to identify in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win if all Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose one player to see if they are a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Werewolves allowed to vote for themselves during the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player who is killed and saved last night be announced as 'no player was killed'?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff provide a summary to persuade other players to vote with him in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase performed before the discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff allowed to vote in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill no one during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard have any actions during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill themselves in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there an election phase after the announcement phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves know each other in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save multiple players in one night?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Guard aware of who is chosen by the Werewolves to kill?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Seer responsible for choosing which player to kill during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Are the Werewolves eliminated if the number of remaining Seer, Guard, and Villagers is equal to the number of remaining Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer have to reveal their findings to all players?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there a summary speech given by the Sheriff in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there a specific order in which players speak during the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers have the power to vote for the Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Seer, Guard, and Villagers win the game if all Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the player who receives the most votes get killed in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the player with the most votes be killed during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers eliminate a player in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be killed by the Werewolves even if they were previously saved by the Guard?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the player with the most votes eliminated in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the election phase take place in every day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers do nothing during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves communicate with each other during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves know each other in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Should the Sheriff provide a summary to persuade other players?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer have any actions during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there more Villagers than Werewolves in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose to see the identity of the same player for multiple nights?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the role of the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Guard have to choose a player to save every night?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the players choose not to vote during the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers save each other during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed even if they were saved by the Guard?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save the player who receives the most votes in the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer choose themselves to see their role in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Will a player who is killed by the Werewolves and also saved by the Guard on the same night die?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff persuade other players to vote in alignment with him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the result of the Werewolves' killing in the announcement phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves choose the player to kill by voting?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote for a player in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard choose the player who was killed in the night round as the player to save?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves choose a player to kill in the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player who is killed by the Werewolves be revived?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be both a Werewolf and the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have a discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers do anything during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have any special actions in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer choose a player to save in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers do anything in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves vote for the player to be killed in agreement?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff chosen based on the number of votes they receive in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff elected through voting?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if all Werewolves are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill a player who was saved by the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there four roles in the Werewolf game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard save a player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers vote to choose the player to eliminate?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is it possible for player_1 to be the Sheriff in the first day?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers communicate with each other during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Seer the only one who can know the identity of the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see the identity of a player chosen by the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there an election phase after the announcement phase on the second day?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer have the ability to see if a player is a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard save one player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase performed after the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves always succeed in killing a player every night?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers participate in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer win the game if all the Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the Werewolves win if all the Seer, Guard, and Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the exact identity of a player during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save themselves from being killed by the Werewolves in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers win the game if all the Seer, Guard, and Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an election phase after the announcement phase in the first day?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the player with the most Werewolves' votes get killed in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers take any action during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers discuss who might be the Werewolves in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the Seer see if a player is a Seer?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers be killed by the Seer?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill a player who is already dead?",
+        "answer": "No"
+    },
+    {
+        "question": "Does each player have a hidden role?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an announcement phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save themselves from being killed by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are all players required to speak in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the election for Sheriff held every day?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves know who each other are?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves choose to not kill any player in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the announcement phase included in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see if they are a Villager in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have a special power in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Sheriff have the right to choose a player to succeed him if he dies?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers kill a player during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Guard know who is chosen by the Werewolves to save?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed by both Werewolves and votes in the same night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there an announcement of last night's result in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Seer's role revealed to other players?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save another player from being killed by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Guard able to save themselves from being killed?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers take any action in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see the same player's role more than once in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed by the Werewolves without any votes?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves win if all Seer, Guard, and Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard choose one player to save without knowing who is chosen by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be both the Seer and the Werewolf?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff choose the player to start the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers see the results of the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the elected Sheriff have the authority to choose who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the Werewolves win the game if the number of remaining Werewolves is equal to the number of remaining Villagers?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Sheriff elected in the announcement phase during the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there a voting phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers save the same player they saved on the previous night?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Werewolves allowed to vote for the same player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose a player to succeed him if he dies?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Villager take any actions in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see if the Guard is a Werewolf?",
+        "answer": "No"
+    },
+    {
+        "question": "Do players vote for one Sheriff in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there a possibility that no player is killed during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Guard a part of the Werewolf team?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the game over if all the Werewolves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose themselves as the player to see if they are a Werewolf in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Werewolf game based on text conversations?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers have any actions during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves choose who to kill by voting?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the next round's discussion starter?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer have the ability to see if a player is a werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer know who the Guard is?",
+        "answer": "No"
+    },
+    {
+        "question": "Is an election phase held after the announcement phase on the first day?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the starting player in the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer save themselves in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do players vote for the Sheriff in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be eliminated if they receive the most votes in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff a special certification that does not conflict with the players' roles?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves be eliminated if all Seer, Guard, and Villagers are still alive?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard know who is chosen by the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see if the Guard saves a player?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves vote to kill a player during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there two Werewolves in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff vote for themselves in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose which player starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be killed by the Werewolves if they were saved by the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there more Werewolves than Villagers?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer save players from being killed by the Werewolves in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Are the roles of the players revealed at the beginning of the game?",
+        "answer": "No"
+    },
+    {
+        "question": "Will there be a player killed if there is no consensus among the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see the role of the player they choose in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Seer and the Guard have the same abilities?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff choose a player to succeed him if he dies in the subsequent game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save themselves during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers choose one player to save during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Are the Werewolves the only ones who win if their numbers equal the number of remaining Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill multiple players in one night?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer know the identity of the player they choose?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Guard have the ability to save a player?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the discussion phase conducted before the voting phase in the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves choose one player to kill in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer see the identity of one player during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose a player to see if they are a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be killed in the night round without receiving the most votes?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the game won by the Villagers if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be a Werewolf and the Seer at the same time?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer choose a player to see if they are a Villager?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers win if they eliminate all the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard win the game when the number of remaining Seer, Guard, and Villagers is equal to the number of remaining Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves choose one player to save in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill during the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is it possible for the Guard to save the same player two nights in a row?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the role of other players in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers recognize each other in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is it possible for the Villagers to have other identities in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard know who the Werewolves are?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Sheriff elected by the players based on their statements?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff be a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers choose not to run for Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see if a player is a Villager?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill each other in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves know who the Guard is?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves vote for the same player they chose to kill in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves always choose to kill the same player in every night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there more Werewolves than Seer and Guard combined?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers do nothing in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is it possible to have Werewolves among the players claiming to be Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard have the ability to protect a player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the number of Werewolves equal to the number of Seer, Guard and Villagers when the Werewolves win the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase after the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there only four initial roles in the Werewolf game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there two Werewolves in the Werewolf game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save another player from being killed?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the game alternate between the night round and the day round until one side wins the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can players decide whether or not to run for Sheriff in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose one player to see if they are a Villager?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer choose one player to see if they are a Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves win the game if all the Seer, Guard, and Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer know the role of the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there three werewolves in the game?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have a special role?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves have to choose the same player to kill?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have any special abilities in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have any special abilities?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the players choose not to vote in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the true identity of the players?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer choose a different player each night to see if they are a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose a player to see if they are a Villager?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be both a Werewolf and a Seer?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Villagers vote for themselves in the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed by the Werewolves and saved by the Guard in the same night?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves choose one player to kill during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose the first speaker for the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do players take turns speaking in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there a Doctor role in our Werewolf game?",
+        "answer": "No"
+    },
+    {
+        "question": "Do players in the discussion phase vote for the Sheriff?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves win if all players except themselves are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose one player to see if they are a Werewolf in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers vote to kill the Werewolves during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves choose who to kill in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save the same player multiple nights in a row?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff chosen in the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can players vote for themselves during the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Moderator also the host of the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there at least three phases in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer know the true identity of a player in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there a Witch role in the Werewolf game?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill more than one player in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer save a player during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the next starting player?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer reveal their identity during the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Guard choose one player to save in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff choose a player to succeed him if he is eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the werewolves choose their victim during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers change their votes in the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there only four roles in the game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers have any special abilities during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is it necessary for the Seer to see if they are a Werewolf?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves discuss together to choose a player to kill?",
+        "answer": "No"
+    },
+    {
+        "question": "Do all players vote for one player in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves know each other's identity?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard be killed by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the player with the most votes get eliminated in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff chosen by the players in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Guard save four players at once?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the announcement made before the discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the power to choose who to eliminate during the day round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill more than one player during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save the same player who was killed by the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves recognize each other in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the starting player in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the role of the Guard during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see who the Guard chooses to save?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard choose themselves to save?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if the number of remaining Werewolves and Seer, Guard and Villagers are equal?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers participate in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill multiple players in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves know the identity of the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Do villagers have any special abilities?",
+        "answer": "No"
+    },
+    {
+        "question": "Are there four players in the Werewolf game?",
+        "answer": "No"
+    },
+    {
+        "question": "Can players decide whether or not to run for Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff provide a summary to persuade other players to vote for him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the results of the night round before making their choice?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save two players at once?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see if the Guard saved a player in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save themselves from being killed?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can players choose not to vote in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard choose a player to save in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player be a Werewolf and a Seer at the same time?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Sheriff elected during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the players running for Sheriff allowed to state their reasons during the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Seer's role determined randomly?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff change the order of player speeches in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the role assignment of Werewolves and Villagers random?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill a player who has already been killed?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save the same player twice in a row?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there an election phase after the announcement phase on the first day?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the starting player in the next round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if all Villagers are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves vote for someone who is not a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the elected Sheriff have the authority to choose a player to succeed him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff choose which player starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves win if all Werewolves are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the announcement phase come before the discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see if the Guard is a Werewolf in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the discussion phase before the voting phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is there an election phase after the announcement phase in the first day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard know who is chosen by the Werewolves in the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Is there an announcement of last night's result during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Werewolves the winners if all of them are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves choose a player to kill unanimously?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer have the ability to know the role of any player?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer know the identity of all the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Will the Werewolves kill one player in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers run for Sheriff in the election phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff the only player who can provide a summary to persuade others to vote with him?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose themselves to see their own role?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Seer see if a player is the Guard?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the game based on text conversations?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose a player to see if they are a Werewolf during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can players communicate through messages other than text?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill the Guard in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers and Werewolves discuss in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer know that they are not a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the players discuss who might be the Werewolves in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the announcement phase in the day round include the result of last night's events?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff responsible for choosing which player starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff responsible for starting the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Seer choose a player to save?",
+        "answer": "No"
+    },
+    {
+        "question": "Can a player be killed in the night round without any votes?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the exact role of the player they choose?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Sheriff vote in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase conducted before the discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves vote for the Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers eliminate a player during the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win if the number of remaining Werewolves is equal to the number of Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer see the role of a player who is killed at night?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill the Seer during the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Villagers win if the number of remaining werewolves equals the number of remaining players?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves announce who they voted for?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the Sheriff the last speaker in the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win the game if all Seer, Guard, and Villagers are eliminated?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Villagers win the game if the number of remaining Werewolves is zero?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will the player who receives the most votes be eliminated in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win if there are no Werewolves remaining?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Werewolves vote to choose the player to kill?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Villagers vote to eliminate the Seer in the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do the Werewolves win if all Werewolves are eliminated?",
+        "answer": "No"
+    },
+    {
+        "question": "Is the announcement phase always after the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the player who starts the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the voting phase always happen after the discussion phase in the day round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "In the discussion phase, does each remaining player speak only once to discuss who might be the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the announcement phase always performed before the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "During the discussion phase, do players need to do their best to convince others to eliminate players from their opposing camp during the voting phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is the Sheriff the first speaker in the discussion phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Werewolves kill more than one player in a night round?",
+        "answer": "No"
+    },
+    {
+        "question": "Do the Villagers have the ability to vote for the Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can a player who is saved by the Guard be successfully killed by the Werewolves during the night round?",
+        "answer": "No"
+    },
+    {
+        "question": "During the discussion phase, do players need to do their best to convince others to eliminate players from their same camp during the voting phase?",
+        "answer": "No"
+    },
+    {
+        "question": "Can the Guard save one player without knowing who is chosen by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are there any special roles in the Werewolf game?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Werewolves kill more than one player in a single night?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the Seer have the ability to identify if a player is a Werewolf?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Seer choose any player to identify in the night round?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard have the ability to save a player from being killed by the Werewolves?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Guard know the identity of the player chosen by the Werewolves?",
+        "answer": "No"
+    },
+    {
+        "question": "Does the game alternate between night rounds and day rounds?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can players run for the position of Sheriff?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Does the Sheriff have the authority to choose the starting player for the next round of discussions?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can players use deception and concealment strategies to persuade other players during the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Can the Sheriff provide a summary to persuade other players during the discussion phase?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Are the Werewolves the winners if the number of remaining Werewolves is equal to the number of remaining Seer, Guard, and Villagers?",
+        "answer": "Yes"
+    }
+]
