@@ -73,12 +73,14 @@ sh fine-tune.sh
 ```
 
 *3. Simulations*
+
 After configuring the model weight path, game log storage path, result storage path, and setting the random seed in ```main.py```, run the following command. We currently support ChatGLM3-6B, Mistral-7B, Baichuan2-13B, InternLM-20B, Yi-34B, GLM-3, GLM-4, and GPT-4.
 ```
 python main.py
 ```
 
 *4. Human Evaluation*
+
 Run the following command and the game log and evaluation result will be saved in ```logs``` and ```results``` by default.
 ```
 python human_eval.py
