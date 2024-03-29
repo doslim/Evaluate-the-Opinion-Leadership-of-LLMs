@@ -21,7 +21,7 @@ class Logging():
 
     def log(self, log_path, level='DEBUG'): 
         logger = logging.getLogger()
-        levle = getattr(logging,level)
+        level = getattr(logging,level)
         logger.setLevel(level)
         if not logger.handlers: 
             sh = logging.StreamHandler()

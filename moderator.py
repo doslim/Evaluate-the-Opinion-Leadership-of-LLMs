@@ -1,77 +1,216 @@
-# The class for moderator
-# Author: Silin Du
-# Date: 2024-1
-# Version: 2.0
-
-
 import time
 from logger import Logging
-from transformers import AutoModelForCausalLM
+from transformers import AutoModelForCausalLM, pipeline, AutoModel, BitsAndBytesConfig
 import random
-from role import Villager, Werewolf, Guard, Seer 
+from role import Villager, Werewolf, Guard, Seer, HumanPlayer
+from copy import deepcopy
 import os
 import json
 import numpy as np
 import pickle as pkl
 from peft import PeftModel
 
+
 class GameModerator:
-    def __init__(self, model_path: str, log_path: str, result_path = None, num_players = 7, peft_path = None) -> None:
+    def __init__(self, model_path: str, log_path: str, result_path = None, num_players = 7, peft_path = None, game_setting = 2) -> None:
+        '''
+        game_setting
+        1: Homogeneous evaluation: All players are the same LLM-based agents. We do not specify the role of the Sheriff
+        2: Heterogeneous evaluation: The sheriff is implemented by the selected LLM-based agents while other players are the same LLM-based agents (default to be LlaMA-7B). We can specify the role of the Sheriff in the assign_roles() method. 
+        3: Human evaluation: One player is a human while other players are the same LLM-based agents. The Sheriff MUST BE a LLM-based agent.
+        '''
+
+
         self.num_players = num_players
         self.log_path = log_path
         self.model_path = model_path
         self.result_path = result_path
         self.game_log = {} 
+        self.temp_game_log = []
         self.start_time = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
-        if model_path in ['chatGLM', 'gpt-3.5', 'gpt-4']:
+        self.game_setting = game_setting
+
+        if model_path in ['glm-3', 'glm-4', 'gpt-3.5', 'gpt-4']:
             self.model = None
-        else:
+        elif 'Baichuan' in model_path:
             self.model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True, load_in_8bit = True, device_map = 'auto')
-        self.logger = Logging().log(log_path, level='DEBUG')
+        elif 'Yi' in model_path:
+            # For LlamaForCausalLM, we leverage the text generation pipeline
+            self.model = pipeline("text-generation", model_path, device_map = 'auto')
+        elif 'Mistral' in model_path:
+            quantization_config = BitsAndBytesConfig(load_in_8bit = True)
+            self.model = AutoModelForCausalLM.from_pretrained(model_path, device_map = 'auto', quantization_config = quantization_config)
+        elif 'chatglm3' in model_path:
+            self.model = AutoModel.from_pretrained(self.model_path, device_map = 'auto', trust_remote_code = True)
+            if peft_path is None:
+                self.model = self.model.quantize(8)
+        elif 'internlm' in model_path:
+            quantization_config = BitsAndBytesConfig(load_in_8bit = True)
+            self.model = AutoModelForCausalLM.from_pretrained(self.model_path, device_map="auto", trust_remote_code=True, quantization_config = quantization_config)
+            self.model = self.model.eval()
+
+        if peft_path is not None:
+            # It means we are using a fine-tuned LLM.
+            self.model = PeftModel.from_pretrained(self.model, peft_path)
+
+        if self.game_setting == 1:
+            self.reference_model_path = model_path
+            self.reference_model = self.model
+            self.logger = Logging().log(log_path, level='DEBUG')
+        elif self.game_setting == 2:
+            # self.reference_model_path = '../LLM_weight/chatglm3-6b'
+            # self.reference_model = AutoModel.from_pretrained(self.reference_model_path, device_map = 'auto', trust_remote_code = True)
+            # self.reference_model = self.reference_model.quantize(8)
+            self.reference_model = None
+            self.reference_model_path = 'glm-3'
+            self.logger = Logging().log(log_path, level='DEBUG')
+        elif self.game_setting == 3:
+            self.logger = Logging().log(log_path, level='CRITICAL')
+
+        
 
         self.decision_and_reliability = {}
 
         self.peft_path = peft_path
-        if peft_path is not None:
-            self.model = PeftModel.from_pretrained(self.model, peft_path)
 
 
-    def assign_roles(self, random_seed = None, villager_path = None, wolf_path = None, guard_path = None, witch_path = None, seer_path = None) -> None:
-
+    def assign_roles(self, random_seed = None, sheriff_role = None, villager_path = None, wolf_path = None, guard_path = None, seer_path = None) -> None:
+        '''
+        We can specify the role of the sheriff
+        '''
         # Initialization
-        if villager_path is None:
-            self.villager_1 = Villager(self.model_path, self.log_path, True, self.model)
-            self.villager_2 = Villager(self.model_path, self.log_path, True, self.model)
-            self.villager_3 = Villager(self.model_path, self.log_path, True, self.model)
-        else:
-            self.villager_1 = Villager(villager_path, self.log_path)
-            self.villager_2 = Villager(villager_path, self.log_path)
-            self.villager_3 = Villager(villager_path, self.log_path)
+        if self.game_setting == 1:
+            if villager_path is None:
+                self.villager_1 = Villager(self.model_path, self.log_path, True, self.model)
+                self.villager_2 = Villager(self.model_path, self.log_path, True, self.model)
+                self.villager_3 = Villager(self.model_path, self.log_path, True, self.model)
+            else:
+                self.villager_1 = Villager(villager_path, self.log_path)
+                self.villager_2 = Villager(villager_path, self.log_path)
+                self.villager_3 = Villager(villager_path, self.log_path)
 
 
-        if wolf_path is None:
-            self.werewolf_1 = Werewolf(self.model_path, self.log_path, True, self.model)
-            self.werewolf_2 = Werewolf(self.model_path, self.log_path, True, self.model)
-        else:
-            self.werewolf_1 = Werewolf(wolf_path, self.log_path)
-            self.werewolf_2 = Werewolf(wolf_path, self.log_path)
+            if wolf_path is None:
+                self.werewolf_1 = Werewolf(self.model_path, self.log_path, True, self.model)
+                self.werewolf_2 = Werewolf(self.model_path, self.log_path, True, self.model)
+            else:
+                self.werewolf_1 = Werewolf(wolf_path, self.log_path)
+                self.werewolf_2 = Werewolf(wolf_path, self.log_path)
 
 
-        if guard_path is None:
-            self.guard = Guard(self.model_path, self.log_path, True, self.model)
-        else:
-            self.guard = Guard(guard_path, self.log_path)
+            if guard_path is None:
+                self.guard = Guard(self.model_path, self.log_path, True, self.model)
+            else:
+                self.guard = Guard(guard_path, self.log_path)
 
-        # if witch_path is None:
-        #     self.witch = Witch(self.model_path, self.log_path)
-        # else:
-        #     self.witch = Witch(witch_path, self.log_path)
 
-        if seer_path is None:
-            self.seer = Seer(self.model_path, self.log_path, True, self.model)
-        else:
-            self.seer = Seer(seer_path, self.log_path)
+            if seer_path is None:
+                self.seer = Seer(self.model_path, self.log_path, True, self.model)
+            else:
+                self.seer = Seer(seer_path, self.log_path)
 
+
+        elif self.game_setting == 2:
+            random.seed(random_seed)
+            sheriff_num = random.randint(1,7)
+            if sheriff_role is not None:
+                if sheriff_role == 'Werewolf':
+                    sheriff_num = 4
+                elif sheriff_role == 'Villager':
+                    sheriff_num = 1
+                elif sheriff_role == 'Guard':
+                    sheriff_num = 6
+                else:
+                    sheriff_num = 7
+
+            if villager_path is None:
+                self.villager_1 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.villager_2 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.villager_3 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.villager_1 = Villager(villager_path, self.log_path)
+                self.villager_2 = Villager(villager_path, self.log_path)
+                self.villager_3 = Villager(villager_path, self.log_path)
+
+
+            if wolf_path is None:
+                self.werewolf_1 = Werewolf(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.werewolf_2 = Werewolf(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.werewolf_1 = Werewolf(wolf_path, self.log_path)
+                self.werewolf_2 = Werewolf(wolf_path, self.log_path)
+
+
+            if guard_path is None:
+                self.guard = Guard(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.guard = Guard(guard_path, self.log_path)
+
+
+            if seer_path is None:
+                self.seer = Seer(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.seer = Seer(seer_path, self.log_path)
+
+            if sheriff_num <= 3:
+                self.villager_1 = Villager(self.model_path, self.log_path, True, self.model)
+            elif sheriff_num <= 5:
+                self.werewolf_1 = Werewolf(self.model_path, self.log_path, True, self.model)
+            elif sheriff_num <= 6:
+                self.guard = Guard(self.model_path, self.log_path, True, self.model)
+            else:
+                self.seer = Seer(self.model_path, self.log_path, True, self.model)
+
+        elif self.game_setting == 3:
+            logger_level = 'ERROR'
+            random.seed(random_seed)
+            self.human_player_num = random.randint(1,7)
+            if villager_path is None:
+                self.villager_1 = Villager(self.model_path, self.log_path, True, self.model, logger_level)
+                self.villager_2 = Villager(self.model_path, self.log_path, True, self.model, logger_level)
+                self.villager_3 = Villager(self.model_path, self.log_path, True, self.model, logger_level)
+            else:
+                self.villager_1 = Villager(villager_path, self.log_path, logger_level = logger_level)
+                self.villager_2 = Villager(villager_path, self.log_path, logger_level = logger_level)
+                self.villager_3 = Villager(villager_path, self.log_path, logger_level = logger_level)
+
+
+            if wolf_path is None:
+                self.werewolf_1 = Werewolf(self.model_path, self.log_path, True, self.model, logger_level)
+                self.werewolf_2 = Werewolf(self.model_path, self.log_path, True, self.model, logger_level)
+            else:
+                self.werewolf_1 = Werewolf(wolf_path, self.log_path, logger_level = logger_level)
+                self.werewolf_2 = Werewolf(wolf_path, self.log_path, logger_level = logger_level)
+
+
+            if guard_path is None:
+                self.guard = Guard(self.model_path, self.log_path, True, self.model, logger_level)
+            else:
+                self.guard = Guard(guard_path, self.log_path, logger_level = logger_level)
+
+
+            if seer_path is None:
+                self.seer = Seer(self.model_path, self.log_path, True, self.model, logger_level)
+            else:
+                self.seer = Seer(seer_path, self.log_path, logger_level = logger_level)
+
+            if self.human_player_num <= 3:
+                self.villager_1 = HumanPlayer(self.log_path)
+                self.villager_1.role = 'Villager'
+                self.human_player = self.villager_1
+            elif self.human_player_num <= 5:
+                self.werewolf_1 = HumanPlayer(self.log_path)
+                self.werewolf_1.role = 'Werewolf'
+                self.human_player = self.werewolf_1
+            elif self.human_player_num <= 6:
+                self.guard = HumanPlayer(self.log_path)
+                self.guard.role = 'Guard'
+                self.human_player = self.guard
+            else:
+                self.seer = HumanPlayer(self.log_path)
+                self.seer.role = 'Seer'
+                self.human_player = self.seer
+            self.sheriff = None
         self.players = [self.werewolf_1, self.werewolf_2, self.villager_1, self.villager_2, self.villager_3, self.guard, self.seer]
         if random_seed is not None:
             random.seed(random_seed)
@@ -94,9 +233,18 @@ class GameModerator:
         self.player_7 = self.players[6]
         self.player_7.set_player_id(7)
 
-        self.sheriff = None
+        if self.game_setting == 2:
+            if sheriff_num <= 3:
+                self.sheriff_id = self.villager_1.player_id
+            elif sheriff_num <= 5:
+                self.sheriff_id = self.werewolf_1.player_id
+            elif sheriff_num <= 6:
+                self.sheriff_id = self.guard.player_id
+            else:
+                self.sheriff_id = self.seer.player_id
+            self.sheriff = self.players[self.sheriff_id - 1]
 
-        role_summary = { \
+            role_summary = { \
               "player_1": self.player_1.role,
               "player_2": self.player_2.role,
               "player_3": self.player_3.role,
@@ -104,11 +252,29 @@ class GameModerator:
               "player_5": self.player_5.role,
               "player_6": self.player_6.role,
               "player_7": self.player_7.role,
+              "sheriff": self.sheriff.player_id
         }
+        elif self.game_setting == 3: 
+            role_summary = { \
+              "player_1": self.player_1.role,
+              "player_2": self.player_2.role,
+              "player_3": self.player_3.role,
+              "player_4": self.player_4.role,
+              "player_5": self.player_5.role,
+              "player_6": self.player_6.role,
+              "player_7": self.player_7.role,
+              "human_player": self.human_player.player_id
+        }
+            self.human_player_id = self.human_player.player_id
+
+        
 
         self.logger.info(role_summary)
         self.decision_and_reliability['role_summary'] = [i.role for i in self.players]
         self.game_log['role_summary'] = role_summary
+        if self.game_setting == 3: 
+            self.decision_and_reliability['human_player'] = self.human_player_id
+
         self.save_log()
         self.all_players = [1, 2, 3, 4, 5, 6, 7]
         self.remaining_players = [1, 2, 3, 4, 5, 6, 7]
@@ -117,32 +283,124 @@ class GameModerator:
         self.werewolf_2.fact.append(f'player_{self.werewolf_1.player_id} is your teammate and is a Werewolf.' )
 
 
-    def assign_sheriff(self):
-        if self.random_seed is not None:
-            random.seed(self.random_seed)
-        self.sheriff_id = random.choice(self.remaining_players)
-        self.sheriff = self.players[self.sheriff_id - 1]
-        self.sheriff.fact.append('You are selected as the Sheriff, which can determine the order of statement, summarize the discussion and provide advice for voting at last.')
-        msg = f"After discussion and a vote, player_{self.sheriff_id} was selected as the Sheriff, which can determine the order of statement, summarize the discussion and provide advice for voting at last."
+    def assign_sheriff(self, id = None):
+        if id is None:
+            if self.random_seed is not None:
+                random.seed(self.random_seed)
+            self.sheriff_id = random.choice(self.get_available_candidate_sherrif())
+            self.sheriff = self.players[self.sheriff_id - 1]
+        else:
+            self.sheriff = self.players[id - 1]
+            self.sheriff_id = self.sheriff.player_id
+        self.sheriff.fact.append('You are selected as the Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last.')
+        msg = f"After discussion and a vote, player_{self.sheriff_id} was selected as the Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last."
         self.announcement(msg, self.sheriff_id)
         self.logger.info(msg)
 
 
-    def convey_sheriff(self, time_str: str):
+    def convey_sheriff(self, time_str: str, random_select = False):
         if self.random_seed is not None:
             random.seed(self.random_seed)
         previous_sheriff_id = self.sheriff.player_id
-        self.sheriff_id = random.choice(self.remaining_players)
-        self.sheriff = self.players[self.sheriff_id - 1]
+        if random_select:
+            self.sheriff_id = random.choice(self.get_available_candidate_sherrif())
+        else: 
+            # choose the next sheriff according to the reliability score.
+            next_sheriff_id = -1
+            max_reliability = -10
+            for player_id in self.get_available_candidate_sherrif():
+                if self.sheriff.reliability[f'player_{player_id}'] > max_reliability:
+                    next_sheriff_id = player_id
+                    max_reliability = self.sheriff.reliability[f'player_{player_id}']
+            self.sheriff = self.players[next_sheriff_id - 1]
+            self.sheriff_id = self.sheriff.player_id
 
         if 'day' in time_str:
-            msg = f'The Sheriff, player_{previous_sheriff_id}, was eliminated in {time_str}. It selects you as the next Sheriff, which can determine the order of statement, summarize the discussion and provide advice for voting at last.'
+            msg = f'The Sheriff, player_{previous_sheriff_id}, was eliminated in {time_str}. It selects you as the next Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last.'
         else:
-            msg = f'The Sheriff, player_{previous_sheriff_id}, was killed in {time_str}. It selects you as the next Sheriff, which can determine the order of statement, summarize the discussion and provide advice for voting at last.'
+            msg = f'The Sheriff, player_{previous_sheriff_id}, was killed in {time_str}. It selects you as the next Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last.'
         self.sheriff.fact.append(msg)
-        msg = f"player_{previous_sheriff_id} selected player_{self.sheriff_id} as the next Sheriff, which can determine the order of statement, summarize the discussion and provide advice for voting at last."
+        msg = f"player_{previous_sheriff_id} selected player_{self.sheriff_id} as the next Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last."
         self.announcement(msg)
         self.logger.info(msg)
+
+
+    def elect_sheriff(self):
+        self.game_log['election'] = {}
+        self.temp_game_log = []
+        
+        if self.random_seed is not None:
+            random.seed(self.random_seed)
+        self.sheriff_candidate_id = random.sample(self.get_available_candidate_sherrif(), 3)
+        self.sheriff_candidate = [f'player_{i}' for i in self.sheriff_candidate_id]
+        msg = f'{self.sheriff_candidate} are running for the Sheriff. Now they will make a statement in turn.'
+        self.temp_game_log.append(msg)
+        self.announcement(msg)
+
+        for player_id in self.sheriff_candidate_id:
+            available_players = self.get_remaining_players()
+            statement = self.players[player_id-1].election_statement(available_players)
+            self.players[player_id - 1].save_log(self.start_time)
+            if statement is None:
+                transferred_statement = f'During the election phase of day 1, player_{player_id} said nothing.'
+                self.temp_game_log.append(transferred_statement)
+                self.public_information(transferred_statement, player_id)
+                self.game_log['election'] = self.temp_game_log
+                self.save_log()
+                continue
+            else:
+                transferred_statement = f'During the election phase of day 1, player_{player_id} said: "{statement}".'
+                self.temp_game_log.append(transferred_statement)
+                self.public_information(transferred_statement, player_id)
+                self.game_log['election'] = self.temp_game_log
+                self.save_log()
+
+        voting_results = {}
+        voting_record = {}
+        self.statement_order = self.remaining_players
+        for player_id in self.statement_order:
+            available_players = self.get_remaining_players()
+            selected_id = self.players[player_id-1].election_vote(self.sheriff_candidate, available_players)
+            self.players[player_id - 1].save_log(self.start_time)
+            voting_record[player_id] = selected_id
+            if selected_id != -1:
+                if selected_id not in voting_results:
+                    voting_results[selected_id] = []
+                voting_results[selected_id].append(f'player_{player_id}')
+        
+        # announce the voting results
+        for player_id in self.statement_order:
+            selected_id = voting_record[player_id]
+            if selected_id == -1:
+                msg = f'During the election phase of day 1, player_{player_id} did not vote.'
+                self.temp_game_log.append(msg)
+                self.announcement(msg, player_id)
+                self.game_log['election'] = self.temp_game_log
+            else:
+                msg = f'During the election phase of day 1, player_{player_id} voted for player_{selected_id}.'
+                self.temp_game_log.append(msg)
+                self.announcement(msg, player_id)
+                self.game_log['election'] = self.temp_game_log
+                self.save_log()
+        
+        self.temp_game_log.append(voting_results)
+        self.game_log['election'] = self.temp_game_log
+        self.save_log()
+
+        temp_id = -1
+        max_votes = -1
+        flag = False
+        for player_id in voting_results:
+            if len(voting_results[player_id]) > max_votes:
+                temp_id = player_id
+                max_votes = len(voting_results[player_id])
+                flag = True
+            elif len(voting_results[player_id]) == max_votes:
+                flag = False
+        if flag:
+            self.assign_sheriff(id = temp_id)
+        else:
+            self.assign_sheriff(id = temp_id)
 
 
     def organize_night_action(self, round) -> None:
@@ -199,13 +457,18 @@ class GameModerator:
                 self.announcement(f'In night {round} round, player_{killed_player} was killed.')
                 self.remaining_players.remove(killed_player)
 
-                if (self.sheriff is not None) and (killed_player == self.sheriff.player_id):
-                    time_str = f'night {round}'
-                    self.convey_sheriff(time_str)
+                if self.game_setting == 1:
+                    if (self.sheriff is not None) and (killed_player == self.sheriff.player_id):
+                        time_str = f'night {round}'
+                        self.convey_sheriff(time_str)
             else:
                 self.temp_game_log.append(f'In night {round}, player_{killed_player} was selected by Werewolves and Guard')
                 self.temp_game_log.append(f'In night {round} round, no player was killed.')
                 self.announcement(f'In night {round} round, no player was killed.')
+        else:
+            self.temp_game_log.append(f'In night {round} round, no player was killed.')
+            self.announcement(f'In night {round} round, no player was killed.')
+
 
         self.game_log[round]['night'] = self.temp_game_log
         # self.game_log[round]['remaining_player'] = self.get_remaining_players()
@@ -243,10 +506,20 @@ class GameModerator:
             self.save_log()
 
         voting_results = {}
+        voting_record = {}
         for player_id in self.statement_order:
             available_players = self.get_remaining_players()
             selected_id = self.players[player_id-1].vote(round, available_players)
             self.players[player_id - 1].save_log(self.start_time)
+            voting_record[player_id] = selected_id
+            if selected_id != -1:
+                if selected_id not in voting_results:
+                    voting_results[selected_id] = []
+                voting_results[selected_id].append(f'player_{player_id}')
+        
+        # announce the voting results
+        for player_id in self.statement_order:
+            selected_id = voting_record[player_id]
             if selected_id == -1:
                 msg = f'In day {round} round, player_{player_id} did not vote.'
                 self.temp_game_log.append(msg)
@@ -259,10 +532,6 @@ class GameModerator:
             self.game_log[round]['day'] = self.temp_game_log
             self.save_log()
 
-            if selected_id not in voting_results:
-                voting_results[selected_id] = []
-            voting_results[selected_id].append(f'player_{player_id}')
-        
         self.temp_game_log.append(voting_results)
         self.game_log[round]['day'] = self.temp_game_log
         self.save_log()
@@ -284,7 +553,7 @@ class GameModerator:
                 time_str = f'day {round}'
                 self.convey_sheriff(time_str)
         else:
-            msg = f'In day {round} round, more than two players got the same votes and no player was eliminated.'
+            msg = f'In day {round} round, more than two players got the most votes and no player was eliminated.'
 
         self.temp_game_log.append(msg)
         self.announcement(msg)
@@ -307,7 +576,7 @@ class GameModerator:
 
         self.decision_and_reliability[round] = {}
         self.decision_and_reliability[round]['sheriff_id'] = self.sheriff_id
-        self.decision_and_reliability[round]['remaining_players'] = self.remaining_players
+        self.decision_and_reliability[round]['remaining_players'] = deepcopy(self.remaining_players)
         self.save_decision_and_reliability()
         self.save_log()
         
@@ -330,12 +599,12 @@ class GameModerator:
                 self.game_log[round]['day'] = self.temp_game_log
                 self.save_log()
                 continue
-
-            transferred_statement = f'In day {round} round, player_{player_id} said: "{statement}".'
-            self.temp_game_log.append(transferred_statement)
-            self.public_information(transferred_statement, player_id)
-            self.game_log[round]['day'] = self.temp_game_log
-            self.save_log()
+            else:
+                transferred_statement = f'In day {round} round, player_{player_id} said: "{statement}".'
+                self.temp_game_log.append(transferred_statement)
+                self.public_information(transferred_statement, player_id)
+                self.game_log[round]['day'] = self.temp_game_log
+                self.save_log()
 
 
         # Now we collect the reliability matrix and decision matrix from available players
@@ -367,21 +636,20 @@ class GameModerator:
 
         # The Sheriff makes a statement
         available_players = self.get_remaining_players()
-        statement = self.sheriff.day_discussion(round, available_players)
+        statement = self.sheriff.day_discussion(round, available_players, sherrif = True)
         self.sheriff.save_log(self.start_time)
         if statement is None:
-            transferred_statement = f'In day {round} round, player_{player_id} said nothing.'
+            transferred_statement = f'In day {round} round, player_{self.sheriff.player_id} said nothing.'
             self.temp_game_log.append(transferred_statement)
-            self.public_information(transferred_statement, player_id)
+            self.public_information(transferred_statement, self.sheriff.player_id)
             self.game_log[round]['day'] = self.temp_game_log
             self.save_log()
-
-
-        transferred_statement = f'In day {round} round, player_{player_id} said: "{statement}".'
-        self.temp_game_log.append(transferred_statement)
-        self.public_information(transferred_statement, self.sheriff.player_id)
-        self.game_log[round]['day'] = self.temp_game_log
-        self.save_log()
+        else:
+            transferred_statement = f'In day {round} round, player_{player_id} said: "{statement}".'
+            self.temp_game_log.append(transferred_statement)
+            self.public_information(transferred_statement, self.sheriff.player_id)
+            self.game_log[round]['day'] = self.temp_game_log
+            self.save_log()
 
 
         # Now begin to vote and collect the reliability and decision matrix again   
@@ -389,26 +657,16 @@ class GameModerator:
         reliability_matrix_post = np.zeros((self.num_players, self.num_players))
 
         voting_results = {}
+        voting_record = {}
         for player_id in self.statement_order:
             available_players = self.get_remaining_players()
             selected_id = self.players[player_id-1].vote(round, available_players)
             self.players[player_id - 1].save_log(self.start_time)
-            if selected_id == -1:
-                msg = f'In day {round} round, player_{player_id} did not vote.'
-                self.temp_game_log.append(msg)
-                self.announcement(msg, player_id)
-            else:
-                decision_matrix_post[player_id-1][selected_id-1] = 1
-                msg = f'In day {round} round, player_{player_id} voted to eliminate player_{selected_id}.'
-                self.temp_game_log.append(msg)
-                self.announcement(msg, player_id)
-                self.game_log[round]['day'] = self.temp_game_log
-                self.save_log()
-
+            voting_record[player_id] = selected_id
+            if selected_id != -1:
                 if selected_id not in voting_results:
                     voting_results[selected_id] = []
                 voting_results[selected_id].append(f'player_{player_id}')
-
 
             reliability = []
             for id in self.all_players:
@@ -421,6 +679,21 @@ class GameModerator:
                     reliability.append(-1)
             reliability_matrix_post[player_id-1] = reliability
         
+        # announce the voting results
+        for player_id in self.statement_order:
+            selected_id = voting_record[player_id]
+            if selected_id == -1:
+                msg = f'In day {round} round, player_{player_id} did not vote.'
+                self.temp_game_log.append(msg)
+                self.announcement(msg, player_id)
+            else:
+                decision_matrix_post[player_id-1][selected_id-1] = 1
+                msg = f'In day {round} round, player_{player_id} voted to eliminate player_{selected_id}.'
+                self.temp_game_log.append(msg)
+                self.announcement(msg, player_id)
+                self.game_log[round]['day'] = self.temp_game_log
+                self.save_log()
+
         self.decision_and_reliability[round]['decision_post'] = decision_matrix_post
         self.decision_and_reliability[round]['reliability_post'] = reliability_matrix_post
         self.save_decision_and_reliability()
@@ -442,11 +715,12 @@ class GameModerator:
         if flag:
             msg = f'In day {round} round, player_{temp_id} had the most votes and was eliminated.'
             self.remaining_players.remove(temp_id)
-            if (self.sheriff is not None) and (temp_id == self.sheriff.player_id):
-                time_str = f'day {round}'
-                self.convey_sheriff(time_str)
+            if self.game_setting == 1:
+                if (self.sheriff is not None) and (temp_id == self.sheriff.player_id):
+                    time_str = f'day {round}'
+                    self.convey_sheriff(time_str)
         else:
-            msg = f'In day {round} round, more than two players got the same votes and no player was eliminated.'
+            msg = f'In day {round} round, more than two players got the most votes and no player was eliminated.'
 
         self.temp_game_log.append(msg)
         self.announcement(msg)
@@ -469,6 +743,8 @@ class GameModerator:
 
     def public_information(self, msg: str, speaker_id: int):
         for player_id in self.remaining_players:
+            if player_id == speaker_id:
+                continue
             self.players[player_id-1].receive_public_info(msg, f'player_{speaker_id}')
 
 
@@ -480,6 +756,15 @@ class GameModerator:
     def get_remaining_players(self) -> list:
         return [f'player_{i}' for i in self.remaining_players]
 
+
+    def get_available_candidate_sherrif(self) -> list:
+        self.available_candidate_sherrif = deepcopy(self.remaining_players)
+        if self.game_setting != 3:
+            return self.available_candidate_sherrif 
+        else:
+            if self.human_player.player_id in self.available_candidate_sherrif:
+                self.available_candidate_sherrif.remove(self.human_player.player_id)
+                return self.available_candidate_sherrif
 
     def get_teammate_id(self, werewolf_id: int) -> int:
         return self.werewolf_id.difference(set([werewolf_id])).pop()
@@ -510,6 +795,19 @@ class GameModerator:
 
 
     def game_end(self):
+
+
+        if self.game_setting == 2:
+            if self.sheriff_id in self.remaining_players:
+                pass
+            else: 
+                return True
+        if self.game_setting == 3:
+            if self.human_player.player_id in self.remaining_players:
+                pass
+            else:
+                return 2
+
         num_villager = 0
         num_werewolf = 0
         for player_id in self.remaining_players:

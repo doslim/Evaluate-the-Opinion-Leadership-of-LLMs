@@ -6,20 +6,26 @@ from eval_ol import play_game_eval, get_metric
 from logger import Logging
 
 
-def eval_opinion_leadership(max_round: int, model_path: str, log_path: str, result_path: str, random_seeds: list, peft_path = None):
+def eval_opinion_leadership(max_round: int, model_path: str, log_path: str, result_path: str, random_seeds: list, peft_path = None, game_setting = 2, sheriff_role = None):
     logger = Logging().log(log_path)
     eval_results = {}
     str_random_seeds = [str(i) for i in random_seeds]
     str_random_seeds = '_'.join(str_random_seeds)
-
+    if sheriff_role is not None:
+        str_random_seeds += f'_{sheriff_role}'
     ratio_list = []
     rel_improvement_list = []
     decision_change_list = []
     for random_seed in random_seeds:
-        date = play_game_eval(max_round, model_path, log_path, result_path, random_seed, peft_path)
+        date = play_game_eval(max_round, model_path, log_path, result_path, random_seed, peft_path, game_setting, sheriff_role)
         result_file = os.path.join(result_path, f'{date}', f'results_{random_seed}.pkl')
-        with open(result_file, 'rb') as f:
-            data = pkl.load(f)
+        try:
+            with open(result_file, 'rb') as f:
+                data = pkl.load(f)
+        except Exception as e:
+            logger.exception("An error occurred: {}".format(e))
+            continue
+
         logger.info(data)
         ratio, rel_improvement, decision_change = get_metric(data)
 
@@ -48,14 +54,61 @@ def eval_opinion_leadership(max_round: int, model_path: str, log_path: str, resu
 
 if __name__ == '__main__':
     max_round = 6
-    model_path = "../LLM_weight/Baichuan2-13B-chat"
-    log_path = './logs/Baichuan2-13B'
-    result_path = "./results/Baichuan2-13B-chat"
-    # peft_path = "./weights/wwqa_train_1453_baichuan2-13B"
-    peft_path = None
-    # model_path = "chatGLM"
+
+    # Mistral-7B
+    # model_path = "../LLM_weight/Mistral-7B-Instruct-v0.2"
+    # log_path = './logs/Mistral-7B-FT'
+    # result_path = "./results/Mistral-7B-FT"
+    # peft_path = "./weights/wwqa_train_1453_mistral-7B"
+    # peft_path = None 
+
+    # Baichuan2-13B
+    # model_path = "../LLM_weight/Baichuan2-13B-chat-v2"
+    # log_path = './logs/Baichuan2-13B-v2'
+    # result_path = "./results/Baichuan2-13B-chat-v2"
+    # sheriff_role = "Werewolf"
+    # peft_path = "./weights/wwqa_train_1453_baichuan2-13B-v2"
+    # peft_path = None 
+
+    # chatglm3-6b
+    # model_path = "../LLM_weight/chatglm3-6b"
+    # log_path = './logs/chatglm3-6b'
+    # result_path = "./results/chatglm3-6b"
+    # sheriff_role = "Seer"
+    # peft_path = None 
+    # peft_path = "./weights/wwqa_train_1453_chatglm3-6b"
+
+    # Yi-34B
+    # model_path = "../LLM_weight/Yi-34B-Chat-8bits"
+    # log_path = './logs/Yi-34B'
+    # result_path = "./results/Yi-34B"
+    # peft_path = "./weights/wwqa_train_1453_chatglm3-6b"
+    # peft_path = None 
+
+    # InternLM-20B
+    model_path = "../LLM_weight/internlm2-chat-20b"
+    log_path = './logs/InternLM-20B'
+    result_path = "./results/InternLM-20B"
+    sheriff_role = 'Villager'
+    peft_path = None 
+    # peft_path = "./weights/wwqa_train_1453_internlm-20b"
+
+    # model_path = "glm-3"
     # log_path = './logs/GLM-3'
     # result_path = "./results/GLM-3"
-    # random_seeds = [429, 514, 827, 712, 2021, 2019, 1997, 1999, 2024, 711]
-    random_seeds = [2019, 1997, 1999, 2024, 711]
-    eval_opinion_leadership(max_round, model_path, log_path, result_path, random_seeds, peft_path)
+    # peft_path = None 
+    # sheriff_role = 'Werewolf'
+    
+    # model_path = "glm-4"
+    # log_path = './logs/GLM-4'
+    # result_path = "./results/GLM-4"
+    # peft_path = None 
+
+    # model_path = "gpt-4"
+    # log_path = './logs/GPT-4'
+    # result_path = "./results/GPT-4"
+    # peft_path = None 
+
+    random_seeds = []
+    game_setting = 2
+    eval_opinion_leadership(max_round, model_path, log_path, result_path, random_seeds, peft_path, game_setting, sheriff_role)

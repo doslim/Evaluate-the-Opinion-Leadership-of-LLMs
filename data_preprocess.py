@@ -1,4 +1,3 @@
-
 from tqdm import tqdm
 
 import transformers
@@ -11,9 +10,12 @@ def read_jsonl(model_checkpoint, path, max_seq_length, prompt_key,target_key,ski
     if 'llama' in model_checkpoint.lower() or 'alpaca' in model_checkpoint.lower():
         tokenizer = LlamaTokenizer.from_pretrained(
             model_checkpoint, trust_remote_code=True)
-    else:
+    elif 'Baichuan' in model_checkpoint or 'chatglm3' in model_checkpoint or 'internlm' in model_checkpoint:
         tokenizer = AutoTokenizer.from_pretrained(
             model_checkpoint, trust_remote_code=True)
+    elif 'Mistral' in model_checkpoint:
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_checkpoint)
     config = transformers.AutoConfig.from_pretrained(
         model_checkpoint, trust_remote_code=True, device_map='auto')
     with open(path, "r") as f:
@@ -35,11 +37,11 @@ def preprocess(tokenizer, config, example, max_seq_length, prompt_key, target_ke
     return {"input_ids": input_ids, "seq_len": len(prompt_ids)}
 
 if __name__ == '__main__':
-    model_checkpoint = '../LLM_weight/Baichuan2-13B-chat'
+    model_checkpoint = '../LLM_weight/internlm2-chat-20b'
     input_file= 'wwqa.json'
     prompt_key = 'Question'
     target_key = 'Answer'
-    save_name = 'wwqa_baichuan2-13B'
+    save_name = 'wwqa_internlm2-20b'
     max_seq_length = 2000
     skip_overlength = False
 
