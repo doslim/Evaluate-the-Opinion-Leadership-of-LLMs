@@ -1,5 +1,11 @@
 # Evaluate the Opinion Leadership of Large Language Models
 
+**Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game**
+
+[![Paper](https://img.shields.io/badge/Paper-Arvix%20Link-green)](https://arxiv.org/abs/2404.01602)
+## News
+
+- [x] [2024.4.2] We release our [paper](https://arxiv.org/abs/2404.01602) and this repo, including code and the WWQA dataset.
 
 ## Requirements and Structures
 All code is implemented by ```Python```. We evaluate the opinion leadership of different LLMs, which require different versions of ```transformers``` and other related packages.
