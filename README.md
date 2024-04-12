@@ -6,7 +6,7 @@
 
 
 <div style="text-align: center;">
-    <img src="demo.gif" alt="Your Image" style="display: block; margin: 0 auto;" width="50%"/>
+    <img src="demo.gif" width="50%" alt="Your Image" style="display: block; margin: 0 auto;" />
 </div>
 
 ## News
