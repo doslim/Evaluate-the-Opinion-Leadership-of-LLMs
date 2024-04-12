@@ -3,6 +3,12 @@
 **Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game**
 
 [![Paper](https://img.shields.io/badge/Paper-Arvix%20Link-green)](https://arxiv.org/abs/2404.01602)
+
+
+<div style="text-align: center;">
+    <img src="demo.gif" alt="Your Image" style="display: block; margin: 0 auto;" />
+</div>
+
 ## News
 
 - [x] [2024.4.2] We release our [paper](https://arxiv.org/abs/2404.01602) and this repo, including code and the WWQA dataset.
@@ -21,7 +27,7 @@ For [Baichuan 2](https://github.com/baichuan-inc/Baichuan2) series models, the f
 - transformers-4.33.0
 - wandb-0.16.0
 
-For [Yi](https://github.com/01-ai/Yi), [ChatGLM3](https://github.com/THUDM/ChatGLM3), [InternLM](https://github.com/InternLM/InternLM) and [Mistral](https://mistral.ai/news/announcing-mistral-7b/) models, the following packages are recommended.
+For [Yi](https://github.com/01-ai/Yi), [ChatGLM3](https://github.com/THUDM/ChatGLM3), [InternLM2](https://github.com/InternLM/InternLM) and [Mistral](https://mistral.ai/news/announcing-mistral-7b/) models, the following packages are recommended.
 
 - accelerate-0.27.2
 - auto-gptq-0.6.0+cu118
@@ -73,14 +79,14 @@ First, tokenize the dataset using ```data_preprocess.py```. The processed files 
 ```
 python data_preprocess.py
 ```
-Then run the following command to fine-tune LLMs. You can switch the fine-tuned model by modifying the script. We currently support fine-tuning on ChatGLM3-6B, Mistral-7B, Baichuan2-13B, and InternLM-20B.
+Then run the following command to fine-tune LLMs. You can switch the fine-tuned model by modifying the script. We currently support fine-tuning on ChatGLM3-6B, Mistral-7B, Baichuan2-13B, and InternLM2-20B.
 ```
 sh fine-tune.sh
 ```
 
 *3. Simulations*
 
-After configuring the model weight path, game log storage path, result storage path, and setting the random seed in ```main.py```, run the following command. We currently support ChatGLM3-6B, Mistral-7B, Baichuan2-13B, InternLM-20B, Yi-34B, GLM-3, GLM-4, and GPT-4.
+After configuring the model weight path, game log storage path, result storage path, and setting the random seed in ```main.py```, run the following command. We currently support ChatGLM3-6B, Mistral-7B, Baichuan2-13B, InternLM2-20B, Yi-34B, GLM-3, GLM-4, and GPT-4.
 ```
 python main.py
 ```
