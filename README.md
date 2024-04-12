@@ -4,9 +4,8 @@
 
 [![Paper](https://img.shields.io/badge/Paper-Arvix%20Link-green)](https://arxiv.org/abs/2404.01602)
 
-
-<div style="text-align: center;">
-    <img src="demo.gif" width="50%" alt="Your Image" style="display: block; margin: 0 auto;" />
+<div align="center">
+    <img src="demo.gif"  width="50%">
 </div>
 
 ## News
