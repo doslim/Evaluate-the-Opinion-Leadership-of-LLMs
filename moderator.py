@@ -15,9 +15,13 @@ class GameModerator:
     def __init__(self, model_path: str, log_path: str, result_path = None, num_players = 7, peft_path = None, game_setting = 2) -> None:
         '''
         game_setting
-        1: Homogeneous evaluation: All players are the same LLM-based agents. We do not specify the role of the Sheriff
-        2: Heterogeneous evaluation: The sheriff is implemented by the selected LLM-based agents while other players are the same LLM-based agents (default to be LlaMA-7B). We can specify the role of the Sheriff in the assign_roles() method. 
-        3: Human evaluation: One player is a human while other players are the same LLM-based agents. The Sheriff MUST BE a LLM-based agent.
+            1: Homogeneous evaluation: All players are the same LLM-based agents. We can specify the role of the Sheriff in the assign_roles() method. 
+            2: Heterogeneous evaluation: The Sheriff is implemented by the selected (tested) LLM-based agent while other players are the same LLM-based agents (default to be GLM-3). We can specify the role of the Sheriff in the assign_roles() method. 
+            3: Human evaluation: One player is a human while other players are the same LLM-based agents. The Sheriff MUST BE a LLM-based agent.
+            4: Human baseline: One player is a human while other players are the same LLM-based agents. The Sheriff is the human player.
+            5: Homogeneous evaluation variant 1: All players are the same LLM-based agents. It contains the election phase.
+            6: Heterogeneous evaluation variant 1:  All players are initialized by the same LLM-based agents (default to be GLM-3), and when the election phase is over, the sheriff is replaced with the LLM to be tested.
+            7: Heterogeneous evaluation variant 2:  One player is implemented by the selected (tested) LLM-based agent while other players are the same LLM-based agents (default to be GLM-3). It contains the election process, and if the LLM to be tested is not selected as the Sheriff, the simulation ends.
         '''
 
 
@@ -53,18 +57,18 @@ class GameModerator:
             # It means we are using a fine-tuned LLM.
             self.model = PeftModel.from_pretrained(self.model, peft_path)
 
-        if self.game_setting == 1:
+        if self.game_setting == 1 or self.game_setting == 5:
             self.reference_model_path = model_path
             self.reference_model = self.model
             self.logger = Logging().log(log_path, level='DEBUG')
-        elif self.game_setting == 2:
+        elif self.game_setting == 2 or self.game_setting == 6 or self.game_setting == 7:
             # self.reference_model_path = '../LLM_weight/chatglm3-6b'
             # self.reference_model = AutoModel.from_pretrained(self.reference_model_path, device_map = 'auto', trust_remote_code = True)
             # self.reference_model = self.reference_model.quantize(8)
             self.reference_model = None
             self.reference_model_path = 'glm-3'
             self.logger = Logging().log(log_path, level='DEBUG')
-        elif self.game_setting == 3:
+        elif self.game_setting == 3 or self.game_setting == 4:
             self.logger = Logging().log(log_path, level='CRITICAL')
 
         
@@ -74,12 +78,15 @@ class GameModerator:
         self.peft_path = peft_path
 
 
-    def assign_roles(self, random_seed = None, sheriff_role = None, villager_path = None, wolf_path = None, guard_path = None, seer_path = None) -> None:
+    def assign_roles(self, random_seed = None, sheriff_role = None, villager_path = None, wolf_path = None, guard_path = None, seer_path = None, early_stop = True) -> None:
         '''
         We can specify the role of the sheriff
         '''
+
+
         # Initialization
-        if self.game_setting == 1:
+        self.early_stop = early_stop
+        if self.game_setting == 1 or self.game_setting == 5:
             if villager_path is None:
                 self.villager_1 = Villager(self.model_path, self.log_path, True, self.model)
                 self.villager_2 = Villager(self.model_path, self.log_path, True, self.model)
@@ -108,9 +115,9 @@ class GameModerator:
                 self.seer = Seer(self.model_path, self.log_path, True, self.model)
             else:
                 self.seer = Seer(seer_path, self.log_path)
+            self.sheriff = None
 
-
-        elif self.game_setting == 2:
+        elif self.game_setting == 2 or self.game_setting == 7:
             random.seed(random_seed)
             sheriff_num = random.randint(1,7)
             if sheriff_role is not None:
@@ -161,7 +168,8 @@ class GameModerator:
             else:
                 self.seer = Seer(self.model_path, self.log_path, True, self.model)
 
-        elif self.game_setting == 3:
+
+        elif self.game_setting == 3 or self.game_setting == 4:
             logger_level = 'ERROR'
             random.seed(random_seed)
             self.human_player_num = random.randint(1,7)
@@ -211,6 +219,38 @@ class GameModerator:
                 self.seer.role = 'Seer'
                 self.human_player = self.seer
             self.sheriff = None
+        elif self.game_setting == 6:
+            if villager_path is None:
+                self.villager_1 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.villager_2 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.villager_3 = Villager(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.villager_1 = Villager(villager_path, self.log_path)
+                self.villager_2 = Villager(villager_path, self.log_path)
+                self.villager_3 = Villager(villager_path, self.log_path)
+
+
+            if wolf_path is None:
+                self.werewolf_1 = Werewolf(self.reference_model_path, self.log_path, True, self.reference_model)
+                self.werewolf_2 = Werewolf(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.werewolf_1 = Werewolf(wolf_path, self.log_path)
+                self.werewolf_2 = Werewolf(wolf_path, self.log_path)
+
+
+            if guard_path is None:
+                self.guard = Guard(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.guard = Guard(guard_path, self.log_path)
+
+
+            if seer_path is None:
+                self.seer = Seer(self.reference_model_path, self.log_path, True, self.reference_model)
+            else:
+                self.seer = Seer(seer_path, self.log_path)
+            self.sheriff = None
+
+            
         self.players = [self.werewolf_1, self.werewolf_2, self.villager_1, self.villager_2, self.villager_3, self.guard, self.seer]
         if random_seed is not None:
             random.seed(random_seed)
@@ -254,7 +294,7 @@ class GameModerator:
               "player_7": self.player_7.role,
               "sheriff": self.sheriff.player_id
         }
-        elif self.game_setting == 3: 
+        elif self.game_setting == 3 or self.game_setting == 4: 
             role_summary = { \
               "player_1": self.player_1.role,
               "player_2": self.player_2.role,
@@ -266,13 +306,71 @@ class GameModerator:
               "human_player": self.human_player.player_id
         }
             self.human_player_id = self.human_player.player_id
+        elif self.game_setting == 1:
+            if sheriff_role is not None:
+                if sheriff_role == 'Werewolf':
+                    self.sheriff_id = self.werewolf_1.player_id
+                elif sheriff_role == 'Villager':
+                    self.sheriff_id = self.villager_1.player_id
+                elif sheriff_role == 'Guard':
+                    self.sheriff_id = self.guard.player_id
+                else:
+                    self.sheriff_id = self.seer.player_id
+                role_summary = { \
+                "player_1": self.player_1.role,
+                "player_2": self.player_2.role,
+                "player_3": self.player_3.role,
+                "player_4": self.player_4.role,
+                "player_5": self.player_5.role,
+                "player_6": self.player_6.role,
+                "player_7": self.player_7.role,
+                "sheriff": self.sheriff_id
+                }
+            else:
+                role_summary = { \
+                "player_1": self.player_1.role,
+                "player_2": self.player_2.role,
+                "player_3": self.player_3.role,
+                "player_4": self.player_4.role,
+                "player_5": self.player_5.role,
+                "player_6": self.player_6.role,
+                "player_7": self.player_7.role
+                }
+        elif self.game_setting == 5 or self.game_setting == 6:
+            role_summary = { \
+                "player_1": self.player_1.role,
+                "player_2": self.player_2.role,
+                "player_3": self.player_3.role,
+                "player_4": self.player_4.role,
+                "player_5": self.player_5.role,
+                "player_6": self.player_6.role,
+                "player_7": self.player_7.role
+                }
+        elif self.game_setting == 7:
+            if sheriff_num <= 3:
+                self.evaluated_id = self.villager_1.player_id
+            elif sheriff_num <= 5:
+                self.evaluated_id = self.werewolf_1.player_id
+            elif sheriff_num <= 6:
+                self.evaluated_id = self.guard.player_id
+            else:
+                self.evaluated_id = self.seer.player_id
 
-        
+            role_summary = { \
+              "player_1": self.player_1.role,
+              "player_2": self.player_2.role,
+              "player_3": self.player_3.role,
+              "player_4": self.player_4.role,
+              "player_5": self.player_5.role,
+              "player_6": self.player_6.role,
+              "player_7": self.player_7.role,
+              "evluated_id": self.evaluated_id
+        }
 
         self.logger.info(role_summary)
         self.decision_and_reliability['role_summary'] = [i.role for i in self.players]
         self.game_log['role_summary'] = role_summary
-        if self.game_setting == 3: 
+        if self.game_setting == 3 or self.game_setting == 4: 
             self.decision_and_reliability['human_player'] = self.human_player_id
 
         self.save_log()
@@ -296,7 +394,8 @@ class GameModerator:
         msg = f"After discussion and a vote, player_{self.sheriff_id} was selected as the Sheriff, who can determine the order of statements, summarize the discussion, and provide advice for voting at last."
         self.announcement(msg, self.sheriff_id)
         self.logger.info(msg)
-
+        # self.game_log['role_summary']['sheriff'] = self.sheriff.player_id
+        # self.save_log()
 
     def convey_sheriff(self, time_str: str, random_select = False):
         if self.random_seed is not None:
@@ -325,13 +424,23 @@ class GameModerator:
         self.logger.info(msg)
 
 
-    def elect_sheriff(self):
+    def elect_sheriff(self, must_join_player_ids = None):
+        if  must_join_player_ids is not None:
+            assert isinstance(must_join_player_ids, list)
+            assert len(must_join_player_ids) <= 3
+        
         self.game_log['election'] = {}
         self.temp_game_log = []
         
         if self.random_seed is not None:
             random.seed(self.random_seed)
-        self.sheriff_candidate_id = random.sample(self.get_available_candidate_sherrif(), 3)
+        if must_join_player_ids is None:
+            self.sheriff_candidate_id = random.sample(self.get_available_candidate_sherrif(), 3)
+        else:
+            self.sheriff_candidate_id = deepcopy(must_join_player_ids)
+            temp = random.sample(self.get_available_candidate_sherrif(), 3 - len(must_join_player_ids))
+            self.sheriff_candidate_id.extend(temp)
+
         self.sheriff_candidate = [f'player_{i}' for i in self.sheriff_candidate_id]
         msg = f'{self.sheriff_candidate} are running for the Sheriff. Now they will make a statement in turn.'
         self.temp_game_log.append(msg)
@@ -457,7 +566,7 @@ class GameModerator:
                 self.announcement(f'In night {round} round, player_{killed_player} was killed.')
                 self.remaining_players.remove(killed_player)
 
-                if self.game_setting == 1:
+                if (self.game_setting == 1 or self.game_setting == 5) and not self.early_stop:
                     if (self.sheriff is not None) and (killed_player == self.sheriff.player_id):
                         time_str = f'night {round}'
                         self.convey_sheriff(time_str)
@@ -715,7 +824,7 @@ class GameModerator:
         if flag:
             msg = f'In day {round} round, player_{temp_id} had the most votes and was eliminated.'
             self.remaining_players.remove(temp_id)
-            if self.game_setting == 1:
+            if (self.game_setting == 1 or self.game_setting == 5) and not self.early_stop:
                 if (self.sheriff is not None) and (temp_id == self.sheriff.player_id):
                     time_str = f'day {round}'
                     self.convey_sheriff(time_str)
@@ -794,19 +903,47 @@ class GameModerator:
                 pkl.dump(self.decision_and_reliability, f)
 
 
-    def game_end(self):
+    def game_end(self, early_stop = True):
+        '''
+        End Criterion:
+        1: If early_stop = True, then the simulation ends when the Sheriff is eliminated; otherwise, the simulation stops according to the game rule.
+        2: The simulation ends when the sheriff is eliminated.
+        3: The simulation ends when the human player is eliminated.
+        4: The simulation ends when the human player is eliminated.
+        5: If early_stop = True, then the simulation ends when the Sheriff is eliminated; otherwise, the simulation stops according to the game rule.
+        6: The simulation ends when the Sheriff is eliminated.
+        7: The simulation ends when the Sheriff is eliminated.
+        '''
 
-
-        if self.game_setting == 2:
+        if self.game_setting == 2 or self.game_setting == 7:
             if self.sheriff_id in self.remaining_players:
                 pass
             else: 
                 return True
-        if self.game_setting == 3:
+        if self.game_setting == 1 and early_stop:
+            if self.sheriff_id in self.remaining_players:
+                pass
+            else: 
+                return True
+        if self.game_setting == 5 and early_stop:
+            if self.sheriff_id is None:
+                return False
+            if self.sheriff_id in self.remaining_players:
+                pass
+            else: 
+                return True
+        if self.game_setting == 3 or self.game_setting == 4:
             if self.human_player.player_id in self.remaining_players:
                 pass
             else:
                 return 2
+        if self.game_setting == 6:
+            if self.sheriff_id is None:
+                return False
+            if self.sheriff_id in self.remaining_players:
+                pass
+            else: 
+                return True
 
         num_villager = 0
         num_werewolf = 0

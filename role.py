@@ -18,7 +18,7 @@ STATEMENT_TEMPLATE, WEREWOLF_VOTING_TMEPLATE, VILLAGER_VOTING_TMEPLATE, REASONIN
 SHERRIF_STATEMENT_TEMPLATE, SEER_ACTION_HUMAN_TEMPLATE, WEREWOLF_ACTION_HUMAN_TEMPLATE, GUARD_ACTION_HUMAN_TEMPLATE, \
 STATEMENT_HUMAN_TEMPLATE, WEREWOLF_VOTING_HUMAN_TMEPLATE, VILLAGER_VOTING_HUMAN_TMEPLATE, REASONING_HUMAN_TEMPLATE, \
 VILLAGER_VOTING_HUMAN_PSEUDO_TMEPLATE, WEREWOLF_VOTING_HUMAN_PSEUDO_TMEPLATE, ELECTION_STATEMENT_TEMPLATE, \
-ELECTION_VOTE_TEMPLATE, ELECTION_VOTE_HUMAN_TEMPLATE
+ELECTION_VOTE_TEMPLATE, ELECTION_VOTE_HUMAN_TEMPLATE, STATEMENT_ORDER_HUMAN_TEMPLATE
 
 
 # The base class for different roles
@@ -87,11 +87,43 @@ class BaseAgent:
 
         self.role = ''
         self.player_id = 0
-        # if device_num is None:
-        #     self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        # else:
-        #     self.device_num = device_num
-        #     self.device = torch.device(f'device:{device_num}')
+
+
+    def reset_backend(self, model_path: str, model):
+        self.model_path = model_path
+        if model_path in ['glm-3', 'glm-4', 'gpt-4', 'gpt-3.5']:
+            self.local_model = False
+            self.model_name = self.model_path
+            if model_path in ['glm-3']:
+                self.model = ZhipuAI(api_key='')
+            if model_path in ['gpt-4', 'gpt-3.5']:
+                self.model = OpenAI(api_key='', timeout=60)
+            if model_path in ['glm-4']:
+                self.model = ZhipuAI(api_key='')
+        else:
+            self.local_model = True
+            self.model = model
+
+            if 'chatglm' in self.model_path:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)   
+                self.model_name = 'chatglm3-6b'
+            
+            if 'Baichuan' in self.model_path:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+                self.generation_config = GenerationConfig.from_pretrained(model_path)     
+                self.model_name = 'Baichuan2-13b'
+            
+            if 'Mistral' in self.model_path:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+                self.model_name = 'Mistral-7B-Instruct'
+
+            if 'Yi' in self.model_path:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+                self.model_name = 'Yi-34B'
+
+            if 'internlm' in self.model_path:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+                self.model_name = 'InternLM-20B'
 
 
     def set_player_id(self, id: int):
@@ -585,7 +617,7 @@ class BaseAgent:
             for player in reasoning_result:
                 try:
                     player_role = reasoning_result[player]['role']
-                    if player_role == 'Werewolf':
+                    if player_role == 'Werewolf' and self.role != 'Werewolf':
                         self.reliability[player] = 11 - int(reasoning_result[player]['confidence'])
                     else:
                         self.reliability[player] = int(reasoning_result[player]['confidence'])
@@ -1012,10 +1044,24 @@ class HumanPlayer:
             self.fact.append(msg)
 
 
+    def take_order(self, remaining_players_ids, first_player_id, left = True) -> list:
+        statement_order = []
+        first_player_idx = remaining_players_ids.index(first_player_id)
+        for i in range(len(remaining_players_ids)):
+            if left:
+                statement_order.append(remaining_players_ids[first_player_idx - i])
+            else:
+                temp = first_player_idx + i
+                if temp > len(remaining_players_ids) - 1:
+                    temp = temp - len(remaining_players_ids)
+                statement_order.append(remaining_players_ids[temp])
+        
+        return statement_order
+
     # We require human player to take actions by providing instructions
     # Therefore, the following methods organize [instructions] for the human player. Then the instructions will presented on the screen.
     # We define additional methods to parse the action results of the human player. 
-    def take_night_action(self, round: int, remaining_player) -> int:
+    def take_night_action(self, round: int, remaining_player) -> str:
         if self.role == 'Villager':
             return 'You are the Villager, so you don\'t need to act at night.'
         elif self.role == "Seer":
@@ -1037,7 +1083,30 @@ class HumanPlayer:
             context = self.organize_context(remaining_player)
             return context + '\n' + were_wolf_action
 
-            
+    
+    def determine_statement_order(self, round: int, remaining_player):
+        context = self.organize_context(remaining_player)
+        remaining_player_ids = [int(i.split('_')[1]) for i in remaining_player]
+        your_idx = remaining_player_ids.index(self.player_id)
+        if your_idx == 0:
+            left_idx = -1
+            right_idx = 1
+        elif your_idx == len(remaining_player_ids) - 1:
+            right_idx = 0
+            left_idx = your_idx - 1
+        else:
+            left_idx = your_idx - 1
+            right_idx = your_idx + 1
+        
+        left_player = remaining_player_ids[left_idx]
+        right_player = remaining_player_ids[right_idx]
+        action_set = [f'player_{left_player}', f'player_{right_player}']
+        statement_order = STATEMENT_ORDER_HUMAN_TEMPLATE.format(round, self.player_id, self.role, action_set)
+        context = self.organize_context(remaining_player)
+
+        return context + '\n' + statement_order
+
+
     def day_discussion(self, round: int, remaining_player) -> str:
         statement = STATEMENT_HUMAN_TEMPLATE.format(round, self.player_id, self.role)
         context = self.organize_context(remaining_player)
@@ -1128,6 +1197,67 @@ class HumanPlayer:
             self.logger.exception("An error occurred: {}".format(e))
             self.logger.info(action_result)
             return False
+
+
+    def parse_statement_order(self, response: str, round: int, remaining_player):
+        remaining_player_ids = [int(i.split('_')[1]) for i in remaining_player]
+        your_idx = remaining_player_ids.index(self.player_id)
+        if your_idx == 0:
+            left_idx = -1
+            right_idx = 1
+        elif your_idx == len(remaining_player_ids) - 1:
+            right_idx = 0
+            left_idx = your_idx - 1
+        else:
+            left_idx = your_idx - 1
+            right_idx = your_idx + 1
+        
+        left_player = remaining_player_ids[left_idx]
+        right_player = remaining_player_ids[right_idx]
+        try:
+            json_strings = extract_json_strings(response)
+            order_result = json.loads(json_strings[0])
+        except Exception as e:
+            self.logger.exception('An error occurs: {}'.format(e))
+            self.logger.error('Invalid output of determining statement order')
+            self.logger.info(response)
+
+            self.fact.append(f'You chose player_{left_player} to make a statement first in day {round}')
+            
+            return self.take_order(remaining_player_ids, left_player, left = True), False, left_player
+        
+        try:
+            if order_result['action'].split('_')[1].isdigit():
+                selected_player = int(order_result['action'].split('_')[1])
+                if selected_player == left_player:
+                    self.fact.append(f'You chose player_{left_player} to make a statement first in day {round}')
+                    self.action_history.append({f'day {round}': f'You chose player_{left_player} to make a statement first'})
+                    return self.take_order(remaining_player_ids, left_player, left = True), True, left_player
+                elif selected_player == right_player:
+                    self.fact.append(f'You chose player_{right_player} to make a statement first in day {round}')
+                    self.action_history.append({f'day {round}': f'You chose player_{right_player} to make a statement first'})
+                    return self.take_order(remaining_player_ids, right_player, left = False), True, right_player
+                else:
+                    self.logger.error('Invalid decision on the order of statement.')
+                    self.logger.info(order_result)
+
+                    self.fact.append(f'You chose player_{left_player} to make a statement first in day {round}')
+                    self.action_history.append({f'day {round}': f'You chose player_{left_player} to make a statement first'})
+                    return self.take_order(remaining_player_ids, left_player, left = True), False, left_player
+            else:
+                self.logger.error('Invalid decision on the order of statement.')
+                self.logger.info(order_result)
+                self.fact.append(f'You chose player_{left_player} to make a statement first in day {round}')
+                self.action_history.append({f'day {round}': f'You chose player_{left_player} to make a statement first'})
+                return self.take_order(remaining_player_ids, left_player, left = True), False, left_player
+        except Exception as e:
+            self.logger.error('Invalid decision on the order of statement.')
+            self.logger.exception("An error occurred: {}".format(e))
+            self.logger.info(order_result)
+            self.fact.append(f'You chose player_{left_player} to make a statement first in day {round}')
+            self.action_history.append({f'day {round}': f'You chose player_{left_player} to make a statement first'})
+            return self.take_order(remaining_player_ids, left_player, left = True), False, left_player
+
 
     
     def parse_statement(self, response: str, round: int):
@@ -1274,7 +1404,7 @@ class HumanPlayer:
             try:
                 player_role = reasoning_result[player]['role']
                 self.reliability[player]['role'] =  player_role
-                if player_role == 'Werewolf':
+                if player_role == 'Werewolf' and self.role != 'Werewolf':
                     self.reliability[player]['reliability'] = 11 - int(reasoning_result[player]['confidence'])
                 else:
                     self.reliability[player]['reliability'] = int(reasoning_result[player]['confidence'])

@@ -207,6 +207,17 @@ Response Format:
 Ensure the response is in English and can be parsed by Python json.loads.
 '''
 
+
+STATEMENT_ORDER_HUMAN_TEMPLATE = '''
+Now it is day {} discussion phase and you are the Sheriff . As player_{}, a {} and the Sheriff, you should decide on the first player to speak. 
+Response Format:
+
+{{
+    "action": "choose one from {}"
+}}
+'''
+
+
 STATEMENT_HUMAN_TEMPLATE = '''
 Now it is day {} discussion phase and it is your turn to speak. You are player_{} and a {}. Please respond in JSON format as described below.
 Response Format:
@@ -288,3 +299,44 @@ Response Format:
 Ensure the response is in English and can be parsed by Python json.loads.
 '''
 
+
+
+WEREWOLF_ACTION_SAMPLE = '''
+Your input is invalid. Please follow the format instructions and respond in JSON format.  The following responses are for reference.
+
+{
+    "action": "kill player_1"
+}
+'''
+
+SEER_ACTION_SAMPLE = '''
+Your input is invalid. Please follow the format instructions and respond in JSON format.  The following responses are for reference.
+
+{
+    "action": "see player_1"
+}
+'''
+
+GUARD_ACTION_SAMPLE = '''
+Your input is invalid. Please follow the format instructions and respond in JSON format.  The following responses are for reference.
+
+{
+    "action": "protect player_1"
+}
+'''
+
+VOTE_ACTION_SAMPLE = '''
+Your input is invalid. Please follow the format instructions and respond in JSON format.  The following responses are for reference.
+
+{
+    "action": "vote to eliminate player_1"
+}
+'''
+
+_ACTION_SAMPLE = '''
+Your input is invalid. Please follow the format instructions and respond in JSON format.  The following responses are for reference.
+
+{
+    "action": "protect player_1"
+}
+'''

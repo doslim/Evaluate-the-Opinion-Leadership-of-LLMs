@@ -1,4 +1,4 @@
-# Evaluate the Opinion Leadership of Large Language Models
+# Evaluate the Opinion Leadership of LLMs in the Werewolf Game
 
 **Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game**
 
@@ -9,7 +9,8 @@
 </div>
 
 ## News
-
+- [x] [2024.6.4] We update several new game settings. Refer to [Game Setting](#game-setting) for more details. 
+  - Update ```eval_ol.py```, ```main.py```, ```moderator.py```, ```prompt.py```, ```role.py```.
 - [x] [2024.4.2] We release our [paper](https://arxiv.org/abs/2404.01602) and this repo, including code and the WWQA dataset.
 
 ## Requirements and Structures
@@ -61,6 +62,15 @@ The structure of our project is as follows.
 - ```/weights```: the directory to save model weights during fine-tuning.
 - ```/results```: the directory to save evaluation results.
 
+## Game Setting
+
+1. **Homogeneous evaluation**: All players are the same LLM-based agents. We can specify the role of the Sheriff in the ```assign_roles()``` method. 
+2. **Heterogeneous evaluation**: The Sheriff is implemented by the selected (tested) LLM-based agent while other players are the same LLM-based agents (default to be GLM-3). We can specify the role of the Sheriff in the ```assign_roles()``` method. 
+3. **Human evaluation**: One player is a human while other players are the same LLM-based agents. The Sheriff MUST BE a LLM-based agent.
+4. **Human baseline**: One player is a human while other players are the same LLM-based agents. The Sheriff is the human player.
+5. **Homogeneous evaluation variant 1**: All players are the same LLM-based agents. It contains the election phase.
+6. **Heterogeneous evaluation variant 1**:  All players are initialized by the same LLM-based agents (default to be GLM-3), and when the election phase is over, the sheriff is replaced with the LLM to be tested.
+7. **Heterogeneous evaluation variant 2**:  One player is implemented by the selected (tested) LLM-based agent while other players are the same LLM-based agents (default to be GLM-3). It contains the election process, and if the LLM to be tested is not selected as the Sheriff, the simulation ends.
 
 ## Usage
 All commands should be run from the root directory of our project. Ensure that your environment matches the LLMs.
@@ -95,4 +105,11 @@ python main.py
 Run the following command and the game log and evaluation result will be saved in ```logs``` and ```results``` by default.
 ```
 python human_eval.py
+```
+
+*5. Human Baseline*
+
+Run the following command and the game log and evaluation result will be saved in ```logs``` and ```results``` by default.
+```
+python human_baseline.py
 ```
