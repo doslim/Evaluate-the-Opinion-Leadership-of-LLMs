@@ -9,9 +9,10 @@
 </div>
 
 ## News
-- [x] [2024.6.4] We update several new game settings. Refer to [Game Setting](#game-setting) for more details. 
+- [x] [2024.07.10] 🎉 Happy to announce that our paper is accepted to First Conference on Language Modeling (COLM) 2024! 
+- [x] [2024.06.04] We update several new game settings. Refer to [Game Setting](#game-setting) for more details. 
   - Update ```eval_ol.py```, ```main.py```, ```moderator.py```, ```prompt.py```, ```role.py```.
-- [x] [2024.4.2] We release our [paper](https://arxiv.org/abs/2404.01602) and this repo, including code and the WWQA dataset.
+- [x] [2024.04.02] We release our [paper](https://arxiv.org/abs/2404.01602) and this repo, including code and the WWQA dataset.
 
 ## Requirements and Structures
 All code is implemented by ```Python```. We evaluate the opinion leadership of different LLMs, which require different versions of ```transformers``` and other related packages.
