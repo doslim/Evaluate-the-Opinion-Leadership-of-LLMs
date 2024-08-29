@@ -9,6 +9,7 @@
 </div>
 
 ## News
+- [x] [2024.08.26] The camera-ready version of our [paper](https://openreview.net/forum?id=xMt9kCv5YR) is released.
 - [x] [2024.07.10] 🎉 Happy to announce that our paper is accepted to First Conference on Language Modeling (COLM) 2024! 
 - [x] [2024.06.04] We update several new game settings. Refer to [Game Setting](#game-setting) for more details. 
   - Update ```eval_ol.py```, ```main.py```, ```moderator.py```, ```prompt.py```, ```role.py```.
@@ -113,4 +114,19 @@ python human_eval.py
 Run the following command and the game log and evaluation result will be saved in ```logs``` and ```results``` by default.
 ```
 python human_baseline.py
+```
+
+## Citation
+
+If you find this project useful in your research, please consider citing:
+
+```
+@inproceedings{
+    du2024helmsman,
+    title={Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game},
+    author={Silin Du and Xiaowei Zhang},
+    booktitle={First Conference on Language Modeling},
+    year={2024},
+    url={https://openreview.net/forum?id=xMt9kCv5YR}
+}
 ```
