@@ -60,6 +60,7 @@ The structure of our project is as follows.
 - ```utils.py```: define tools to parse outputs of LLMs.
 - ```fine-tune.sh```: the script to fine-tune LLMs.
 - ```/WWQA```: the WWQA dataset.
+  -  ```data_generation.py```: the process of building the WWQA dataset.
 - ```/logs```: directory to save the game logs.
 - ```/weights```: the directory to save model weights during fine-tuning.
 - ```/results```: the directory to save evaluation results.
